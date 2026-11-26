@@ -135,14 +135,15 @@ ALIASES = {
     # BibleWorks-style codes used in eBible VPL files
     "sol": "Song", "eze": "Ezek", "joe": "Joel", "mar": "Mark", "joh": "John", "phi": "Phil",
     "1jo": "1John", "2jo": "2John", "3jo": "3John", "jam": "Jas", "jdg": "Judg", "rth": "Ruth",
-    "1sm": "1Sam", "2sm": "2Sam", "1kg": "1Kgs", "2kg": "2Kgs", "ezk": "Ezek", "jnh": "Jonah", "zph": "Zeph",
+    "dng": "Dan", "pra": None, "1sm": "1Sam", "2sm": "2Sam", "1kg": "1Kgs", "2kg": "2Kgs", "ezk": "Ezek", "jnh": "Jonah", "zph": "Zeph",
 }
 RESOLVE = {}
 for b in BOOKS:
     for k in (b["osis"], b["sil"], b["name"]):
         RESOLVE[norm_key(k)] = b["osis"]
 for k, v in ALIASES.items():
-    RESOLVE.setdefault(norm_key(k), v)
+    if v:
+        RESOLVE.setdefault(norm_key(k), v)
 
 def resolve_book(name):
     return RESOLVE.get(norm_key(name)) if name else None
@@ -330,13 +331,21 @@ def parse_vpl_zip(data):
             continue
         code, c, v, t = m.group(1).upper(), m.group(2), m.group(3), m.group(4).strip()
         seen[code] += 1
-        if code in ("ESG", "DAG"):
+        if code in ("ESG", "DAG", "DNG"):
             alt[resolve_book(code)][c][v] = t
+            continue
+        if code == "4ES":   # some Orthodox texts file 'Esdras B' (Ezra) under this code
+            alt["Ezra?"][c][v] = t
             continue
         osis = resolve_book(code)
         if osis and BOOK_INDEX[osis] < 39:
             books[osis][c][v] = t
     for osis, chs in alt.items():
+        if osis == "Ezra?":
+            # only if it looks like Ezra (10 chapters, or 23 for Ezra+Nehemiah), not the 16-chapter apocalypse 4 Ezra
+            if "Ezra" not in books and len(chs) in (10, 23):
+                books["Ezra"] = chs
+            continue
         if osis and osis not in books:
             books[osis] = chs
     out = {k: {c: dict(vs) for c, vs in v.items()} for k, v in books.items()}
