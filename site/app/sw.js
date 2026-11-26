@@ -1,6 +1,6 @@
 // Offline support: the app shell is cached on install; Bible data is cached
 // as you read it, so chapters you've opened work without a connection.
-const VERSION = "v6";
+const VERSION = "v7";
 const SHELL = `shell-${VERSION}`;
 const DATA = `data-${VERSION}`;
 const SHELL_FILES = ["./", "index.html", "app.js", "refs.js", "store.js", "morph.js", "compare.js", "hebrew.js", "speech.js", "config.js", "style.css",

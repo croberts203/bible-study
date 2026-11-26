@@ -286,3 +286,5 @@ mark.topic-neg { background: color-mix(in srgb, #d0453a 30%, transparent); color
 .ext-links { display: flex; flex-wrap: wrap; gap: .35rem .9rem; margin: .3rem 0 .6rem; }
 .ext { white-space: nowrap; }
 .ext-list li { margin: .3rem 0; }
+.lib-results { max-height: 40vh; overflow: auto; margin-top: .3rem; }
+.picker-body input[type=search] { width: 100%; }

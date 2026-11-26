@@ -98,12 +98,45 @@ function applySettings() {
   document.documentElement.style.setProperty("--fs", settings.size + "px");
   document.documentElement.dataset.theme = settings.theme;
 }
-const trans = (id) => manifest.translations.find((t) => t.id === id);
+// ---- the online library: every translation served by the HelloAO Free Use Bible API, loaded a chapter at a time
+const AO = "https://bible.helloao.org/api";
+let library = [];          // [{id, label, lang, langName, license, rtl, ...}]
+const libById = new Map();
+async function loadLibrary() {
+  if (library.length) return library;
+  try {
+    const j = await getJSON(`${AO}/available_translations.json`);
+    library = (j?.translations || []).map((t) => ({
+      id: "ao:" + t.id, aoId: t.id, label: `${t.englishName || t.name}${t.name && t.englishName && t.name !== t.englishName ? ` — ${t.name}` : ""}`,
+      short: t.shortName || t.id, lang: t.language, langName: t.languageEnglishName || t.languageName || t.language,
+      license: t.license?.publicDomain ? "Public domain" : (t.licenseUrl ? "Open license" : ""), licenseUrl: t.licenseUrl,
+      rtl: t.textDirection === "rtl", ot: true, nt: true, remote: true, books: t.numberOfBooks,
+    }));
+    for (const t of library) libById.set(t.id, t);
+  } catch { library = []; }
+  return library;
+}
+function flattenAO(items) {
+  return (items || []).map((it) => typeof it === "string" ? it : it?.text ? it.text : it?.lineBreak ? " " : "").join(" ").replace(/\s+/g, " ").trim();
+}
+async function remoteChapter(id, osis, c) {
+  const b = book(osis);
+  const d = await getJSON(`${AO}/${id.slice(3)}/${b.sil}/${c}.json`);
+  const arr = [];
+  for (const it of d?.chapter?.content || []) if (it.type === "verse" && it.number) arr[it.number - 1] = flattenAO(it.content);
+  return Array.from(arr, (x) => x || "");
+}
+/** One chapter of any translation (built in or from the online library) as an array of verses. */
+async function chapterOf(id, osis, c) {
+  if (id.startsWith("ao:")) return remoteChapter(id, osis, c);
+  return (await textBook(id, osis))?.[c - 1] || [];
+}
+const trans = (id) => manifest.translations.find((t) => t.id === id) || libById.get(id);
 const primaryVer = () => [...settings.versionsNT, ...settings.versionsOT].find((v) => trans(v)?.ot && trans(v)?.nt)
   || (trans("kjv") ? "kjv" : manifest.translations[0]?.id) || "kjv";
 /** Translations chosen for a testament that actually contain it. */
 function chosenFor(t) {
-  const list = (t === "OT" ? settings.versionsOT : settings.versionsNT).filter((x) => trans(x) && trans(x)[t.toLowerCase()]);
+  const list = (t === "OT" ? settings.versionsOT : settings.versionsNT).filter((x) => x.startsWith("ao:") || (trans(x) && trans(x)[t.toLowerCase()]));
   if (!list.length) { const d = manifest.translations.find((x) => x[t.toLowerCase()]); if (d) list.push(d.id); }
   return list;
 }
@@ -172,13 +205,13 @@ async function viewRead([b, c, v]) {
   const lxxCh = isOT ? lxxChapters(bk.osis, c) : [];
   const ns = settings.explain ? noteSource(bk.t) : null;
   const [texts, orig, lxxG, lxxE, comm] = await Promise.all([
-    Promise.all(vers.map((x) => textBook(x, bk.osis))),
+    Promise.all(vers.map((x) => chapterOf(x, bk.osis, c))),
     settings.original || settings.footnotes ? interlinear(bk.osis, c) : null,
     isOT && settings.lxx && hasLxx(lxxG()) ? lxxBook(lxxG(), bk.osis) : null,
     isOT && (settings.lxxeng || settings.compare) && hasLxx(lxxE()) ? lxxBook(lxxE(), bk.osis) : null,
     ns ? commentaryCh(ns.id, bk.osis, c) : null,
   ]);
-  const chapterTexts = texts.map((t) => (t && t[c - 1]) || []);
+  const chapterTexts = texts.map((t) => t || []);
   const origData = orig;
   const lxxVerses = (bookData) => {
     if (!bookData) return null;
@@ -207,7 +240,7 @@ async function viewRead([b, c, v]) {
     : null;
   const cols = [
     ...vers.map((x, i) => ({ kind: "tr", id: x, base: Boolean(cmp) && i === baseIdx,
-      label: verLabel(x).replace(/\s*\(.*\)/, "") + (cmp && i === baseIdx ? " — from the Hebrew" : ""), data: chapterTexts[i] })),
+      label: (trans(x)?.remote ? trans(x).short + " · " + trans(x).langName : verLabel(x).replace(/\s*\(.*\)/, "")) + (cmp && i === baseIdx ? " — from the Hebrew" : ""), data: chapterTexts[i] })),
     ...(orig && settings.original ? [{ kind: "orig", label: isOT ? "Hebrew" : "Greek", data: orig }] : []),
     ...(lg && !split ? [{ kind: "lxx", label: "Septuagint (Greek)", data: lg }] : []),
     ...(cmp ? [{ kind: "lxxeng", cmp: true, label: "Septuagint (English) — matched", data: {} }]
@@ -257,6 +290,22 @@ async function viewRead([b, c, v]) {
     const el = document.getElementById(`v${v}`);
     if (el) { el.scrollIntoView({ block: "center" }); el.classList.add("flash"); }
   } else window.scrollTo(0, 0);
+}
+
+// ---------------------------------------------------------------- cross references for an entry
+async function crossRefSection(refs, related, openRelated) {
+  const ver = primaryVer();
+  const blocks = await Promise.all(refs.slice(0, 3).map(async (r) => {
+    const p = parseOsis(r);
+    const xb = p && (await xrefBook(p.b));
+    const list = (xb?.[`${p.c}.${p.v || 1}`] || []).slice(0, 6);
+    if (!list.length) return null;
+    return h("div", {}, h("div", { class: "muted small" }, `Linked to ${fmtRef(`${p.b}.${p.c}.${p.v || 1}`)}:`),
+      h("ul", { class: "xrefs" }, await Promise.all(list.map(async ([to]) => h("li", {}, refLink(to), " ",
+        h("span", { class: "small" }, (await verseText(ver, to)).slice(0, 180)))))));
+  }));
+  return [h("h3", {}, "Cross references"), blocks.filter(Boolean).length ? blocks : h("p", { class: "muted small" }, "None listed."),
+    related.length ? [h("h4", {}, "Related entries"), h("div", { class: "chips" }, related.slice(0, 12).map((x) => h("button", { class: "chip", onclick: () => openRelated(x) }, x.title)))] : null];
 }
 
 // ---------------------------------------------------------------- outside links for readers
@@ -478,7 +527,7 @@ function readerToolbar(bk, c) {
   const chosen = chosenFor(bk.t);
   const verChips = h("details", { class: "picker" },
     h("summary", { class: "chip" }, "Translations: ",
-      h("strong", {}, chosen.map((x) => x.toUpperCase()).join(", ") || "none"), " ▾"),
+      h("strong", {}, chosen.map((x) => (x.startsWith("ao:") ? x.slice(3) : x).toUpperCase()).join(", ") || "none"), " ▾"),
     h("div", { class: "picker-body" },
       h("p", { class: "muted small" }, `Pick any translations for the ${bk.t === "OT" ? "Old" : "New"} Testament; they show side by side. ` +
         `The ${bk.t === "OT" ? "New" : "Old"} Testament keeps its own choice.`),
@@ -488,7 +537,29 @@ function readerToolbar(bk, c) {
             const cur = chosenFor(bk.t);
             settings[key] = e.target.checked ? [...cur, t.id] : cur.filter((x) => x !== t.id);
             saveSettings(); route();
-          } }), h("span", {}, t.label), h("span", { class: "muted small" }, ` · ${t.license}`)))))));
+          } }), h("span", {}, t.label), h("span", { class: "muted small" }, ` · ${t.license}`))))),
+      h("div", { class: "picker-group" }, h("div", { class: "picker-lang" }, "Every other translation — online library"),
+        h("p", { class: "muted small" }, "About 1,500 Bibles in over 1,100 languages from the HelloAO Free Use Bible API, loaded as you read. Type a language or a name:"),
+        (() => {
+          const box = h("div", { class: "lib-results" });
+          const input = h("input", { type: "search", placeholder: "e.g. Spanish, Swahili, Young's Literal, Hebrew…", "aria-label": "Search all translations",
+            oninput: async () => {
+              const lib = await loadLibrary();
+              const q = input.value.trim().toLowerCase();
+              if (q.length < 2) { fill(box); return; }
+              const hits = lib.filter((t) => `${t.label} ${t.short} ${t.langName} ${t.lang}`.toLowerCase().includes(q)).slice(0, 60);
+              fill(box, hits.length ? hits.map((t) => h("label", { class: "picker-item" },
+                h("input", { type: "checkbox", checked: chosen.includes(t.id), onchange: (e) => {
+                  const cur = chosenFor(bk.t);
+                  settings[key] = e.target.checked ? [...cur, t.id] : cur.filter((x) => x !== t.id);
+                  saveSettings(); route();
+                } }), h("span", {}, t.label), h("span", { class: "muted small" }, ` · ${t.langName}${t.license ? " · " + t.license : ""}`)))
+                : h("p", { class: "muted small" }, "No match."));
+            } });
+          return [input, box];
+        })(),
+        chosen.filter((x) => x.startsWith("ao:")).length ? h("p", { class: "small" }, "Chosen from the library: ",
+          chosen.filter((x) => x.startsWith("ao:")).map((x) => trans(x)?.short || x).join(", ")) : null)));
   const scriptSel = bk.t === "OT" && settings.original && manifest.original?.hebrew ? h("label", { class: "picker-item" }, "Hebrew script: ",
     h("select", { onchange: (e) => { settings.script = e.target.value; saveSettings(); route(); } },
       [["masoretic", "Masoretic, with accents (AD 1008)"], ["plain", "Vowels only (modern Bibles)"],
@@ -833,13 +904,19 @@ const HARD_VERDICTS = ["", "The text condemns it", "The text commands or approve
 
 function viewHard(_p, q) {
   const cat = q.get("cat") || "";
-  const items = hard.items.filter((x) => !cat || x.cat === cat);
+  const stance = q.get("stance") || "";
+  const items = hard.items.filter((x) => (!cat || x.cat === cat) && (!stance || x.stance === stance || (stance === "commanded" && x.stance === "law")));
   const chip = (id, label) => h("a", { class: `chip${cat === id ? " on" : ""}`, href: `#/hard${id ? "?cat=" + id : ""}` }, label);
   fill(main(),
     h("h1", {}, "Morality: hard passages"),
     h("p", { class: "lead" }, "Passages describing or commanding sexual violence, mass killing, violence against children, slavery and harsh punishments — and texts later used to justify harm. Each entry says what happens (without graphic detail), how the text itself presents it, and the main ways readers interpret it. These verses are marked in the reader."),
     h("div", { class: "chips" }, chip("", `All (${hard.items.length})`),
       Object.keys(hard.categories).map((k) => chip(k, `${HARD_SHORT[k] || k} (${hard.items.filter((x) => x.cat === k).length})`))),
+    h("div", { class: "chips" }, h("span", { class: "muted small" }, "How the text presents it: "),
+      h("a", { class: `chip${stance === "commanded" ? " on" : ""}`, href: "#/hard?stance=commanded" },
+        `Commanded or given as law (${hard.items.filter((x) => x.stance === "commanded" || x.stance === "law").length})`),
+      ["approved", "condemned", "reported", "imagery"].map((st) => h("a", { class: `chip${stance === st ? " on" : ""}`, href: `#/hard?stance=${st}` },
+        `${hard.stances[st]?.split(";")[0] || st} (${hard.items.filter((x) => x.stance === st).length})`))),
     h("div", { class: "table-wrap" }, h("table", { class: "xsection" },
       h("thead", {}, h("tr", {}, h("th", {}, "Passage"), h("th", {}, "What happens"), h("th", {}, "How the text presents it"), h("th", {}, "Your verdict"))),
       h("tbody", {}, items.map((x) => h("tr", {},
@@ -867,6 +944,7 @@ async function hardPanel(x) {
     x.refs.map((r, i) => h("div", { class: "con-passage" }, h("h4", {}, refLink(r), h("span", { class: "muted small" }, ` · ${ver.toUpperCase()}`)),
       h("p", { class: "verse-quote" }, texts[i] || h("em", { class: "muted" }, "Text not loaded.")), passageLinks(r))),
     x.views?.length ? [h("h3", {}, "How readers interpret it"), h("ul", {}, x.views.map((v) => h("li", {}, v)))] : null,
+    await crossRefSection(x.refs, hard.items.filter((y) => y !== x && (y.cat === x.cat || y.stance === x.stance && y.cat !== "law")), hardPanel),
     learnMore(x.title, x.refs, x.wiki, "morality"),
     h("h3", {}, "Your verdict"), sel, notes,
     h("button", { class: "btn primary", onclick: () => {
@@ -1000,8 +1078,7 @@ async function viewFull([b, c]) {
   const mode = settings[modeKey] || (heb ? "he-modern" : "el-modern");
   const ver = chosenFor(bk.t)[0] || primaryVer();
   fill(main(), h("div", { id: "full" }, loading()));
-  const [words, tb] = await Promise.all([interlinear(bk.osis, c), textBook(ver, bk.osis)]);
-  const eng = tb?.[c - 1] || [];
+  const [words, eng] = await Promise.all([interlinear(bk.osis, c), chapterOf(ver, bk.osis, c)]);
   const avail = await availability();
   const showEng = settings.fullEnglish !== false;
   const nums = Object.keys(words || {}).map(Number).sort((x, y) => x - y);
@@ -1255,6 +1332,7 @@ async function contraPanel(x) {
       h("mark", { class: "only-lxx" }, "wording only in this passage")),
     blocks,
     x.explanations?.length ? [h("h3", {}, "Common explanations"), h("ul", {}, x.explanations.map((e) => h("li", {}, e)))] : null,
+    await crossRefSection(x.passages.map((p) => p.ref), contra.items.filter((y) => y !== x && y.cat === x.cat), contraPanel),
     learnMore(x.title, x.passages.map((p) => p.ref), x.wiki, "contradiction"),
     x.note ? [h("h3", {}, "Manuscript evidence"), h("p", { class: "def" }, x.note)] : null,
     h("h3", {}, "Your verdict"), sel, notes,
@@ -1538,6 +1616,8 @@ async function boot() {
     if (e.key === "ArrowRight") document.querySelectorAll(".nav-row a")[1]?.click();
   });
   store.onChange(() => { /* panels re-render on demand */ });
+  if ([...settings.versionsOT, ...settings.versionsNT].some((x) => x.startsWith("ao:"))) await loadLibrary();
+  else loadLibrary();
   route();
   store.init();
   try {
