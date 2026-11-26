@@ -1,0 +1,58 @@
+name: Build data and deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Downloaded sources are cached so ordinary pushes don't re-download
+      # ~100 MB of data. Bump the "v1" to force a fresh download.
+      - uses: actions/cache@v4
+        with:
+          path: .cache
+          key: sources-v1-${{ hashFiles('scripts/build_data.py') }}
+          restore-keys: sources-v1-
+
+      - name: Build data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/build_data.py --out site/data
+
+      - name: Show build summary
+        run: |
+          python -c "import json;m=json.load(open('site/data/manifest.json'));print(json.dumps({k:m[k] for k in ('translations','lxx','original','xref','errors')},indent=1,ensure_ascii=False))"
+          du -sh site/data
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
