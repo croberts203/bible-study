@@ -239,7 +239,8 @@ def parse_midvash(data):
                 arr[n - 1] = (v.get("text") or "").strip()
             chapters.append(arr)
         expected = next(b["ch"] for b in BOOKS if b["osis"] == osis)
-        if abs(len(chapters) - expected) > 1:
+        extended = osis in ("Esth", "Dan") and len(chapters) > expected  # Catholic Bibles include the Greek additions
+        if abs(len(chapters) - expected) > 1 and not extended:
             unmapped.append(f"{name} ({len(chapters)} ch, expected {expected} for {osis})")
             continue
         out[osis] = chapters
@@ -322,11 +323,13 @@ def parse_vpl_zip(data):
     text = z.read(names[0]).decode("utf-8-sig", errors="replace")
     books = defaultdict(lambda: defaultdict(dict))
     alt = defaultdict(lambda: defaultdict(dict))  # ESG/DAG fallbacks
+    seen = defaultdict(int)
     for line in text.splitlines():
         m = VPL_RE.match(line.strip())
         if not m:
             continue
         code, c, v, t = m.group(1).upper(), m.group(2), m.group(3), m.group(4).strip()
+        seen[code] += 1
         if code in ("ESG", "DAG"):
             alt[resolve_book(code)][c][v] = t
             continue
@@ -336,13 +339,72 @@ def parse_vpl_zip(data):
     for osis, chs in alt.items():
         if osis and osis not in books:
             books[osis] = chs
-    return {k: {c: dict(vs) for c, vs in v.items()} for k, v in books.items()}
+    out = {k: {c: dict(vs) for c, vs in v.items()} for k, v in books.items()}
+    split_ezra_nehemiah(out)
+    out["__codes"] = dict(seen)
+    return out
+
+def split_ezra_nehemiah(books):
+    """The Septuagint's '2 Esdras' is Ezra + Nehemiah in one book (23 chapters). Split it."""
+    for whole, missing in (("Ezra", "Neh"), ("Neh", "Ezra")):
+        chs = books.get(whole)
+        if chs and missing not in books and len(chs) >= 20:
+            ezra = {c: v for c, v in chs.items() if int(c) <= 10}
+            neh = {str(int(c) - 10): v for c, v in chs.items() if int(c) > 10}
+            books["Ezra"], books["Neh"] = ezra, neh
+            return
+
+USFM_V = re.compile(r"\\v\s+(\d+)\S*\s*(.*)")
+def parse_usfm_zip(data, want):
+    """Fallback: read whole books from an eBible USFM zip. want = set of OSIS ids. Returns {osis: {ch: {v: text}}}."""
+    z = zipfile.ZipFile(io.BytesIO(data))
+    out = {}
+    for name in z.namelist():
+        if not name.lower().endswith((".usfm", ".sfm")):
+            continue
+        text = z.read(name).decode("utf-8-sig", errors="replace")
+        m = re.search(r"\\id\s+(\w{3})", text)
+        osis = m and resolve_book(m.group(1))
+        if not osis or osis not in want:
+            continue
+        chs, c, cur = defaultdict(dict), None, None
+        for line in text.splitlines():
+            if line.startswith("\\c "):
+                c = line.split()[1]
+                cur = None
+                continue
+            vm = USFM_V.match(line)
+            if vm and c:
+                cur = vm.group(2)
+                chs[c][vm.group(1)] = cur
+            elif c and cur is not None and line.strip() and not re.match(r"\\(s|ms|mt|r|d|c|p\b|q\d?\s*$|b\b)", line):
+                last = list(chs[c])[-1]
+                chs[c][last] += " " + line
+        clean = lambda t: re.sub(r"\s+", " ", re.sub(r"\\f .*?\\f\*|\\x .*?\\x\*", "", re.sub(r"\|[^\\]*?(?=\\w\*)", "", t)).replace("\\w*", "")).strip()
+        out[osis] = {cc: {vv: re.sub(r"\\[a-z0-9+]+\*?\s?", "", clean(tt)).strip() for vv, tt in vs.items()} for cc, vs in chs.items()}
+    return out
 
 def build_lxx(F, out, manifest):
     for vid, label, lic, urls in LXX_SOURCES:
         try:
             data, used = F.first(urls, key=f"{vid}_vpl.zip")
             books = parse_vpl_zip(data)
+            codes = books.pop("__codes", {})
+            missing = {b["osis"] for b in BOOKS[:39]} - set(books)
+            if missing and "_vpl.zip" in used:
+                try:
+                    udata = F.get(used.replace("_vpl.zip", "_usfm.zip"), key=f"{vid}_usfm.zip")
+                    extra = parse_usfm_zip(udata, missing | {"Ezra", "Neh"})
+                    for osis, chs in extra.items():
+                        if osis not in books:
+                            books[osis] = chs
+                    split_ezra_nehemiah(books)
+                    log(f"  {vid}: filled {sorted(set(extra) & missing)} from USFM")
+                except Exception as e:  # noqa: BLE001
+                    log(f"  {vid}: USFM fallback failed: {e}")
+            still = sorted({b["osis"] for b in BOOKS[:39]} - set(books))
+            if still:
+                manifest["errors"].append(f"septuagint {vid}: missing {' '.join(still)}; codes in file: {' '.join(sorted(codes))}")
             if len(books) < 30:
                 raise RuntimeError(f"only {len(books)} OT books parsed")
             for osis, chs in books.items():
