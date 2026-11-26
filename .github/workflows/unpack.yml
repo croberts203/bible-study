@@ -5,12 +5,14 @@ on:
   workflow_dispatch: {}
 permissions:
   contents: write
+  actions: write
 jobs:
   unpack:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: |
+      - name: Unpack and commit
+        run: |
           set -e
           if [ -f bible-study.zip ]; then
             unzip -o -q bible-study.zip
@@ -23,3 +25,7 @@ jobs:
             git commit -m "Unpack Bible Sources"
             git push
           fi
+      - name: Rebuild the site from the unpacked files
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main --repo ${{ github.repository }}
