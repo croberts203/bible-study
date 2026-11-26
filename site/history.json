@@ -830,7 +830,12 @@
     "1Kgs.16.23-30"
    ],
    "evidence": "The Mesha Stele names Omri; Assyrian records call Israel 'the House of Omri'; the Kurkh Monolith lists 'Ahab the Israelite' at the battle of Qarqar (853 BC).",
-   "other": ""
+   "other": "",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Mesha_Stele",
+    "https://en.wikipedia.org/wiki/Kurkh_Monoliths",
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "jehu",
@@ -841,7 +846,11 @@
     "2Kgs.9.1-13"
    ],
    "evidence": "The Black Obelisk of Shalmaneser III shows 'Jehu son of Omri' paying tribute (c. 841 BC).",
-   "other": "The tribute itself isn't in the Bible, and Assyria calls him Omri's 'son' though 2 Kings says he wiped out Omri's line."
+   "other": "The tribute itself isn't in the Bible, and Assyria calls him Omri's 'son' though 2 Kings says he wiped out Omri's line.",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Black_Obelisk_of_Shalmaneser_III",
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "menahem-hoshea",
@@ -853,7 +862,10 @@
     "2Kgs.17.1-6"
    ],
    "evidence": "Tiglath-pileser III (also called Pulu in Babylonian lists) records tribute from Menahem of Samaria and claims he placed Hoshea on the throne.",
-   "other": ""
+   "other": "",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "samaria-fall",
@@ -864,7 +876,10 @@
     "2Kgs.17.5-6"
    ],
    "evidence": "Sargon II's inscriptions claim the capture of Samaria and the deportation of about 27,290 people.",
-   "other": "2 Kings names the king only as 'the king of Assyria' after Shalmaneser V began the siege; Sargon took credit."
+   "other": "2 Kings names the king only as 'the king of Assyria' after Shalmaneser V began the siege; Sargon took credit.",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "hezekiah-sennacherib",
@@ -876,7 +891,11 @@
     "2Kgs.19.35-36"
    ],
    "evidence": "Sennacherib's annals confirm the campaign, the tribute and that Hezekiah was shut in Jerusalem 'like a bird in a cage'; Lachish's fall is shown in his palace reliefs.",
-   "other": "The Assyrian sources say nothing of 185,000 soldiers struck down by an angel (2 Kgs 19:35); Herodotus tells a story of mice destroying an Assyrian army in Egypt."
+   "other": "The Assyrian sources say nothing of 185,000 soldiers struck down by an angel (2 Kgs 19:35); Herodotus tells a story of mice destroying an Assyrian army in Egypt.",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Sennacherib's_campaign_in_the_Levant",
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "sennacherib-death",
@@ -887,7 +906,10 @@
     "2Kgs.19.37"
    ],
    "evidence": "Babylonian chronicles and his successor Esarhaddon's inscriptions report the murder; one son, Arda-Mulissu, is probably the Bible's 'Adrammelech'.",
-   "other": ""
+   "other": "",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "manasseh",
@@ -898,7 +920,10 @@
     "2Kgs.21.1"
    ],
    "evidence": "Esarhaddon's prism lists 'Manasseh king of Judah' among vassals supplying building materials.",
-   "other": "2 Chr 33:11–13 says Manasseh was taken to Babylon and repented; no outside source mentions it."
+   "other": "2 Chr 33:11–13 says Manasseh was taken to Babylon and repented; no outside source mentions it.",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "jerusalem-586",
@@ -910,7 +935,10 @@
     "2Kgs.25.8-10"
    ],
    "evidence": "The Babylonian Chronicle dates the first capture to 16 March 597 BC; excavations show a destruction layer with burnt houses and Babylonian arrowheads.",
-   "other": ""
+   "other": "",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "belshazzar",
@@ -922,7 +950,11 @@
     "Dan.5.30"
    ],
    "evidence": "Babylonian texts show Belshazzar was the son of Nabonidus and ruled Babylon while his father lived at Tema.",
-   "other": "He was never formally king, and he wasn't Nebuchadnezzar's son — defenders note 'son' can mean successor."
+   "other": "He was never formally king, and he wasn't Nebuchadnezzar's son — defenders note 'son' can mean successor.",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Belshazzar",
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "darius-mede",
@@ -934,7 +966,11 @@
     "Dan.6.1"
    ],
    "evidence": "No ruler of this name is known; Babylonian and Persian sources say Cyrus the Persian took Babylon in 539 BC, and Darius I reigned later (522–486 BC).",
-   "other": "Proposed identifications: Cyrus himself, or his governor Gubaru."
+   "other": "Proposed identifications: Cyrus himself, or his governor Gubaru.",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Darius_the_Mede",
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "nebuchadnezzar-madness",
@@ -945,7 +981,11 @@
     "Dan.4.33"
    ],
    "evidence": "No Babylonian record mentions it.",
-   "other": "A Dead Sea Scroll, the Prayer of Nabonidus (4Q242), tells a similar story about Nabonidus, the last king, who left Babylon for ten years — many scholars think the story was transferred."
+   "other": "A Dead Sea Scroll, the Prayer of Nabonidus (4Q242), tells a similar story about Nabonidus, the last king, who left Babylon for ten years — many scholars think the story was transferred.",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Prayer_of_Nabonidus",
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "cyrus-decree",
@@ -956,7 +996,11 @@
     "Ezra.1.1-4"
    ],
    "evidence": "The Cyrus Cylinder describes returning deported peoples and their gods to their homelands.",
-   "other": "The cylinder doesn't name the Jews; the wording of Ezra's decree can't be checked."
+   "other": "The cylinder doesn't name the Jews; the wording of Ezra's decree can't be checked.",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Cyrus_Cylinder",
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "esther",
@@ -967,7 +1011,11 @@
     "Esth.2.16-17"
    ],
    "evidence": "Xerxes I is well documented, and a Persian official named Marduka appears in Persepolis tablets.",
-   "other": "Herodotus names Xerxes' queen Amestris; no Persian source mentions Vashti or Esther."
+   "other": "Herodotus names Xerxes' queen Amestris; no Persian source mentions Vashti or Esther.",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Book_of_Esther",
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "david",
@@ -978,7 +1026,11 @@
     "2Sam.5.3-5"
    ],
    "evidence": "The Tel Dan Stele (9th c. BC) mentions the 'House of David', confirming a dynasty named after him.",
-   "other": "The size of David and Solomon's kingdom is debated; some archaeologists see Jerusalem as a modest town in the 10th century."
+   "other": "The size of David and Solomon's kingdom is debated; some archaeologists see Jerusalem as a modest town in the 10th century.",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Tel_Dan_stele",
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "solomon-gates",
@@ -989,7 +1041,10 @@
     "1Kgs.9.15"
    ],
    "evidence": "Matching six-chambered gates at all three sites were attributed to Solomon by Yigael Yadin.",
-   "other": "Others (the 'low chronology') date the gates to the 9th century, under Omri's dynasty."
+   "other": "Others (the 'low chronology') date the gates to the 9th century, under Omri's dynasty.",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "exodus",
@@ -1001,7 +1056,11 @@
     "Num.14.33"
    ],
    "evidence": "No Egyptian record mentions Israelite slaves or the Exodus, and no camps of that size have been found in Sinai.",
-   "other": "Defenders note Egypt rarely recorded defeats and nomads leave few traces; some scholars accept a smaller exodus behind the story. Exod 1:11's city Raamses fits the 13th century."
+   "other": "Defenders note Egypt rarely recorded defeats and nomads leave few traces; some scholars accept a smaller exodus behind the story. Exod 1:11's city Raamses fits the 13th century.",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/The_Exodus",
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "jericho",
@@ -1012,7 +1071,11 @@
     "Josh.6.20"
    ],
    "evidence": "Kathleen Kenyon's excavations found Jericho's walls destroyed c. 1550 BC and the site largely empty in Joshua's century.",
-   "other": "Bryant Wood argued for a destruction c. 1400 BC; most archaeologists follow Kenyon."
+   "other": "Bryant Wood argued for a destruction c. 1400 BC; most archaeologists follow Kenyon.",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Battle_of_Jericho",
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "ai",
@@ -1023,7 +1086,10 @@
     "Josh.8.28"
    ],
    "evidence": "Et-Tell, the usual identification of Ai ('the ruin'), was abandoned from c. 2400 to 1200 BC.",
-   "other": "Some propose another site (Khirbet el-Maqatir); others read the story as explaining an ancient ruin."
+   "other": "Some propose another site (Khirbet el-Maqatir); others read the story as explaining an ancient ruin.",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "philistines-genesis",
@@ -1035,7 +1101,10 @@
     "Gen.26.1"
    ],
    "evidence": "The Philistines arrived on the coast of Canaan around 1175 BC, centuries after the patriarchs' traditional dates.",
-   "other": "Possibly an earlier Aegean group, or the later name used for the region (an anachronism)."
+   "other": "Possibly an earlier Aegean group, or the later name used for the region (an anachronism).",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "camels",
@@ -1047,7 +1116,11 @@
     "Gen.24.10"
    ],
    "evidence": "A 2014 study of bones at Timna found domesticated camels appear in the southern Levant around the 10th century BC.",
-   "other": "Camels were domesticated earlier in Arabia, and occasional earlier use is possible."
+   "other": "Camels were domesticated earlier in Arabia, and occasional earlier use is possible.",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible",
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "ur-chaldees",
@@ -1058,7 +1131,10 @@
     "Gen.11.31"
    ],
    "evidence": "Ur is a real Sumerian city, but the Chaldeans first appear in records in the 9th century BC, long after Abraham's traditional date.",
-   "other": "Read as the later name used for the region when Genesis was written."
+   "other": "Read as the later name used for the region when Genesis was written.",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "hittites",
@@ -1070,7 +1146,10 @@
     "2Sam.11.3"
    ],
    "evidence": "The Hittite empire was rediscovered at Hattusa in Turkey (1906); Neo-Hittite states existed in Syria later.",
-   "other": "The Bible's Hittites in Canaan may be a different local group with the same name."
+   "other": "The Bible's Hittites in Canaan may be a different local group with the same name.",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "table-nations",
@@ -1081,7 +1160,11 @@
     "Gen.10.1-32"
    ],
    "evidence": "Many names match real peoples: Javan (Ionian Greeks), Madai (Medes), Mizraim (Egypt), Kittim (Cyprus), Elam, Asshur.",
-   "other": "The links are geographic and political, not genetic or linguistic: Canaan is a son of Ham, yet Canaanites spoke a Semitic language like Hebrew."
+   "other": "The links are geographic and political, not genetic or linguistic: Canaan is a son of Ham, yet Canaanites spoke a Semitic language like Hebrew.",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Generations_of_Noah",
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "adam-eve",
@@ -1094,7 +1177,12 @@
     "Acts.17.26"
    ],
    "evidence": "Fossils date Homo sapiens to about 300,000 years ago; genetic diversity shows the human population never dropped to two people, staying in the thousands or more.",
-   "other": "Some theologians read Adam and Eve as representative or as a 'genealogical' pair among a larger population; others read Genesis 2–3 non-literally."
+   "other": "Some theologians read Adam and Eve as representative or as a 'genealogical' pair among a larger population; others read Genesis 2–3 non-literally.",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Adam_and_Eve",
+    "https://en.wikipedia.org/wiki/Mitochondrial_Eve",
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "creation-date",
@@ -1106,7 +1194,10 @@
     "Gen.11.10-26"
    ],
    "evidence": "Jericho itself was settled around 9000 BC; farming began c. 10,000 BC; the earth is about 4.5 billion years old.",
-   "other": "The Septuagint's genealogy is about 1,300 years longer; many readers don't treat the genealogies as a timeline."
+   "other": "The Septuagint's genealogy is about 1,300 years longer; many readers don't treat the genealogies as a timeline.",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "lifespans",
@@ -1117,7 +1208,11 @@
     "Gen.5.27"
    ],
    "evidence": "No skeletal or historical evidence supports such lifespans.",
-   "other": "The Sumerian King List gives pre-flood kings reigns of tens of thousands of years — a shared ancient convention for the distant past."
+   "other": "The Sumerian King List gives pre-flood kings reigns of tens of thousands of years — a shared ancient convention for the distant past.",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Sumerian_King_List",
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "flood",
@@ -1128,7 +1223,11 @@
     "Gen.7.19-20"
    ],
    "evidence": "Geology shows no global flood layer; large local floods are found in Mesopotamia (e.g. at Shuruppak and Ur).",
-   "other": "Some read it as a regional flood described from a local viewpoint; the Mesopotamian flood stories (Atrahasis, Gilgamesh) are older written versions of a similar story."
+   "other": "Some read it as a regional flood described from a local viewpoint; the Mesopotamian flood stories (Atrahasis, Gilgamesh) are older written versions of a similar story.",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Genesis_flood_narrative",
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "babel",
@@ -1139,7 +1238,11 @@
     "Gen.11.6-9"
    ],
    "evidence": "Linguistics shows languages diverging gradually over many thousands of years; Babylon's temple-tower (Etemenanki) was real.",
-   "other": "Commonly read as a story explaining the diversity of nations and criticizing Babylon's pride."
+   "other": "Commonly read as a story explaining the diversity of nations and criticizing Babylon's pride.",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Tower_of_Babel",
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "asherah",
@@ -1151,7 +1254,12 @@
     "Judg.2.13"
    ],
    "evidence": "Texts from Ugarit (found 1928) describe Baal, El and Asherah; inscriptions at Kuntillet Ajrud (c. 800 BC) bless by 'YHWH and his Asherah'.",
-   "other": "The archaeology suggests such worship was common, not just occasional apostasy."
+   "other": "The archaeology suggests such worship was common, not just occasional apostasy.",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Asherah",
+    "https://en.wikipedia.org/wiki/Kuntillet_Ajrud",
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "child-sacrifice",
@@ -1163,7 +1271,10 @@
     "Jer.7.31"
    ],
    "evidence": "Phoenician 'tophet' cemeteries at Carthage hold urns of infant remains, widely (though not universally) interpreted as sacrifices.",
-   "other": ""
+   "other": "",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "jonah-nineveh",
@@ -1174,7 +1285,10 @@
     "Jonah.3.5-10"
    ],
    "evidence": "No Assyrian record mentions it, and the city was not 'three days' journey' across.",
-   "other": "Many read Jonah as a parable; others note Assyrian records rarely report such events."
+   "other": "Many read Jonah as a parable; others note Assyrian records rarely report such events.",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "quirinius",
@@ -1186,7 +1300,11 @@
     "Matt.2.1"
    ],
    "evidence": "Josephus dates Quirinius's governorship and census to AD 6; Herod the Great died in 4 BC.",
-   "other": "Proposals: an earlier term or census under Quirinius, or reading Luke 2:2 as 'before Quirinius'."
+   "other": "Proposals: an earlier term or census under Quirinius, or reading Luke 2:2 as 'before Quirinius'.",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Census_of_Quirinius",
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "innocents",
@@ -1197,7 +1315,11 @@
     "Matt.2.16"
    ],
    "evidence": "No source outside Matthew mentions it.",
-   "other": "Bethlehem was small, so few children may have died; Herod is known to have executed his own sons."
+   "other": "Bethlehem was small, so few children may have died; Herod is known to have executed his own sons.",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Massacre_of_the_Innocents",
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "pilate-caiaphas",
@@ -1209,7 +1331,12 @@
     "Matt.26.57"
    ],
    "evidence": "The Pilate Stone, Josephus and Philo confirm Pilate as prefect (AD 26–36); the Caiaphas ossuary likely held the high priest's bones.",
-   "other": ""
+   "other": "",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Pilate_stone",
+    "https://en.wikipedia.org/wiki/Caiaphas_ossuary",
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "crucifixion",
@@ -1220,7 +1347,11 @@
     "Mark.15.15"
    ],
    "evidence": "Tacitus (Annals 15.44) says Christus 'suffered the extreme penalty' under Pilate in Tiberius's reign; Josephus mentions Jesus and his brother James.",
-   "other": ""
+   "other": "",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Historicity_of_Jesus",
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "darkness",
@@ -1231,7 +1362,10 @@
     "Luke.23.44-45"
    ],
    "evidence": "No reliable outside record; a solar eclipse is impossible at Passover, which falls at full moon.",
-   "other": "Later writers cite lost works by Thallus and Phlegon, whose meaning is disputed."
+   "other": "Later writers cite lost works by Thallus and Phlegon, whose meaning is disputed.",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "lysanias",
@@ -1242,7 +1376,10 @@
     "Luke.3.1"
    ],
    "evidence": "Once thought an error (Josephus knew an earlier Lysanias, died 36 BC), an inscription at Abila names a later Lysanias as tetrarch in Tiberius's time.",
-   "other": ""
+   "other": "",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "theudas",
@@ -1253,7 +1390,11 @@
     "Acts.5.36"
    ],
    "evidence": "Josephus places Theudas's revolt under governor Fadus (c. AD 44–46), about ten years after Gamaliel's speech.",
-   "other": "Possibly a different, earlier Theudas, or Josephus erred."
+   "other": "Possibly a different, earlier Theudas, or Josephus erred.",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Theudas",
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   },
   {
    "id": "nazareth-bethesda",
@@ -1265,7 +1406,10 @@
     "John.5.2"
    ],
    "evidence": "Excavations show 1st-century houses at Nazareth and a large pool complex with colonnades at Bethesda.",
-   "other": ""
+   "other": "",
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Historicity_of_the_Bible"
+   ]
   }
  ]
 }

@@ -6,7 +6,8 @@
   "slavery": "Slavery",
   "law": "Harsh laws and punishments",
   "women": "Treatment of women",
-  "harm": "Texts later used to justify harm"
+  "harm": "Texts later used to justify harm",
+  "god": "God's own actions questioned"
  },
  "stances": {
   "commanded": "Commanded by God or a leader in the text",
@@ -30,6 +31,9 @@
     "Hospitality to guests outweighed protecting daughters in that culture; the text reports it without praise",
     "Lot's later disgrace (19:30–38) is read by some as an implied judgment",
     "Feminist readings name it a 'text of terror'"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Sodom_and_Gomorrah"
    ]
   },
   {
@@ -44,7 +48,8 @@
    "views": [
     "Explains the origins of Israel's neighbours, often read as a polemic against them",
     "Lot is portrayed as passive and shamed"
-   ]
+   ],
+   "wiki": []
   },
   {
    "id": "dinah",
@@ -59,6 +64,9 @@
    "views": [
     "Jacob rebukes the killing (34:30) and curses Simeon and Levi's violence (49:5–7)",
     "Dinah never speaks in the story"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Dinah"
    ]
   },
   {
@@ -74,6 +82,9 @@
    "views": [
     "A legal custom of the ancient Near East (compare Bilhah, Gen 30:3–4)",
     "God meets Hagar in the wilderness and she gives him a name, El Roi (16:13)"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Hagar"
    ]
   },
   {
@@ -88,6 +99,9 @@
    "views": [
     "The book frames this as the low point of an age when 'there was no king in Israel' (19:1; 21:25)",
     "Leads to civil war against Benjamin (Judg 20)"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Levite's_concubine"
    ]
   },
   {
@@ -103,7 +117,8 @@
    "views": [
     "Part of the same 'no king' framing; the repair of one atrocity by another",
     "Read by many as deliberate irony by the narrator"
-   ]
+   ],
+   "wiki": []
   },
   {
    "id": "bathsheba",
@@ -118,6 +133,9 @@
    "views": [
     "Nathan's parable condemns David (2 Sam 12:1–14)",
     "Debated whether Bathsheba could refuse a king; many now read it as abuse of power"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Bathsheba"
    ]
   },
   {
@@ -132,6 +150,9 @@
    "views": [
     "Tamar calls it folly (13:12); David is angry but does nothing (13:21), and Absalom later kills Amnon",
     "Read as the fulfilment of Nathan's judgment on David's house"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Amnon"
    ]
   },
   {
@@ -146,7 +167,8 @@
    "views": [
     "Fulfils the judgment of 2 Sam 12:11",
     "The women are later confined for life (20:3)"
-   ]
+   ],
+   "wiki": []
   },
   {
    "id": "midian-captives",
@@ -161,6 +183,10 @@
     "Punishment for Midian's role at Baal-peor (Num 25)",
     "Defenders read 'for yourselves' as servants or wives, not abuse; critics read it as sanctioned sexual captivity",
     "Many scholars see it as a later idealised war narrative"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Midian",
+    "https://en.wikipedia.org/wiki/The_Bible_and_violence"
    ]
   },
   {
@@ -175,7 +201,8 @@
    "views": [
     "Defenders: limits on wartime practice compared with surrounding cultures",
     "Critics: consent is absent; it regulates rather than forbids taking captives"
-   ]
+   ],
+   "wiki": []
   },
   {
    "id": "rape-marriage",
@@ -190,7 +217,8 @@
     "Some translations read it as seduction rather than force (compare Exod 22:16–17)",
     "Intended to protect a woman's future in a society where she could not otherwise marry",
     "Critics: the woman's wishes are not considered"
-   ]
+   ],
+   "wiki": []
   },
   {
    "id": "betrothed-city",
@@ -204,7 +232,8 @@
    "views": [
     "The law presumes consent from silence in a town",
     "The field case is read as recognising that she may have been forced"
-   ]
+   ],
+   "wiki": []
   },
   {
    "id": "esther-harem",
@@ -219,7 +248,8 @@
    "views": [
     "The story critiques Persian excess with irony",
     "Esther rises within a system she did not choose"
-   ]
+   ],
+   "wiki": []
   },
   {
    "id": "ezekiel-16-23",
@@ -235,7 +265,8 @@
    "views": [
     "A metaphor for covenant betrayal, not instructions",
     "Critics warn the imagery has been used to excuse domestic abuse"
-   ]
+   ],
+   "wiki": []
   },
   {
    "id": "herem-command",
@@ -252,6 +283,10 @@
     "Hyperbolic war language common in ancient texts (the same peoples remain later, Judg 1)",
     "Archaeology suggests a gradual settlement, not a sudden conquest",
     "Others conclude it is a genuine moral problem in Scripture"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Herem_(war_or_property)",
+    "https://en.wikipedia.org/wiki/The_Bible_and_violence"
    ]
   },
   {
@@ -265,6 +300,9 @@
    "what": "Israel destroys everyone in Jericho, men and women, young and old, and the animals; only Rahab's family is spared.",
    "views": [
     "See the herem command (Deut 7, 20)"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Battle_of_Jericho"
    ]
   },
   {
@@ -279,6 +317,9 @@
    "what": "Joshua's southern and northern campaigns are summarised as leaving no survivors, 'as the LORD God of Israel commanded'.",
    "views": [
     "Stylised summary formulas; later chapters list peoples not driven out (Josh 13:13; 15:63)"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/The_Bible_and_violence"
    ]
   },
   {
@@ -294,6 +335,9 @@
     "Punishment for Amalek's attack on Israel in the wilderness (Exod 17; Deut 25:17–19)",
     "Amalekites still appear later (1 Sam 30), suggesting hyperbole",
     "Often cited as the hardest command in the Old Testament"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Amalek"
    ]
   },
   {
@@ -307,6 +351,9 @@
    "what": "Israel kills the men and kings of Midian and burns their cities; Moses is angry that the women were spared (31:14–15).",
    "views": [
     "See also the captives entry (Num 31:17–18)"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/The_Bible_and_violence"
    ]
   },
   {
@@ -321,6 +368,9 @@
    "views": [
     "Judgment on universal violence (Gen 6:11–13)",
     "God's promise never to do it again (Gen 8:21; 9:11)"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Genesis_flood_narrative"
    ]
   },
   {
@@ -335,6 +385,9 @@
    "views": [
     "Mirrors Pharaoh's killing of Hebrew boys (Exod 1:22)",
     "Questions about punishing children for a ruler's choices"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/The_Bible_and_violence"
    ]
   },
   {
@@ -348,6 +401,9 @@
    "what": "At Saul's order, Doeg kills 85 priests and everyone in their town, including women, children and infants.",
    "views": [
     "Presented as Saul's crime; David takes responsibility (22:22)"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/The_Bible_and_violence"
    ]
   },
   {
@@ -363,6 +419,9 @@
    "views": [
     "Most modern translations read the Hebrew as forced labour with saws and picks, not torture",
     "The difference turns on one Hebrew word in 1 Chronicles 20:3"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/The_Bible_and_violence"
    ]
   },
   {
@@ -377,6 +436,9 @@
    "views": [
     "Contrasts with Deut 24:16: children are not to die for a parent's sin",
     "Corporate responsibility in ancient thought"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/The_Bible_and_violence"
    ]
   },
   {
@@ -391,6 +453,9 @@
    "views": [
     "Num 26:11 notes that Korah's sons did not die",
     "Corporate judgment"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/The_Bible_and_violence"
    ]
   },
   {
@@ -405,6 +470,9 @@
    "views": [
     "Blood-guilt for Saul's breaking a treaty (Josh 9)",
     "Rizpah's vigil over the bodies (21:10) moves David to bury them"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/The_Bible_and_violence"
    ]
   },
   {
@@ -419,6 +487,9 @@
    "views": [
     "Self-defence against a decreed genocide (Esth 3:13)",
     "Origin of the feast of Purim"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/The_Bible_and_violence"
    ]
   },
   {
@@ -434,6 +505,9 @@
    "views": [
     "Apocalyptic symbolism of judgment on evil",
     "Critics note its violence toward enemies"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/The_Bible_and_violence"
    ]
   },
   {
@@ -450,6 +524,9 @@
     "A test of faith; the story ends with God forbidding the sacrifice",
     "Read as a rejection of child sacrifice",
     "Kierkegaard and others question a faith that obeys such a command"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Binding_of_Isaac"
    ]
   },
   {
@@ -466,6 +543,9 @@
     "Most read it as human sacrifice the narrator does not endorse",
     "Some argue she was dedicated to lifelong virginity instead (11:37–39)",
     "Hebrews 11:32 lists Jephthah among the faithful"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Jephthah"
    ]
   },
   {
@@ -479,6 +559,9 @@
    "what": "Losing the battle, Moab's king offers his eldest son as a burnt offering on the wall, and 'there was great indignation against Israel', who withdraw.",
    "views": [
     "Whose 'indignation' is meant — Moab's god, Israel's God, or the Moabites — is debated"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/The_Bible_and_violence"
    ]
   },
   {
@@ -493,6 +576,9 @@
    "views": [
     "God handing people over to their own practices (compare Rom 1:24)",
     "Others see a memory of firstborn sacrifice in Israel's past"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/The_Bible_and_violence"
    ]
   },
   {
@@ -507,6 +593,9 @@
    "views": [
     "The Hebrew can mean young men rather than small children (KJV 'little children')",
     "A warning about contempt for a prophet"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/The_Bible_and_violence"
    ]
   },
   {
@@ -521,6 +610,9 @@
    "views": [
     "A raw cry of grief and rage from survivors of Jerusalem's destruction, voiced to God rather than acted on",
     "Christian tradition often allegorised it; many lectionaries omit it"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Psalm_137"
    ]
   },
   {
@@ -535,6 +627,9 @@
    "what": "Prophecies of conquest describe the killing of infants and pregnant women as judgment.",
    "views": [
     "Describes the known brutality of Assyrian/Babylonian warfare as divine judgment"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/The_Bible_and_violence"
    ]
   },
   {
@@ -550,6 +645,9 @@
    "what": "The covenant curses warn of, and later narratives report, parents eating their children during famine under siege.",
    "views": [
     "Presented as the horror that follows covenant breaking"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/The_Bible_and_violence"
    ]
   },
   {
@@ -564,6 +662,9 @@
    "views": [
     "One of the few ancient laws to punish killing a slave at all",
     "Critics: treats a person as property; still permits beating"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/The_Bible_and_slavery"
    ]
   },
   {
@@ -578,7 +679,8 @@
    "views": [
     "Ancient debt-slavery regulated by term limits",
     "Critics: the family is used as leverage"
-   ]
+   ],
+   "wiki": []
   },
   {
    "id": "daughter-sold",
@@ -591,7 +693,8 @@
    "what": "A man may sell his daughter as a maidservant (a concubine-wife); she does not go free like male slaves but has some protections.",
    "views": [
     "Regulates a debt practice; requires food, clothing and marital rights or her release"
-   ]
+   ],
+   "wiki": []
   },
   {
    "id": "lev-25-slaves",
@@ -605,6 +708,9 @@
    "views": [
     "Was cited in defence of American slavery",
     "Distinguishes chattel slavery of foreigners from debt service of Israelites"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/The_Bible_and_slavery"
    ]
   },
   {
@@ -621,6 +727,10 @@
    "views": [
     "Also tells masters to treat slaves justly (Eph 6:9; Col 4:1) and urges Philemon to receive Onesimus 'as a brother'",
     "Was quoted by both pro-slavery and abolitionist writers"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/The_Bible_and_slavery",
+    "https://en.wikipedia.org/wiki/Christian_views_on_slavery"
    ]
   },
   {
@@ -635,7 +745,8 @@
    "views": [
     "Rabbinic tradition hedged it with so many conditions that it was said never to have been carried out",
     "Removed the power of life and death from the father alone"
-   ]
+   ],
+   "wiki": []
   },
   {
    "id": "sabbath-sticks",
@@ -648,7 +759,8 @@
    "what": "A man found gathering sticks on the Sabbath is stoned by the congregation at the LORD's command.",
    "views": [
     "Presented as a test case for defiant sin (15:30–31)"
-   ]
+   ],
+   "wiki": []
   },
   {
    "id": "death-penalties",
@@ -662,7 +774,8 @@
    "views": [
     "Holiness code for ancient Israel; Christians debate what still applies",
     "Lev 20:13 is central to modern debates on homosexuality"
-   ]
+   ],
+   "wiki": []
   },
   {
    "id": "kill-relatives",
@@ -676,7 +789,8 @@
    "views": [
     "Treats apostasy as treason against the covenant",
     "Cited historically in support of executing heretics"
-   ]
+   ],
+   "wiki": []
   },
   {
    "id": "hand-cut",
@@ -690,7 +804,8 @@
    "views": [
     "The only bodily mutilation penalty in the Torah",
     "Some scholars argue for a different reading of the penalty"
-   ]
+   ],
+   "wiki": []
   },
   {
    "id": "ananias",
@@ -704,7 +819,8 @@
    "views": [
     "Judgment on deceiving the Holy Spirit in the founding community",
     "Peter does not pronounce a sentence on Ananias, only exposes the lie"
-   ]
+   ],
+   "wiki": []
   },
   {
    "id": "women-silent",
@@ -720,6 +836,9 @@
     "Addressed to specific local problems",
     "Some argue 1 Cor 14:34–35 is a later insertion (it moves position in some manuscripts)",
     "Others hold it as a lasting rule"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Women_in_the_Bible"
    ]
   },
   {
@@ -734,7 +853,8 @@
    "views": [
     "Removed punishment from the husband's hands to a ritual",
     "Critics note the one-sided suspicion"
-   ]
+   ],
+   "wiki": []
   },
   {
    "id": "curse-ham",
@@ -747,6 +867,9 @@
    "what": "Noah curses Canaan, Ham's son, to be a servant of servants to his brothers.",
    "views": [
     "Was misused for centuries to justify enslaving Africans, though the text curses Canaan and says nothing about skin colour"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Curse_of_Ham"
    ]
   },
   {
@@ -761,6 +884,9 @@
    "views": [
     "Was used for centuries to blame all Jews for Jesus' death and to justify persecution",
     "Rejected by most churches today (e.g. Vatican II, Nostra Aetate)"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Antisemitism_in_Christianity"
    ]
   },
   {
@@ -775,6 +901,235 @@
    "views": [
     "Quoted to justify the European and colonial witch trials",
     "The Hebrew word refers to a practitioner of sorcery, not the later idea of witchcraft"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Witch-hunt"
+   ]
+  },
+  {
+   "id": "uzzah",
+   "cat": "god",
+   "title": "Uzzah struck dead for steadying the ark",
+   "refs": [
+    "2Sam.6.6-7"
+   ],
+   "stance": "approved",
+   "what": "When the oxen stumble, Uzzah reaches out to steady the ark of God and is struck dead on the spot.",
+   "views": [
+    "The ark was to be carried by Levites on poles, never touched (Num 4:15); the story stresses God's holiness",
+    "Critics see a disproportionate penalty for a well-meant act; David himself is angry (6:8)"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Uzzah"
+   ]
+  },
+  {
+   "id": "census-plague",
+   "cat": "god",
+   "title": "70,000 die for David's census",
+   "refs": [
+    "2Sam.24.10-15"
+   ],
+   "stance": "approved",
+   "what": "David sins by numbering the people; God sends a plague that kills 70,000 Israelites.",
+   "views": [
+    "David protests that the people did nothing wrong (24:17)",
+    "Corporate judgment on the nation through its king",
+    "See the related contradiction over who incited the census"
+   ],
+   "wiki": []
+  },
+  {
+   "id": "pharaoh-heart",
+   "cat": "god",
+   "title": "God hardens Pharaoh's heart, then punishes Egypt",
+   "refs": [
+    "Exod.9.12",
+    "Exod.10.1",
+    "Exod.11.10"
+   ],
+   "stance": "approved",
+   "what": "God repeatedly hardens Pharaoh's heart so he will not let Israel go, then brings plagues on Egypt.",
+   "views": [
+    "Earlier Pharaoh hardened his own heart (8:15, 32); God confirms a choice already made",
+    "Raises the question of free will and fairness (Paul takes it up in Rom 9:17–18)"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Plagues_of_Egypt"
+   ]
+  },
+  {
+   "id": "lying-spirit",
+   "cat": "god",
+   "title": "God sends a lying spirit",
+   "refs": [
+    "1Kgs.22.19-23"
+   ],
+   "stance": "reported",
+   "what": "In Micaiah's vision, God authorises a spirit to be a lying spirit in the mouths of Ahab's prophets to lure him to death.",
+   "views": [
+    "A vision of judgment on a king who wanted to hear lies; Micaiah tells him the truth openly",
+    "Tension with 'God cannot lie' (Num 23:19; Titus 1:2; Heb 6:18)"
+   ],
+   "wiki": []
+  },
+  {
+   "id": "job-children",
+   "cat": "god",
+   "title": "Job's children killed as part of a test",
+   "refs": [
+    "Job.1.12",
+    "Job.1.18-19"
+   ],
+   "stance": "reported",
+   "what": "God allows the Accuser to test Job; his ten children die when a house collapses on them.",
+   "views": [
+    "Job never learns why; the book questions simple ideas of reward and punishment",
+    "Critics note the children are treated as Job's property, replaced in 42:13"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Book_of_Job",
+    "https://en.wikipedia.org/wiki/Problem_of_evil"
+   ]
+  },
+  {
+   "id": "eternal-punishment",
+   "cat": "god",
+   "title": "Everlasting punishment",
+   "refs": [
+    "Matt.25.46",
+    "Mark.9.43-48",
+    "Rev.14.10-11"
+   ],
+   "stance": "approved",
+   "what": "Jesus speaks of 'everlasting punishment' and unquenchable fire; Revelation describes torment 'for ever and ever'.",
+   "views": [
+    "Traditional view: conscious eternal punishment",
+    "Annihilationism: the wicked are destroyed; universalism: all are eventually restored",
+    "Debate turns partly on the Greek aiōnios"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Hell_in_Christianity"
+   ]
+  },
+  {
+   "id": "elijah-baal",
+   "cat": "massacre",
+   "title": "Elijah executes 450 prophets of Baal",
+   "refs": [
+    "1Kgs.18.40"
+   ],
+   "stance": "approved",
+   "what": "After the contest on Mount Carmel, Elijah has the prophets of Baal seized and kills them at the brook Kishon.",
+   "views": [
+    "Applies Deut 13 against leaders of apostasy",
+    "Critics see religious violence endorsed by the narrative"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/The_Bible_and_violence"
+   ]
+  },
+  {
+   "id": "phinehas",
+   "cat": "massacre",
+   "title": "Phinehas spears a couple and is rewarded",
+   "refs": [
+    "Num.25.6-13"
+   ],
+   "stance": "approved",
+   "what": "Phinehas kills an Israelite man and a Midianite woman with one spear thrust; God gives him a covenant of perpetual priesthood for his zeal.",
+   "views": [
+    "Stops a plague; framed as zeal for God",
+    "Later used to justify religious zealotry"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/The_Bible_and_violence"
+   ]
+  },
+  {
+   "id": "abraham-lies",
+   "cat": "women",
+   "title": "Abraham passes his wife off as his sister",
+   "refs": [
+    "Gen.12.13-15",
+    "Gen.20.2"
+   ],
+   "stance": "reported",
+   "what": "To protect himself, Abraham twice lets Sarah be taken into a foreign king's household; Isaac does the same (Gen 26:7).",
+   "views": [
+    "The text shows the foreign kings acting more honourably than Abraham",
+    "Sarah's consent is never asked"
+   ],
+   "wiki": []
+  },
+  {
+   "id": "childbirth-impurity",
+   "cat": "women",
+   "title": "Twice as long unclean after bearing a girl",
+   "refs": [
+    "Lev.12.2-5"
+   ],
+   "stance": "law",
+   "what": "A mother is ritually unclean 7 + 33 days after a boy, but 14 + 66 days after a girl.",
+   "views": [
+    "Ritual impurity was not sin or moral blame",
+    "Critics read the doubling as valuing daughters less; explanations vary"
+   ],
+   "wiki": []
+  },
+  {
+   "id": "vows-annulled",
+   "cat": "women",
+   "title": "A father or husband can cancel a woman's vows",
+   "refs": [
+    "Num.30.3-8"
+   ],
+   "stance": "law",
+   "what": "A daughter's or wife's vow to God can be annulled by her father or husband on the day he hears of it; a widow's or divorced woman's vow stands.",
+   "views": [
+    "Reflects household authority in ancient Israel",
+    "Critics note women's religious commitments depended on men"
+   ],
+   "wiki": []
+  },
+  {
+   "id": "wives-submit",
+   "cat": "women",
+   "title": "\"Wives, submit yourselves unto your own husbands\"",
+   "refs": [
+    "Eph.5.22-24",
+    "Col.3.18",
+    "1Pet.3.1"
+   ],
+   "stance": "approved",
+   "what": "New Testament household codes tell wives to submit to their husbands 'as unto the Lord'.",
+   "views": [
+    "Paired with husbands loving as Christ loved the church (Eph 5:25)",
+    "Complementarian vs. egalitarian readings",
+    "Was used to justify domestic control"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/Women_in_the_Bible"
+   ]
+  },
+  {
+   "id": "same-sex",
+   "cat": "law",
+   "title": "Same-sex relations condemned",
+   "refs": [
+    "Lev.18.22",
+    "Rom.1.26-27",
+    "1Cor.6.9-10"
+   ],
+   "stance": "law",
+   "what": "Leviticus forbids a man lying with a male (death penalty in 20:13); Paul describes same-sex relations as contrary to nature.",
+   "views": [
+    "Traditional view: a lasting moral teaching",
+    "Revisionist readings limit the texts to exploitation, idolatry or ancient practices",
+    "Central to current church debates"
+   ],
+   "wiki": [
+    "https://en.wikipedia.org/wiki/The_Bible_and_homosexuality"
    ]
   }
  ]

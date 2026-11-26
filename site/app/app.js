@@ -259,6 +259,38 @@ async function viewRead([b, c, v]) {
   } else window.scrollTo(0, 0);
 }
 
+// ---------------------------------------------------------------- outside links for readers
+function hubSlug(osis) {
+  if (osis === "Song") return "songs";
+  if (osis === "Ps") return "psalms";
+  return (book(osis)?.name || osis).toLowerCase().replace(/\s+/g, "_");
+}
+function extLink(href, label) { return h("a", { href, target: "_blank", rel: "noopener", class: "ext" }, label, " ↗"); }
+/** Links to read one passage on other Bible sites. */
+function passageLinks(ref) {
+  const p = parseOsis(ref);
+  if (!p) return null;
+  const v = p.v || 1;
+  return h("div", { class: "ext-links small" },
+    extLink(`https://www.biblegateway.com/passage/?search=${encodeURIComponent(fmtRef(ref))}&version=KJV;NIV;ESV;NRSVUE`, "Compare translations"),
+    extLink(`https://biblehub.com/${hubSlug(p.b)}/${p.c}-${v}.htm`, "Commentaries (BibleHub)"),
+    extLink(`https://biblehub.com/interlinear/${hubSlug(p.b)}/${p.c}-${v}.htm`, "Interlinear"),
+    extLink(`https://www.stepbible.org/?q=reference=${p.b}.${p.c}.${v}`, "STEP Bible"));
+}
+/** "Learn more" links: curated Wikipedia articles plus searches for both sides of the debate. */
+function learnMore(title, refs, wiki, kind) {
+  const q = `${title} ${refs.slice(0, 2).map((r) => fmtRef(r)).join(" ")}`;
+  const ddg = (extra) => `https://duckduckgo.com/?q=${encodeURIComponent(`${q} ${extra}`)}`;
+  return [h("h3", {}, "Learn more"),
+    h("ul", { class: "ext-list" },
+      (wiki || []).map((u) => h("li", {}, extLink(u, `Wikipedia: ${decodeURIComponent(u.split("/wiki/")[1]).replace(/_/g, " ")}`))),
+      h("li", {}, extLink(`https://scholar.google.com/scholar?q=${encodeURIComponent(q)}`, "Scholarly articles (Google Scholar)")),
+      h("li", {}, extLink(ddg(kind === "morality" ? "Christian explanation" : "explanation apologetics"), "How Christian writers explain it")),
+      h("li", {}, extLink(ddg(kind === "morality" ? "moral problem critique" : "contradiction skeptic"), "Skeptical and critical views")),
+      kind === "history" ? h("li", {}, extLink(ddg("archaeology evidence"), "Archaeology and historical evidence")) : null),
+    h("p", { class: "muted tiny" }, "Links open outside sites. Search results are not checked or endorsed by this app.")];
+}
+
 // ---------------------------------------------------------------- footnotes
 const FN_ICON = { context: "✎", word: "א", aramaic: "𐡀", diff: "⚑", contra: "⚖", hard: "⚠", claim: "🏛", artifact: "🏺" };
 const FN_KIND = { context: "Explanation", word: "Original language", aramaic: "Aramaic", diff: "Text difference", contra: "Contradiction", hard: "Hard passage", claim: "History check", artifact: "Archaeology" };
@@ -345,6 +377,8 @@ function claimPanel(x) {
     h("h3", {}, "The biblical text"), h("ul", {}, x.refs.map((r) => h("li", {}, refLink(r)))),
     h("h3", {}, "Outside evidence"), h("p", {}, x.evidence),
     x.other ? [h("h3", {}, "Other views"), h("p", {}, x.other)] : null,
+    x.refs.map((r) => [h("div", { class: "small" }, fmtRef(r)), passageLinks(r)]),
+    learnMore(x.claim, x.refs, x.wiki, "history"),
     h("p", {}, h("a", { href: "#/history?tab=claims", onclick: closePanel }, "All history checks ›")));
 }
 
@@ -534,6 +568,7 @@ async function versePanel(bk, c, v) {
     h("p", { class: "verse-quote" }, await verseText(ver, ref)),
     ctxBox,
     comms(bk.t).length ? h("button", { class: "btn", onclick: () => contextPanel(bk, c, v) }, "✎ Explanations & commentary") : null,
+    passageLinks(ref),
     h("div", { class: "hl-row" }, "Highlight: ",
       HL_COLORS.map((col) => h("button", { class: `swatch hl-${col}`, "aria-label": col,
         onclick: () => { store.set("highlights", ref, store.get("highlights", ref) === col ? null : col); route2(); } })),
@@ -745,6 +780,7 @@ async function diffPanel(d) {
       d.ntr ? h("tr", {}, h("th", {}, "New Testament"), h("td", {}, d.ntr)) : null),
     d.note ? h("p", { class: "def" }, d.note) : null,
     d.scholars ? [h("h3", {}, "Scholars"), h("ul", { class: "small" }, d.scholars.map((x) => h("li", {}, x)))] : null,
+    learnMore(d.title, [d.ot, ...(d.nt || [])], d.wiki, "contradiction"),
     h("h3", {}, "The texts"), texts,
     h("h3", {}, "Your verdict"), sel, notes,
     h("button", { class: "btn primary", onclick: () => {
@@ -791,7 +827,7 @@ function refCovers(range, b, c, v) {
   return true;
 }
 const hardFor = (b, c, v) => hard.items.filter((x) => x.refs.some((r) => refCovers(r, b, c, v)));
-const HARD_SHORT = { sexual: "Sexual violence", massacre: "Mass killing", children: "Children", slavery: "Slavery", law: "Harsh laws", women: "Women", harm: "Used to justify harm" };
+const HARD_SHORT = { god: "God's actions", sexual: "Sexual violence", massacre: "Mass killing", children: "Children", slavery: "Slavery", law: "Harsh laws", women: "Women", harm: "Used to justify harm" };
 const HARD_VERDICTS = ["", "The text condemns it", "The text commands or approves it", "Reported without judgment",
   "Wrong, whatever the text intends", "Justified in its context", "Hyperbole or imagery, not literal", "Unresolved"];
 
@@ -800,7 +836,7 @@ function viewHard(_p, q) {
   const items = hard.items.filter((x) => !cat || x.cat === cat);
   const chip = (id, label) => h("a", { class: `chip${cat === id ? " on" : ""}`, href: `#/hard${id ? "?cat=" + id : ""}` }, label);
   fill(main(),
-    h("h1", {}, "Hard passages"),
+    h("h1", {}, "Morality: hard passages"),
     h("p", { class: "lead" }, "Passages describing or commanding sexual violence, mass killing, violence against children, slavery and harsh punishments — and texts later used to justify harm. Each entry says what happens (without graphic detail), how the text itself presents it, and the main ways readers interpret it. These verses are marked in the reader."),
     h("div", { class: "chips" }, chip("", `All (${hard.items.length})`),
       Object.keys(hard.categories).map((k) => chip(k, `${HARD_SHORT[k] || k} (${hard.items.filter((x) => x.cat === k).length})`))),
@@ -829,8 +865,9 @@ async function hardPanel(x) {
     h("p", {}, x.what),
     h("p", {}, h("strong", {}, "How the text presents it: "), h("span", { class: `stance st-${x.stance}` }, hard.stances[x.stance] || x.stance)),
     x.refs.map((r, i) => h("div", { class: "con-passage" }, h("h4", {}, refLink(r), h("span", { class: "muted small" }, ` · ${ver.toUpperCase()}`)),
-      h("p", { class: "verse-quote" }, texts[i] || h("em", { class: "muted" }, "Text not loaded.")))),
+      h("p", { class: "verse-quote" }, texts[i] || h("em", { class: "muted" }, "Text not loaded.")), passageLinks(r))),
     x.views?.length ? [h("h3", {}, "How readers interpret it"), h("ul", {}, x.views.map((v) => h("li", {}, v)))] : null,
+    learnMore(x.title, x.refs, x.wiki, "morality"),
     h("h3", {}, "Your verdict"), sel, notes,
     h("button", { class: "btn primary", onclick: () => {
       store.set("verdicts", key, sel.value || notes.value.trim() ? { verdict: sel.value, note: notes.value.trim() } : null);
@@ -845,13 +882,14 @@ function viewStudy() {
   fill(main(), h("h1", {}, "Study"),
     h("p", { class: "lead" }, "Tools for digging deeper. Everything here is also linked from the footnotes as you read."),
     h("div", { class: "study-grid" },
+      card("#/contradictions", "⚖", "Contradictions", `${contra.items.length} passages that appear to conflict — numbers, events, teachings — with explanations, evidence and links.`),
+      card("#/hard", "⚠", "Morality: hard passages", `${hard.items.length} passages on violence, sexual abuse, slavery, harsh laws, treatment of women and God's own actions — with links to both sides.`),
       card("#/topic", "🔍", "Topic: find contradictions", "Enter any subject. See what the whole Bible says, in Hebrew, Greek and translation, and where it seems to disagree."),
-      card("#/contradictions", "⚖", "Contradictions", `${contra.items.length} passages that appear to conflict, with explanations and manuscript evidence.`),
       card("#/differences", "⚑", "Hebrew, Septuagint & New Testament", `${diffs.items.length} places where the Hebrew, the Greek Old Testament and New Testament quotes differ.`),
       card("#/compare/Gen", "⇄", "Hebrew vs Septuagint scanner", "Every Old Testament verse compared automatically, with differences highlighted."),
       card("#/history", "🏛", "History & archaeology", "Timeline, background to every book, archaeological finds, and how the Hebrew text was written down."),
       card("#/history?tab=claims", "📜", "Bible vs the historical record", `${(history.claims || []).length} claims rated against inscriptions, archaeology and science.`),
-      card("#/hard", "⚠", "Hard passages", `${hard.items.length} passages involving violence, slavery and abuse, with how the text presents them.`),
+      
       card(`#/full/Gen/1`, "🔊", "Listen in Hebrew or Greek", "Full chapters in the original language, read aloud in modern or ancient pronunciation.")));
 }
 
@@ -1209,7 +1247,7 @@ async function contraPanel(x) {
       content = diffTokens(i === 0 ? cmp.a : cmp.b, i === 0 ? "mt" : "lxx");
     }
     return h("div", { class: "con-passage" }, h("h4", {}, refLink(p.ref), h("span", { class: "muted small" }, ` · ${ver.toUpperCase()}`)),
-      h("p", { class: "small muted" }, p.says), h("p", { class: "verse-quote" }, content));
+      h("p", { class: "small muted" }, p.says), h("p", { class: "verse-quote" }, content), passageLinks(p.ref));
   });
   fill(body,
     h("div", { class: "tag" }, contra.categories[x.cat] || x.cat),
@@ -1217,6 +1255,7 @@ async function contraPanel(x) {
       h("mark", { class: "only-lxx" }, "wording only in this passage")),
     blocks,
     x.explanations?.length ? [h("h3", {}, "Common explanations"), h("ul", {}, x.explanations.map((e) => h("li", {}, e)))] : null,
+    learnMore(x.title, x.passages.map((p) => p.ref), x.wiki, "contradiction"),
     x.note ? [h("h3", {}, "Manuscript evidence"), h("p", { class: "def" }, x.note)] : null,
     h("h3", {}, "Your verdict"), sel, notes,
     h("button", { class: "btn primary", onclick: () => {
