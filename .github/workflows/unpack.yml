@@ -1,0 +1,25 @@
+name: Unpack upload
+on:
+  push:
+    paths: [bible-study.zip]
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  unpack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          set -e
+          if [ -f bible-study.zip ]; then
+            unzip -o -q bible-study.zip
+            rm -rf bible-study/.github
+            cp -a bible-study/. .
+            rm -rf bible-study bible-study.zip
+            git config user.name github-actions
+            git config user.email github-actions@users.noreply.github.com
+            git add -A
+            git commit -m "Unpack Bible Sources"
+            git push
+          fi
