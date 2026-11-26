@@ -1,0 +1,11 @@
+TAHOT header comment line
+Eng (Heb) Ref & Type	Hebrew	Transliteration	Translation	dStrongs	Grammar	Meaning Variants
+Gen.1.1#01=L	בְּ/רֵאשִׁ֖ית	be./re.Shit	in/ beginning	H9003/{H7225G}	HR/Ncfsa	
+Gen.1.1#02=L	בָּרָ֣א	ba.Ra'	he created	{H1254A}	HVqp3ms	
+Gen.1.1#03=L	אֱלֹהִ֑ים	'e.lo.Him	God	{H0430G}	HNcmpa	
+Gen.1.2#01=L	וְ/הָ/אָ֗רֶץ	ve./ha./'A.retz	and/ the/ earth	H9002/H9009/{H0776G}	HC/Td/Ncbsa	
+Gen.1.2#02=L	וְ/ר֣וּחַ	ve./Ru.ach	and/ spirit	H9002/{H7307G}	HC/Ncbsc	
+Gen.1.2#03=L	אֱלֹהִ֔ים	'e.lo.Him	of God	{H0430G}	HNcmpa	
+Gen.31.47#01=L	יְגַ֖ר	ye.Gar	heap	{H3026}	ANcmsc	
+Gen.1.3#01=L	לֹ֣א	lo	not	{H3808}	HTn	
+Gen.1.3#02=L	בָּרָ֣א	ba.Ra'	he created	{H1254A}	HVqp3ms	

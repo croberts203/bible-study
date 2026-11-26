@@ -1,0 +1,1170 @@
+{
+ "categories": {
+  "numbers": "Samuel & Kings vs Chronicles — parallel accounts with different numbers",
+  "history": "Old Testament accounts that appear to disagree",
+  "gospels": "Gospel accounts of the same event that differ",
+  "acts": "Acts and the rest of the New Testament",
+  "teaching": "Teachings that appear to conflict"
+ },
+ "items": [
+  {
+   "id": "chariots-700-7000",
+   "cat": "numbers",
+   "title": "700 or 7,000 charioteers; horsemen or footmen?",
+   "passages": [
+    {
+     "ref": "2Sam.10.18",
+     "says": "700 chariots and 40,000 horsemen; Shobach killed"
+    },
+    {
+     "ref": "1Chr.19.18",
+     "says": "7,000 men who fought in chariots and 40,000 footmen; Shophach killed"
+    }
+   ],
+   "explanations": [
+    "Copying error in a number (Hebrew numbers were easily confused)",
+    "Different units counted (chariots vs. chariot crews)"
+   ],
+   "note": ""
+  },
+  {
+   "id": "horsemen-700-7000",
+   "cat": "numbers",
+   "title": "700 or 7,000 horsemen captured",
+   "passages": [
+    {
+     "ref": "2Sam.8.4",
+     "says": "1,000 chariots, 700 horsemen, 20,000 footmen"
+    },
+    {
+     "ref": "1Chr.18.4",
+     "says": "1,000 chariots, 7,000 horsemen, 20,000 footmen"
+    }
+   ],
+   "explanations": [
+    "Copying error in Samuel's Hebrew text"
+   ],
+   "note": "The Septuagint of 2 Samuel 8:4 and the Samuel scroll from Qumran (4QSamᵃ) read 1,000 chariots and 7,000 horsemen, like Chronicles."
+  },
+  {
+   "id": "census-totals",
+   "cat": "numbers",
+   "title": "David's census totals",
+   "passages": [
+    {
+     "ref": "2Sam.24.9",
+     "says": "Israel 800,000; Judah 500,000"
+    },
+    {
+     "ref": "1Chr.21.5",
+     "says": "Israel 1,100,000; Judah 470,000"
+    }
+   ],
+   "explanations": [
+    "Different groups counted (e.g. standing army included or not)",
+    "1 Chr 21:6 says Levi and Benjamin were not counted",
+    "Copying errors"
+   ],
+   "note": ""
+  },
+  {
+   "id": "census-incited",
+   "cat": "numbers",
+   "title": "Who moved David to take the census — God or Satan?",
+   "passages": [
+    {
+     "ref": "2Sam.24.1",
+     "says": "The LORD's anger was kindled, and \"he moved David\" to number Israel"
+    },
+    {
+     "ref": "1Chr.21.1",
+     "says": "\"Satan stood up against Israel, and provoked David\" to number Israel"
+    }
+   ],
+   "explanations": [
+    "God permitted what Satan carried out (compare Job 1–2)",
+    "Chronicles reflects a later theology that attributes the temptation to an adversary"
+   ],
+   "note": "The Hebrew in Chronicles is śāṭān without the article, which some read as \"an adversary.\""
+  },
+  {
+   "id": "famine-7-3",
+   "cat": "numbers",
+   "title": "Seven or three years of famine",
+   "passages": [
+    {
+     "ref": "2Sam.24.13",
+     "says": "\"seven years of famine\""
+    },
+    {
+     "ref": "1Chr.21.12",
+     "says": "\"three years' famine\""
+    }
+   ],
+   "explanations": [
+    "Copying error in Samuel's Hebrew text",
+    "Seven counts the three-year famine of 2 Sam 21:1 plus the census year and three more"
+   ],
+   "note": "The Septuagint of 2 Samuel 24:13 reads three years, like Chronicles."
+  },
+  {
+   "id": "threshing-floor-price",
+   "cat": "numbers",
+   "title": "50 shekels of silver or 600 shekels of gold",
+   "passages": [
+    {
+     "ref": "2Sam.24.24",
+     "says": "David bought the threshing floor and the oxen for 50 shekels of silver"
+    },
+    {
+     "ref": "1Chr.21.25",
+     "says": "David gave for \"the place\" 600 shekels of gold"
+    }
+   ],
+   "explanations": [
+    "Samuel prices the floor and oxen; Chronicles prices the whole site (later the temple mount)"
+   ],
+   "note": ""
+  },
+  {
+   "id": "stalls-40000-4000",
+   "cat": "numbers",
+   "title": "Solomon's horse stalls: 40,000 or 4,000",
+   "passages": [
+    {
+     "ref": "1Kgs.4.26",
+     "says": "40,000 stalls of horses"
+    },
+    {
+     "ref": "2Chr.9.25",
+     "says": "4,000 stalls for horses and chariots"
+    }
+   ],
+   "explanations": [
+    "Copying error in Kings (the parallel 1 Kgs 10:26 has 1,400 chariots)"
+   ],
+   "note": ""
+  },
+  {
+   "id": "sea-baths",
+   "cat": "numbers",
+   "title": "The bronze Sea held 2,000 or 3,000 baths",
+   "passages": [
+    {
+     "ref": "1Kgs.7.26",
+     "says": "\"it contained two thousand baths\""
+    },
+    {
+     "ref": "2Chr.4.5",
+     "says": "\"it received and held three thousand baths\""
+    }
+   ],
+   "explanations": [
+    "Normal contents vs. full capacity",
+    "Copying error"
+   ],
+   "note": ""
+  },
+  {
+   "id": "overseers-3300-3600",
+   "cat": "numbers",
+   "title": "3,300 or 3,600 overseers",
+   "passages": [
+    {
+     "ref": "1Kgs.5.16",
+     "says": "3,300 officers over the work"
+    },
+    {
+     "ref": "2Chr.2.2",
+     "says": "3,600 to oversee them"
+    }
+   ],
+   "explanations": [
+    "Different ranks counted (2 Chr 8:10 and 1 Kgs 9:23 give 250 and 550 chief officers; both totals come to 3,850)"
+   ],
+   "note": ""
+  },
+  {
+   "id": "ophir-gold",
+   "cat": "numbers",
+   "title": "420 or 450 talents of gold from Ophir",
+   "passages": [
+    {
+     "ref": "1Kgs.9.28",
+     "says": "420 talents"
+    },
+    {
+     "ref": "2Chr.8.18",
+     "says": "450 talents"
+    }
+   ],
+   "explanations": [
+    "Gross vs. net (expenses deducted)",
+    "Copying error"
+   ],
+   "note": ""
+  },
+  {
+   "id": "ahaziah-age",
+   "cat": "numbers",
+   "title": "Ahaziah began to reign at 22 or 42",
+   "passages": [
+    {
+     "ref": "2Kgs.8.26",
+     "says": "\"Two and twenty years old\""
+    },
+    {
+     "ref": "2Chr.22.2",
+     "says": "\"Forty and two years old\" (KJV, following the Hebrew)"
+    }
+   ],
+   "explanations": [
+    "Copying error in Chronicles: his father Jehoram died at 40 (2 Chr 21:20), so 42 would make Ahaziah older than his father"
+   ],
+   "note": "Some Septuagint manuscripts and the Syriac read 20 or 22 in 2 Chronicles 22:2; most modern translations print 22."
+  },
+  {
+   "id": "jehoiachin-age",
+   "cat": "numbers",
+   "title": "Jehoiachin began to reign at 18 or 8",
+   "passages": [
+    {
+     "ref": "2Kgs.24.8",
+     "says": "\"eighteen years old… reigned three months\""
+    },
+    {
+     "ref": "2Chr.36.9",
+     "says": "\"eight years old… reigned three months and ten days\""
+    }
+   ],
+   "explanations": [
+    "Copying error in Chronicles (Ezek 19:5–7 describes him as a grown man with wives, 2 Kgs 24:15)",
+    "Co-regency from age 8"
+   ],
+   "note": "Some Hebrew manuscripts, the Septuagint and the Syriac read 18 in Chronicles."
+  },
+  {
+   "id": "mighty-man-800-300",
+   "cat": "numbers",
+   "title": "David's chief warrior: 800 or 300 killed",
+   "passages": [
+    {
+     "ref": "2Sam.23.8",
+     "says": "Adino the Eznite, against 800, slain at one time"
+    },
+    {
+     "ref": "1Chr.11.11",
+     "says": "Jashobeam lifted his spear against 300, slain at one time"
+    }
+   ],
+   "explanations": [
+    "Copying error in one of the numbers or names (the Samuel Hebrew is difficult here)",
+    "Two different exploits"
+   ],
+   "note": ""
+  },
+  {
+   "id": "baasha-asa",
+   "cat": "numbers",
+   "title": "Baasha attacks Judah ten years after he died?",
+   "passages": [
+    {
+     "ref": "1Kgs.16.8",
+     "says": "Baasha's son Elah began to reign in Asa's 26th year (so Baasha was already dead)"
+    },
+    {
+     "ref": "2Chr.16.1",
+     "says": "\"In the six and thirtieth year of the reign of Asa Baasha king of Israel came up against Judah\""
+    }
+   ],
+   "explanations": [
+    "Counted from the division of the kingdom, not from Asa's accession",
+    "Copying error in the number"
+   ],
+   "note": ""
+  },
+  {
+   "id": "ahaz-hezekiah",
+   "cat": "numbers",
+   "title": "Was Hezekiah born when his father was 11?",
+   "passages": [
+    {
+     "ref": "2Kgs.16.2",
+     "says": "Ahaz was 20 when he began and reigned 16 years (died at about 36)"
+    },
+    {
+     "ref": "2Kgs.18.2",
+     "says": "Hezekiah was 25 when he began to reign"
+    }
+   ],
+   "explanations": [
+    "Co-regencies overlapping the reigns",
+    "Copying error in one of the ages"
+   ],
+   "note": ""
+  },
+  {
+   "id": "goliath-killer",
+   "cat": "history",
+   "title": "Who killed Goliath — David or Elhanan?",
+   "passages": [
+    {
+     "ref": "1Sam.17.50",
+     "says": "David killed the Philistine (Goliath, 17:4)"
+    },
+    {
+     "ref": "2Sam.21.19",
+     "says": "Elhanan \"slew the brother of Goliath the Gittite\" — the words \"the brother of\" are in italics in the KJV: they are not in the Hebrew, which says Elhanan killed Goliath"
+    },
+    {
+     "ref": "1Chr.20.5",
+     "says": "Elhanan slew Lahmi the brother of Goliath"
+    }
+   ],
+   "explanations": [
+    "Copying error in 2 Samuel; Chronicles preserves the original (\"Lahmi\" and \"Bethlehemite\" look similar in Hebrew)",
+    "Elhanan was another name for David",
+    "Two different giants named Goliath"
+   ],
+   "note": ""
+  },
+  {
+   "id": "saul-death",
+   "cat": "history",
+   "title": "How did Saul die?",
+   "passages": [
+    {
+     "ref": "1Sam.31.4",
+     "says": "Saul fell on his own sword"
+    },
+    {
+     "ref": "2Sam.1.10",
+     "says": "An Amalekite says \"I stood upon him, and slew him\""
+    },
+    {
+     "ref": "1Chr.10.14",
+     "says": "\"[Saul] enquired not of the LORD: therefore he slew him\""
+    }
+   ],
+   "explanations": [
+    "The Amalekite lied to win David's favor",
+    "Chronicles states the theological cause, not the physical means"
+   ],
+   "note": "See also 1 Sam 28:6: \"when Saul enquired of the LORD, the LORD answered him not\" — compare with 1 Chr 10:14."
+  },
+  {
+   "id": "michal-children",
+   "cat": "history",
+   "title": "Did Michal have children?",
+   "passages": [
+    {
+     "ref": "2Sam.6.23",
+     "says": "Michal \"had no child unto the day of her death\""
+    },
+    {
+     "ref": "2Sam.21.8",
+     "says": "\"the five sons of Michal the daughter of Saul, whom she brought up for Adriel\" (KJV)"
+    }
+   ],
+   "explanations": [
+    "Copying error: Merab, not Michal, married Adriel (1 Sam 18:19)",
+    "Michal raised her sister's sons (the KJV's \"brought up\")"
+   ],
+   "note": "Two Hebrew manuscripts and some Septuagint manuscripts read Merab in 2 Sam 21:8."
+  },
+  {
+   "id": "creation-order",
+   "cat": "history",
+   "title": "Animals before or after the man?",
+   "passages": [
+    {
+     "ref": "Gen.1.25-27",
+     "says": "Animals are made, then humankind, male and female together"
+    },
+    {
+     "ref": "Gen.2.18-19",
+     "says": "The man is formed first; then the LORD forms the animals and brings them to him; the woman last"
+    }
+   ],
+   "explanations": [
+    "Two separate creation accounts from different sources",
+    "Genesis 2 is topical, not chronological (\"had formed\", as in some translations)"
+   ],
+   "note": ""
+  },
+  {
+   "id": "ark-animals",
+   "cat": "history",
+   "title": "Two of every kind, or seven?",
+   "passages": [
+    {
+     "ref": "Gen.6.19-20",
+     "says": "two of every sort, male and female"
+    },
+    {
+     "ref": "Gen.7.2-3",
+     "says": "clean beasts by sevens; unclean by two"
+    }
+   ],
+   "explanations": [
+    "Two sources combined",
+    "Genesis 6 gives the general rule, Genesis 7 the detail for clean animals"
+   ],
+   "note": ""
+  },
+  {
+   "id": "judas-death",
+   "cat": "gospels",
+   "title": "How Judas died, and who bought the field",
+   "passages": [
+    {
+     "ref": "Matt.27.5-7",
+     "says": "Judas hanged himself; the chief priests bought the potter's field with the money"
+    },
+    {
+     "ref": "Acts.1.18",
+     "says": "Judas \"purchased a field\"; \"falling headlong, he burst asunder\""
+    }
+   ],
+   "explanations": [
+    "He hanged himself and the body later fell",
+    "The priests bought it with his money, so it was counted as his purchase"
+   ],
+   "note": ""
+  },
+  {
+   "id": "joseph-father",
+   "cat": "gospels",
+   "title": "Who was Joseph's father?",
+   "passages": [
+    {
+     "ref": "Matt.1.16",
+     "says": "Jacob begat Joseph"
+    },
+    {
+     "ref": "Luke.3.23",
+     "says": "Joseph, \"which was the son of Heli\""
+    }
+   ],
+   "explanations": [
+    "Luke gives Mary's line (Heli as Joseph's father-in-law)",
+    "Levirate marriage: one legal, one natural father",
+    "The lists also differ between David and Joseph almost entirely"
+   ],
+   "note": ""
+  },
+  {
+   "id": "jericho-blind",
+   "cat": "gospels",
+   "title": "One blind man or two; leaving or approaching Jericho?",
+   "passages": [
+    {
+     "ref": "Matt.20.29-30",
+     "says": "Two blind men, as they departed from Jericho"
+    },
+    {
+     "ref": "Mark.10.46",
+     "says": "Blind Bartimaeus, as he went out of Jericho"
+    },
+    {
+     "ref": "Luke.18.35",
+     "says": "A certain blind man, as he was come nigh unto Jericho"
+    }
+   ],
+   "explanations": [
+    "Mark and Luke name only the better-known man",
+    "Old and new Jericho were two sites, so one could leave one and approach the other"
+   ],
+   "note": ""
+  },
+  {
+   "id": "demoniacs",
+   "cat": "gospels",
+   "title": "One demoniac or two; where?",
+   "passages": [
+    {
+     "ref": "Matt.8.28",
+     "says": "Two possessed men, in the country of the Gergesenes (KJV)"
+    },
+    {
+     "ref": "Mark.5.1-2",
+     "says": "One man, in the country of the Gadarenes"
+    },
+    {
+     "ref": "Luke.8.26-27",
+     "says": "One man, in the country of the Gadarenes"
+    }
+   ],
+   "explanations": [
+    "Mark and Luke focus on the one who spoke",
+    "The place names vary in manuscripts (Gadarenes, Gerasenes, Gergesenes)"
+   ],
+   "note": ""
+  },
+  {
+   "id": "crucifixion-hour",
+   "cat": "gospels",
+   "title": "The third hour or the sixth?",
+   "passages": [
+    {
+     "ref": "Mark.15.25",
+     "says": "\"it was the third hour, and they crucified him\""
+    },
+    {
+     "ref": "John.19.14",
+     "says": "Pilate is still judging Jesus \"about the sixth hour\""
+    }
+   ],
+   "explanations": [
+    "John uses Roman time (from midnight), Mark Jewish time (from sunrise)",
+    "Approximate times by quarters of the day"
+   ],
+   "note": "A few manuscripts of John read \"third hour.\""
+  },
+  {
+   "id": "passover-timing",
+   "cat": "gospels",
+   "title": "Was the Last Supper the Passover meal?",
+   "passages": [
+    {
+     "ref": "Mark.14.12",
+     "says": "On the first day of unleavened bread, \"when they killed the passover,\" the disciples prepare the Passover"
+    },
+    {
+     "ref": "John.18.28",
+     "says": "The next morning the priests avoid defilement \"that they might eat the passover\""
+    },
+    {
+     "ref": "John.19.14",
+     "says": "\"it was the preparation of the passover\" when Jesus was condemned"
+    }
+   ],
+   "explanations": [
+    "Different calendars in use",
+    "\"Passover\" in John means the whole feast week",
+    "John aligns Jesus' death with the slaughter of the lambs for theological reasons"
+   ],
+   "note": ""
+  },
+  {
+   "id": "staff",
+   "cat": "gospels",
+   "title": "Take a staff or not?",
+   "passages": [
+    {
+     "ref": "Mark.6.8",
+     "says": "\"take nothing for their journey, save a staff only\""
+    },
+    {
+     "ref": "Matt.10.10",
+     "says": "\"neither two coats, neither shoes, nor yet staves\""
+    },
+    {
+     "ref": "Luke.9.3",
+     "says": "\"Take nothing for your journey, neither staves\""
+    }
+   ],
+   "explanations": [
+    "Don't acquire an extra staff vs. take the one you have",
+    "Different sayings preserved differently"
+   ],
+   "note": ""
+  },
+  {
+   "id": "cock-crow",
+   "cat": "gospels",
+   "title": "Before the cock crows once or twice?",
+   "passages": [
+    {
+     "ref": "Mark.14.30",
+     "says": "\"before the cock crow twice, thou shalt deny me thrice\""
+    },
+    {
+     "ref": "Matt.26.34",
+     "says": "\"before the cock crow, thou shalt deny me thrice\""
+    }
+   ],
+   "explanations": [
+    "Matthew, Luke and John simplify; Mark gives the detail (Mark 14:68, 72)"
+   ],
+   "note": "Some manuscripts of Mark lack the first crowing and \"twice.\""
+  },
+  {
+   "id": "jairus",
+   "cat": "gospels",
+   "title": "Was Jairus's daughter already dead?",
+   "passages": [
+    {
+     "ref": "Matt.9.18",
+     "says": "\"My daughter is even now dead\""
+    },
+    {
+     "ref": "Mark.5.23",
+     "says": "\"My little daughter lieth at the point of death\"; news of her death comes later (5:35)"
+    }
+   ],
+   "explanations": [
+    "Matthew condenses the story, combining the request and the later news"
+   ],
+   "note": ""
+  },
+  {
+   "id": "empty-tomb",
+   "cat": "gospels",
+   "title": "Who went to the tomb, and whom did they see?",
+   "passages": [
+    {
+     "ref": "Matt.28.1-2",
+     "says": "Mary Magdalene and the other Mary; one angel sitting on the stone"
+    },
+    {
+     "ref": "Mark.16.1-5",
+     "says": "Two Marys and Salome; a young man sitting inside"
+    },
+    {
+     "ref": "Luke.24.1-4",
+     "says": "The women (named in 24:10: Mary Magdalene, Joanna, Mary mother of James, others); two men standing"
+    },
+    {
+     "ref": "John.20.1",
+     "says": "Mary Magdalene (then two angels sitting, 20:12)"
+    }
+   ],
+   "explanations": [
+    "Each writer names part of a larger group and different moments",
+    "Independent eyewitness traditions differ in detail"
+   ],
+   "note": ""
+  },
+  {
+   "id": "cross-inscription",
+   "cat": "gospels",
+   "title": "The wording on the cross",
+   "passages": [
+    {
+     "ref": "Matt.27.37",
+     "says": "THIS IS JESUS THE KING OF THE JEWS"
+    },
+    {
+     "ref": "Mark.15.26",
+     "says": "THE KING OF THE JEWS"
+    },
+    {
+     "ref": "Luke.23.38",
+     "says": "THIS IS THE KING OF THE JEWS"
+    },
+    {
+     "ref": "John.19.19",
+     "says": "JESUS OF NAZARETH THE KING OF THE JEWS"
+    }
+   ],
+   "explanations": [
+    "The sign was in three languages (John 19:20), so wording may differ",
+    "Each gives the substance"
+   ],
+   "note": ""
+  },
+  {
+   "id": "thieves",
+   "cat": "gospels",
+   "title": "Did both thieves mock Jesus?",
+   "passages": [
+    {
+     "ref": "Matt.27.44",
+     "says": "\"The thieves also, which were crucified with him, cast the same in his teeth\""
+    },
+    {
+     "ref": "Luke.23.39-40",
+     "says": "One railed on him; the other rebuked him"
+    }
+   ],
+   "explanations": [
+    "Both mocked at first, then one repented",
+    "Matthew uses a general plural"
+   ],
+   "note": ""
+  },
+  {
+   "id": "pauls-companions",
+   "cat": "acts",
+   "title": "Did Paul's companions hear the voice?",
+   "passages": [
+    {
+     "ref": "Acts.9.7",
+     "says": "\"hearing a voice, but seeing no man\""
+    },
+    {
+     "ref": "Acts.22.9",
+     "says": "\"saw indeed the light… but they heard not the voice of him that spake to me\""
+    }
+   ],
+   "explanations": [
+    "They heard a sound but did not understand the words (the Greek grammar differs between the two verses)"
+   ],
+   "note": "Acts 26:14 adds that they all fell to the ground; Acts 9:7 says they stood."
+  },
+  {
+   "id": "god-tempts",
+   "cat": "teaching",
+   "title": "Does God tempt anyone?",
+   "topics": [
+    "tempt",
+    "test",
+    "temptation"
+   ],
+   "passages": [
+    {
+     "ref": "Gen.22.1",
+     "says": "\"God did tempt Abraham\" (KJV)"
+    },
+    {
+     "ref": "Jas.1.13",
+     "says": "\"God cannot be tempted with evil, neither tempteth he any man\""
+    }
+   ],
+   "explanations": [
+    "The Hebrew nissah means 'test'; most modern translations read 'God tested Abraham'",
+    "James means enticing to sin, not testing faith"
+   ],
+   "note": ""
+  },
+  {
+   "id": "god-repents",
+   "cat": "teaching",
+   "title": "Does God change his mind?",
+   "topics": [
+    "repent",
+    "change",
+    "mind",
+    "regret"
+   ],
+   "passages": [
+    {
+     "ref": "Gen.6.6",
+     "says": "\"it repented the LORD that he had made man\""
+    },
+    {
+     "ref": "Exod.32.14",
+     "says": "\"the LORD repented of the evil which he thought to do\""
+    },
+    {
+     "ref": "Num.23.19",
+     "says": "\"God is not a man… that he should repent\""
+    },
+    {
+     "ref": "1Sam.15.29",
+     "says": "\"the Strength of Israel will not… repent\" — eleven verses after 15:11 says he did"
+    }
+   ],
+   "explanations": [
+    "Human language for God's response to changed circumstances (anthropopathism)",
+    "God's character and promises don't change, his responses to people do"
+   ],
+   "note": "1 Samuel 15:11 and 15:29 sit in the same chapter, so the writer saw no conflict."
+  },
+  {
+   "id": "seen-god",
+   "cat": "teaching",
+   "title": "Has anyone seen God?",
+   "topics": [
+    "see",
+    "seen",
+    "face",
+    "god"
+   ],
+   "passages": [
+    {
+     "ref": "Gen.32.30",
+     "says": "Jacob: \"I have seen God face to face\""
+    },
+    {
+     "ref": "Exod.33.11",
+     "says": "\"the LORD spake unto Moses face to face\""
+    },
+    {
+     "ref": "Exod.33.20",
+     "says": "\"Thou canst not see my face: for there shall no man see me, and live\""
+    },
+    {
+     "ref": "John.1.18",
+     "says": "\"No man hath seen God at any time\""
+    }
+   ],
+   "explanations": [
+    "'Face to face' is an idiom for direct, personal encounter",
+    "People saw a manifestation (an angel, glory, the pre-incarnate Son), not God's essence"
+   ],
+   "note": ""
+  },
+  {
+   "id": "faith-works",
+   "cat": "teaching",
+   "title": "Justified by faith or by works?",
+   "topics": [
+    "faith",
+    "works",
+    "justified",
+    "justify",
+    "righteous"
+   ],
+   "passages": [
+    {
+     "ref": "Rom.3.28",
+     "says": "\"a man is justified by faith without the deeds of the law\""
+    },
+    {
+     "ref": "Gal.2.16",
+     "says": "\"a man is not justified by the works of the law\""
+    },
+    {
+     "ref": "Jas.2.24",
+     "says": "\"by works a man is justified, and not by faith only\""
+    }
+   ],
+   "explanations": [
+    "Paul means works of the Mosaic law as a basis for standing with God; James means deeds that show faith is real",
+    "Luther thought the conflict real and called James 'an epistle of straw'"
+   ],
+   "note": ""
+  },
+  {
+   "id": "sins-fathers",
+   "cat": "teaching",
+   "title": "Are children punished for their parents' sins?",
+   "topics": [
+    "sin",
+    "iniquity",
+    "fathers",
+    "children",
+    "punish"
+   ],
+   "passages": [
+    {
+     "ref": "Exod.20.5",
+     "says": "\"visiting the iniquity of the fathers upon the children unto the third and fourth generation\""
+    },
+    {
+     "ref": "Deut.24.16",
+     "says": "\"the children [shall not] be put to death for the fathers\""
+    },
+    {
+     "ref": "Ezek.18.20",
+     "says": "\"The son shall not bear the iniquity of the father\""
+    }
+   ],
+   "explanations": [
+    "Exodus describes consequences that follow families who keep hating God; Deuteronomy is a rule for human courts",
+    "Ezekiel answers a proverb (18:2) and marks a development in teaching"
+   ],
+   "note": ""
+  },
+  {
+   "id": "hate-parents",
+   "cat": "teaching",
+   "title": "Honour or hate your father and mother?",
+   "topics": [
+    "hate",
+    "honour",
+    "honor",
+    "father",
+    "mother",
+    "parents"
+   ],
+   "passages": [
+    {
+     "ref": "Exod.20.12",
+     "says": "\"Honour thy father and thy mother\""
+    },
+    {
+     "ref": "Luke.14.26",
+     "says": "\"If any man… hate not his father, and mother… he cannot be my disciple\""
+    }
+   ],
+   "explanations": [
+    "A Semitic idiom: 'hate' means 'love less' (compare Matt 10:37; Gen 29:30–31)"
+   ],
+   "note": ""
+  },
+  {
+   "id": "peace-sword",
+   "cat": "teaching",
+   "title": "Peace or a sword?",
+   "topics": [
+    "peace",
+    "sword",
+    "war"
+   ],
+   "passages": [
+    {
+     "ref": "John.14.27",
+     "says": "\"Peace I leave with you, my peace I give unto you\""
+    },
+    {
+     "ref": "Luke.2.14",
+     "says": "\"on earth peace, good will toward men\""
+    },
+    {
+     "ref": "Matt.10.34",
+     "says": "\"I came not to send peace, but a sword\""
+    }
+   ],
+   "explanations": [
+    "Inner peace with God vs. the division his message causes in families (Matt 10:35–36)"
+   ],
+   "note": ""
+  },
+  {
+   "id": "judging",
+   "cat": "teaching",
+   "title": "Judge or don't judge?",
+   "topics": [
+    "judge",
+    "judgment",
+    "judging"
+   ],
+   "passages": [
+    {
+     "ref": "Matt.7.1",
+     "says": "\"Judge not, that ye be not judged\""
+    },
+    {
+     "ref": "John.7.24",
+     "says": "\"Judge not according to the appearance, but judge righteous judgment\""
+    },
+    {
+     "ref": "1Cor.6.2",
+     "says": "\"the saints shall judge the world\""
+    }
+   ],
+   "explanations": [
+    "Condemning hypocritically vs. discerning rightly (Matt 7:5 assumes you will help your brother)"
+   ],
+   "note": ""
+  },
+  {
+   "id": "answer-fool",
+   "cat": "teaching",
+   "title": "Answer a fool or not?",
+   "topics": [
+    "fool",
+    "answer",
+    "folly"
+   ],
+   "passages": [
+    {
+     "ref": "Prov.26.4",
+     "says": "\"Answer not a fool according to his folly\""
+    },
+    {
+     "ref": "Prov.26.5",
+     "says": "\"Answer a fool according to his folly\""
+    }
+   ],
+   "explanations": [
+    "Placed side by side deliberately: wisdom means knowing which situation calls for which"
+   ],
+   "note": ""
+  },
+  {
+   "id": "burdens",
+   "cat": "teaching",
+   "title": "Bear one another's burdens or your own?",
+   "topics": [
+    "burden",
+    "bear",
+    "load"
+   ],
+   "passages": [
+    {
+     "ref": "Gal.6.2",
+     "says": "\"Bear ye one another's burdens\""
+    },
+    {
+     "ref": "Gal.6.5",
+     "says": "\"every man shall bear his own burden\""
+    }
+   ],
+   "explanations": [
+    "Different Greek words: baros (heavy weight, v. 2) and phortion (one's own pack or responsibility, v. 5)"
+   ],
+   "note": ""
+  },
+  {
+   "id": "god-weary",
+   "cat": "teaching",
+   "title": "Does God get tired?",
+   "topics": [
+    "rest",
+    "weary",
+    "tired",
+    "faint",
+    "refreshed"
+   ],
+   "passages": [
+    {
+     "ref": "Exod.31.17",
+     "says": "\"on the seventh day he rested, and was refreshed\""
+    },
+    {
+     "ref": "Isa.40.28",
+     "says": "\"the Creator… fainteth not, neither is weary\""
+    }
+   ],
+   "explanations": [
+    "'Rested' (shabath) means ceased; 'refreshed' is human language",
+    "Different genres: law grounded in a creation pattern vs. poetry about God's power"
+   ],
+   "note": ""
+  },
+  {
+   "id": "ascended",
+   "cat": "teaching",
+   "title": "Has anyone gone up to heaven?",
+   "topics": [
+    "heaven",
+    "ascend",
+    "ascended",
+    "taken"
+   ],
+   "passages": [
+    {
+     "ref": "2Kgs.2.11",
+     "says": "\"Elijah went up by a whirlwind into heaven\""
+    },
+    {
+     "ref": "Gen.5.24",
+     "says": "\"Enoch… was not; for God took him\""
+    },
+    {
+     "ref": "John.3.13",
+     "says": "\"no man hath ascended up to heaven, but he that came down from heaven\""
+    }
+   ],
+   "explanations": [
+    "John means no one has gone up to bring back heavenly knowledge",
+    "'Heaven' in 2 Kings may mean the sky"
+   ],
+   "note": ""
+  },
+  {
+   "id": "oaths",
+   "cat": "teaching",
+   "title": "Swear oaths or not?",
+   "topics": [
+    "swear",
+    "oath",
+    "vow"
+   ],
+   "passages": [
+    {
+     "ref": "Deut.6.13",
+     "says": "\"Thou shalt fear the LORD… and shalt swear by his name\""
+    },
+    {
+     "ref": "Num.30.2",
+     "says": "A vow or oath must be kept"
+    },
+    {
+     "ref": "Matt.5.34",
+     "says": "\"Swear not at all\""
+    },
+    {
+     "ref": "Jas.5.12",
+     "says": "\"swear not… let your yea be yea\""
+    }
+   ],
+   "explanations": [
+    "Jesus targets evasive oaths (Matt 5:35–37; 23:16–22), not all solemn statements; Paul uses oath-like language (Gal 1:20)",
+    "Some traditions (Quakers, Anabaptists) take it literally"
+   ],
+   "note": ""
+  },
+  {
+   "id": "own-witness",
+   "cat": "teaching",
+   "title": "Is Jesus' witness about himself true?",
+   "topics": [
+    "witness",
+    "testimony",
+    "record",
+    "true"
+   ],
+   "passages": [
+    {
+     "ref": "John.5.31",
+     "says": "\"If I bear witness of myself, my witness is not true\""
+    },
+    {
+     "ref": "John.8.14",
+     "says": "\"Though I bear record of myself, yet my record is true\""
+    }
+   ],
+   "explanations": [
+    "John 5 concedes the legal rule (two witnesses, Deut 19:15) for argument's sake; John 8 asserts his authority"
+   ],
+   "note": ""
+  },
+  {
+   "id": "law-forever",
+   "cat": "teaching",
+   "title": "Is the Law forever or abolished?",
+   "topics": [
+    "law",
+    "commandment",
+    "abolish",
+    "forever",
+    "covenant"
+   ],
+   "passages": [
+    {
+     "ref": "Matt.5.17-18",
+     "says": "\"I am not come to destroy the law… till heaven and earth pass, one jot or one tittle shall in no wise pass\""
+    },
+    {
+     "ref": "Eph.2.15",
+     "says": "\"Having abolished in his flesh… the law of commandments\""
+    },
+    {
+     "ref": "Heb.8.13",
+     "says": "The first covenant is \"ready to vanish away\""
+    }
+   ],
+   "explanations": [
+    "Fulfilled rather than discarded; ceremonial vs. moral law distinctions",
+    "Jewish readers see the Torah as eternal (e.g. Exod 31:16 'a perpetual covenant')"
+   ],
+   "note": ""
+  },
+  {
+   "id": "divorce",
+   "cat": "teaching",
+   "title": "Is divorce allowed?",
+   "topics": [
+    "divorce",
+    "put away",
+    "marriage",
+    "adultery",
+    "wife"
+   ],
+   "passages": [
+    {
+     "ref": "Deut.24.1",
+     "says": "A man may write a bill of divorcement"
+    },
+    {
+     "ref": "Mark.10.11-12",
+     "says": "Whoever divorces and remarries commits adultery — no exception"
+    },
+    {
+     "ref": "Matt.19.9",
+     "says": "\"except it be for fornication\""
+    }
+   ],
+   "explanations": [
+    "Jesus says Moses permitted divorce 'because of the hardness of your hearts' (Matt 19:8)",
+    "Matthew's exception clause is read by many as clarifying Mark"
+   ],
+   "note": ""
+  }
+ ]
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bible Sources — Hebrew, Greek & Septuagint side by side</title>
+  <meta name="description" content="A free Bible study app: read the Hebrew, the Greek New Testament and the Septuagint next to English, tap any word for its meaning and grammar, follow cross references, and see where the ancient texts differ.">
+  <meta property="og:title" content="Bible Sources">
+  <meta property="og:description" content="Hebrew, Greek and Septuagint side by side — and where they differ.">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400&family=Noto+Serif+Hebrew:wght@400;600&family=Inter:wght@400;600&display=swap">
+  <style>
+    :root { --bg:#fbfaf7; --fg:#1f2430; --muted:#5f6673; --line:#e5e2da; --accent:#2f3b52; --accent2:#8a5a2b; --card:#fff;
+      --serif:"Gentium Book Plus",Georgia,serif; --sans:Inter,system-ui,sans-serif; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#14171d; --fg:#e8e6e1; --muted:#a3a9b3; --line:#2b303a; --card:#1b1f27; --accent:#c9d4ea; --accent2:#e0b07c; } }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 var(--sans); }
+    a { color:inherit; }
+    .wrap { max-width:1080px; margin:0 auto; padding:0 1.25rem; }
+    header.site { display:flex; align-items:center; justify-content:space-between; padding:1rem 0; }
+    .logo { display:flex; align-items:center; gap:.6rem; font:700 1.25rem var(--serif); text-decoration:none; }
+    .logo img { width:36px; height:36px; }
+    .cta { display:inline-block; background:var(--accent); color:var(--bg); padding:.75rem 1.3rem; border-radius:10px; text-decoration:none; font-weight:600; }
+    .cta.ghost { background:none; color:var(--fg); border:1px solid var(--line); }
+    .hero { display:grid; grid-template-columns:1.1fr 1fr; gap:3rem; align-items:center; padding:3rem 0 4rem; }
+    h1 { font:700 clamp(2.2rem,5vw,3.4rem)/1.08 var(--serif); margin:0 0 1rem; letter-spacing:-.01em; }
+    .lede { font-size:1.15rem; color:var(--muted); max-width:34em; }
+    .actions { display:flex; gap:.75rem; flex-wrap:wrap; margin-top:1.5rem; }
+    .sample { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:1.25rem 1.4rem; box-shadow:0 20px 50px -30px rgba(0,0,0,.35); }
+    .sample .ref { font:600 .75rem var(--sans); text-transform:uppercase; letter-spacing:.08em; color:var(--accent2); }
+    .row { display:grid; grid-template-columns:7rem 1fr; gap:.75rem; padding:.6rem 0; border-top:1px solid var(--line); }
+    .row:first-of-type { border-top:0; }
+    .row b { font:600 .78rem var(--sans); color:var(--muted); padding-top:.25rem; }
+    .row span { font-family:var(--serif); }
+    .heb { font-family:"Noto Serif Hebrew",serif; font-size:1.25rem; direction:rtl; text-align:right; }
+    .flag { display:inline-block; margin-top:.75rem; font:600 .8rem var(--sans); color:var(--accent2); border:1px solid currentColor; border-radius:999px; padding:.15rem .6rem; }
+    section { padding:3.5rem 0; border-top:1px solid var(--line); }
+    h2 { font:700 2rem/1.15 var(--serif); margin:0 0 .5rem; }
+    .sub { color:var(--muted); max-width:42em; margin:0 0 2rem; }
+    .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1.25rem; }
+    .feat { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:1.25rem; }
+    .feat h3 { font:700 1.15rem var(--serif); margin:.2rem 0 .4rem; }
+    .feat p { margin:0; color:var(--muted); font-size:.96rem; }
+    .feat .k { font:700 1.6rem var(--serif); color:var(--accent2); }
+    .steps { counter-reset:s; list-style:none; padding:0; display:grid; grid-template-columns:repeat(3,1fr); gap:1.25rem; }
+    .steps li { counter-increment:s; }
+    .steps li::before { content:counter(s); display:inline-grid; place-items:center; width:2rem; height:2rem; border-radius:50%; background:var(--accent); color:var(--bg); font-weight:700; margin-bottom:.5rem; }
+    footer { padding:2.5rem 0 3rem; border-top:1px solid var(--line); color:var(--muted); font-size:.88rem; }
+    footer p { margin:.35rem 0; }
+    @media (max-width:820px) { .hero { grid-template-columns:1fr; padding-top:1.5rem; gap:2rem; } .grid, .steps { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="site">
+      <a class="logo" href="./"><img src="icon.svg" alt=""> Bible Sources</a>
+      <a class="cta ghost" href="app/">Open the app</a>
+    </header>
+
+    <div class="hero">
+      <div>
+        <h1>Read the Bible in the languages it was written in.</h1>
+        <p class="lede">Hebrew, the Greek New Testament and the Septuagint sit beside English or any of 30+ translations, verse by verse. Tap any word for its meaning and grammar, follow cross references, and see exactly where the ancient texts don't agree, where passages appear to contradict each other, and where the text describes or commands atrocities.</p>
+        <div class="actions">
+          <a class="cta" href="app/">Start reading — it's free</a>
+          <a class="cta ghost" href="app/#/differences">See where the texts differ</a>
+        </div>
+      </div>
+      <div class="sample" aria-label="Example: Hebrews 10:5 quoting Psalm 40:6">
+        <div class="ref">Psalm 40:6 → Hebrews 10:5</div>
+        <div class="row"><b>Hebrew</b><span class="heb">אָ֭זְנַיִם כָּרִ֣יתָ לִּ֑י</span></div>
+        <div class="row"><b>Hebrew says</b><span>“ears you have opened for me”</span></div>
+        <div class="row"><b>Septuagint</b><span>“a body you have prepared for me”</span></div>
+        <div class="row"><b>Hebrews 10:5</b><span>“a body you have prepared for me”</span></div>
+        <span class="flag">⚑ New Testament follows the Septuagint</span>
+      </div>
+    </div>
+
+    <section>
+      <h2>Everything in one place</h2>
+      <p class="sub">The original texts and the tools to study them, without switching between apps.</p>
+      <div class="grid">
+        <div class="feat"><div class="k">א Ω</div><h3>Hebrew &amp; Greek</h3><p>Every word of the Hebrew Old Testament and Greek New Testament, with English under each word.</p></div>
+        <div class="feat"><div class="k">LXX</div><h3>The Septuagint</h3><p>The Greek Old Testament the apostles quoted most often, in Greek and in English, with its psalm numbers converted for you.</p></div>
+        <div class="feat"><div class="k">⚑</div><h3>Where texts differ</h3><p>Every verse of the Hebrew Bible is compared with the Septuagint automatically, with the differences highlighted. There's also a curated table of New Testament quotations, plus 33 apparent contradictions (Kings vs Chronicles, the Gospels), each with manuscript evidence. Record your own verdict on each.</p></div>
+        <div class="feat"><div class="k">H7225</div><h3>Word study</h3><p>Tap a word to see its dictionary form, its grammar in plain English, a lexicon entry, and every other verse that uses it.</p></div>
+        <div class="feat"><div class="k">↔</div><h3>Cross references</h3><p>About 340,000 links between passages, ranked by usefulness. Problems are flagged: weak links, known contradictions, places where the Septuagint differs. Compare the wording of any two passages.</p></div>
+        <div class="feat"><div class="k">🔊</div><h3>Listen &amp; history</h3><p>Hear Hebrew and Greek in modern or ancient pronunciation. See each passage in its historical setting, with archaeology, a timeline, and biblical claims checked against the record.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Put it on your phone</h2>
+      <p class="sub">It runs in your browser, and you can add it to your home screen like any other app. Chapters you've read keep working offline.</p>
+      <ol class="steps">
+        <li><strong>Open the app</strong><br><span class="sub">Go to the app on your phone.</span></li>
+        <li><strong>Add to home screen</strong><br><span class="sub">Android: ⋮ menu → “Add to Home screen.” iPhone: Share → “Add to Home Screen.”</span></li>
+        <li><strong>Sign in to sync</strong><br><span class="sub">Optional. Your notes follow you to every device.</span></li>
+      </ol>
+      <p><a class="cta" href="app/">Open Bible Sources</a></p>
+    </section>
+
+    <footer>
+      <p><strong>Sources.</strong> Hebrew and Greek tagged texts and lexicons: STEPBible.org, based on work at Tyndale House Cambridge (CC BY 4.0). Cross references: OpenBible.info (CC BY), from the Treasury of Scripture Knowledge. Septuagint Greek and English: Sir Lancelot C. L. Brenton (public domain), via eBible.org. English translations: KJV, ASV, WEB, Geneva (public domain).</p>
+      <p>© <span id="y"></span> Bible Sources.</p>
+    </footer>
+  </div>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>

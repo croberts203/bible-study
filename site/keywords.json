@@ -1,0 +1,257 @@
+{
+ "H3068": {
+  "word": "YHWH",
+  "note": "God's personal name, probably pronounced Yahweh. Out of reverence Jewish readers say Adonai ('my Lord') instead, so most English Bibles print it as LORD in capitals; the KJV uses 'Jehovah' a few times. It appears about 6,800 times.",
+  "context": "The name appears outside the Bible on the Mesha Stele (c. 840 BC) and in inscriptions from Kuntillet Ajrud and Ketef Hinnom.",
+  "scholars": [
+   "Frank Moore Cross, Canaanite Myth and Hebrew Epic (1973) — origins of the name and its relation to El",
+   "Wilhelm Gesenius (19th century) proposed the pronunciation Yahweh, now standard among scholars"
+  ]
+ },
+ "H0430": {
+  "word": "elohim",
+  "note": "The ordinary word for God, plural in form but used with singular verbs for Israel's God (a 'plural of majesty'). The same word means 'gods' for other deities, and occasionally rulers or heavenly beings (Ps 82:1, 6).",
+  "context": "Related to El, the high god of the Canaanite texts from Ugarit; 'El' is also used of Israel's God (El Shaddai, El Elyon).",
+  "scholars": [
+   "Mark S. Smith, The Early History of God (1990) — how Israel's God related to El and Baal"
+  ]
+ },
+ "H0136": {
+  "word": "Adonai",
+  "note": "'My Lord' — used for God, and read aloud in place of the divine name YHWH."
+ },
+ "H2617": {
+  "word": "ḥesed",
+  "note": "Loyal, covenant love: kindness that keeps faith. No single English word fits — 'mercy' (KJV), 'lovingkindness', 'steadfast love', 'faithful love'.",
+  "scholars": [
+   "Nelson Glueck, Hesed in the Bible (1927) — the loyalty owed within a relationship",
+   "Katharine Doob Sakenfeld, The Meaning of Hesed in the Hebrew Bible (1978) — loyalty freely given beyond obligation"
+  ]
+ },
+ "H7307": {
+  "word": "ruaḥ",
+  "note": "Wind, breath and spirit are one word in Hebrew. Translators must choose: 'a wind from God' or 'the Spirit of God' in Genesis 1:2.",
+  "scholars": [
+   "E. A. Speiser, Genesis (Anchor Bible, 1964): 'an awesome wind'",
+   "The Jewish Publication Society's NJPS (1985): 'a wind from God'",
+   "Robert Alter, The Hebrew Bible (2018): 'God's breath hovering over the waters'"
+  ]
+ },
+ "H5315": {
+  "word": "nephesh",
+  "note": "Often 'soul', but it means the whole living being, life, appetite or even throat — not an immortal part separate from the body. Animals are also nephesh (Gen 1:20).",
+  "context": "Cognates in Ugaritic (npš) and Akkadian (napištu) mean throat, breath and life.",
+  "scholars": [
+   "Hans Walter Wolff, Anthropology of the Old Testament (1974) — nephesh as the needy, living person rather than an immortal soul"
+  ]
+ },
+ "H7965": {
+  "word": "shalom",
+  "note": "More than 'peace' (absence of war): wholeness, well-being, things as they should be. Still the everyday Hebrew greeting."
+ },
+ "H8451": {
+  "word": "torah",
+  "note": "'Instruction' or 'teaching' more than 'law'. Also the name of the first five books.",
+  "context": "From the verb yarah, 'to point, shoot, teach'."
+ },
+ "H1285": {
+  "word": "berit",
+  "note": "Covenant: a binding agreement, often sealed by a ritual. One 'cuts' a covenant in Hebrew (Gen 15).",
+  "context": "Ancient Near Eastern vassal treaties (Hittite, Assyrian) share Deuteronomy's covenant form: history, stipulations, blessings and curses.",
+  "scholars": [
+   "George E. Mendenhall, Law and Covenant in Israel and the Ancient Near East (1955)",
+   "Moshe Weinfeld, Deuteronomy and the Deuteronomic School (1972)"
+  ]
+ },
+ "H3519": {
+  "word": "kavod",
+  "note": "Glory; literally 'weight' or 'heaviness' — what gives something importance."
+ },
+ "H6664": {
+  "word": "tsedeq",
+  "note": "Righteousness or justice — doing what is right within relationships and covenants; Hebrew doesn't separate the two ideas."
+ },
+ "H6666": {
+  "word": "tsedaqah",
+  "note": "Righteousness or justice; in later Hebrew it also means charity to the poor."
+ },
+ "H0530": {
+  "word": "emunah",
+  "note": "Faithfulness or steadiness (Moses' hands were emunah, Exod 17:12). Habakkuk 2:4, 'the just shall live by his faith', uses this word, which Paul quotes for 'faith'.",
+  "scholars": [
+   "The Habakkuk Commentary from Qumran (1QpHab) reads Hab 2:4 as faithfulness to the community's Teacher of Righteousness"
+  ]
+ },
+ "H6918": {
+  "word": "qadosh",
+  "note": "Holy: set apart, belonging to God, distinct from the ordinary."
+ },
+ "H3722": {
+  "word": "kipper",
+  "note": "To atone or make atonement: to cover, wipe clean or ransom. Root of Yom Kippur.",
+  "context": "Compare Akkadian kuppuru, a ritual 'wiping' to purify a temple.",
+  "scholars": [
+   "Jacob Milgrom, Leviticus (Anchor Bible, 1991–2001) — atonement as purging the sanctuary"
+  ]
+ },
+ "H2403": {
+  "word": "ḥatta'at",
+  "note": "Sin, and also the 'sin offering' that deals with it — the same word."
+ },
+ "H1350": {
+  "word": "go'el",
+  "note": "Kinsman-redeemer: the relative obliged to buy back land or people and avenge blood (Ruth 3–4; Job 19:25)."
+ },
+ "H7585": {
+  "word": "Sheol",
+  "note": "The shadowy realm of all the dead, good and bad. The KJV translates it 'hell' 31 times, 'grave' 31 times and 'pit' 3 times; most modern versions keep 'Sheol'.",
+  "context": "Ancient Israelites pictured the dead going 'down' to Sheol, much like Mesopotamian ideas of a dark underworld; clear hope of resurrection appears late (Dan 12:2)."
+ },
+ "H4899": {
+  "word": "mashiaḥ",
+  "note": "'Anointed one' — any king or priest anointed with oil (even Cyrus, Isa 45:1). Greek christos translates it; English 'Messiah' and 'Christ' both come from here."
+ },
+ "H7854": {
+  "word": "satan",
+  "note": "'Adversary' or 'accuser'. With the article (ha-satan, Job 1–2) it is a title, 'the Accuser'; it can also be a human opponent (1 Kgs 11:14).",
+  "scholars": [
+   "Peggy L. Day, An Adversary in Heaven: śāṭān in the Hebrew Bible (1988)"
+  ]
+ },
+ "H5959": {
+  "word": "ʿalmah",
+  "note": "A young woman of marriageable age. Whether it implies virginity is debated; the Septuagint translated it parthenos in Isaiah 7:14.",
+  "scholars": [
+   "Rashi (11th century) read the ʿalmah of Isaiah 7:14 as the prophet's own wife",
+   "Justin Martyr's Dialogue with Trypho (2nd century) records the early Jewish–Christian dispute over ʿalmah and parthenos"
+  ]
+ },
+ "H6944": {
+  "word": "qodesh",
+  "note": "Holiness, a holy thing or place; 'holy of holies' is a superlative — the holiest place."
+ },
+ "H0157": {
+  "word": "ahav",
+  "note": "To love — used for God's love, human love and also liking food (Gen 27:4)."
+ },
+ "H8085": {
+  "word": "shama'",
+  "note": "To hear, and so to obey: 'Hear, O Israel' (Shema, Deut 6:4). Hebrew has no separate word for 'obey'."
+ },
+ "H3045": {
+  "word": "yada'",
+  "note": "To know — by experience and relationship, including sexual intimacy ('Adam knew Eve', Gen 4:1)."
+ },
+ "H1288": {
+  "word": "barakh",
+  "note": "To bless; also used for kneeling. People bless God and God blesses people."
+ },
+ "H8034": {
+  "word": "shem",
+  "note": "Name — also reputation and presence. Observant Jews still call God HaShem, 'the Name'."
+ },
+ "H0120": {
+  "word": "adam",
+  "note": "Human being or humankind, and later the personal name Adam; related to adamah, 'ground' — the human is made from the ground (Gen 2:7).",
+  "scholars": [
+   "Phyllis Trible, God and the Rhetoric of Sexuality (1978) — ha-adam as an 'earth creature' before the creation of woman"
+  ]
+ },
+ "G0026": {
+  "word": "agapē",
+  "note": "Love — the word the New Testament chose for God's love and Christian love. The KJV sometimes translates it 'charity' (1 Cor 13)."
+ },
+ "G3056": {
+  "word": "logos",
+  "note": "Word, message, reason. John 1:1 calls Christ the Logos, a term with roots in both Greek philosophy and the Hebrew 'word of the LORD'.",
+  "context": "Philo of Alexandria, a Jewish contemporary of Jesus, already described God's Logos as a divine mediator."
+ },
+ "G4102": {
+  "word": "pistis",
+  "note": "Faith, trust, and faithfulness — the same word. Whether Paul's pistis Christou means 'faith in Christ' or 'the faithfulness of Christ' is a well-known debate.",
+  "scholars": [
+   "Richard B. Hays, The Faith of Jesus Christ (1983) — argues for 'the faithfulness of Christ'",
+   "James D. G. Dunn defended the traditional 'faith in Christ'"
+  ]
+ },
+ "G5485": {
+  "word": "charis",
+  "note": "Grace: undeserved favour or a gift; also thanks ('charis to God')."
+ },
+ "G1343": {
+  "word": "dikaiosynē",
+  "note": "Righteousness and justice in one word, like Hebrew tsedeq; 'to justify' comes from the same root."
+ },
+ "G4151": {
+  "word": "pneuma",
+  "note": "Spirit, wind, breath — like Hebrew ruaḥ (compare John 3:8)."
+ },
+ "G4561": {
+  "word": "sarx",
+  "note": "Flesh: the body, human weakness, or (in Paul) human nature turned against God. The NIV 1984 rendered it 'sinful nature'."
+ },
+ "G5590": {
+  "word": "psychē",
+  "note": "Soul or life — Greek's equivalent of nephesh. 'Whoever would save his psychē will lose it' (Mark 8:35)."
+ },
+ "G1577": {
+  "word": "ekklēsia",
+  "note": "Assembly or gathering; in the Septuagint it translates qahal, Israel's assembly. English 'church' comes from a different word (kyriakon, 'the Lord's')."
+ },
+ "G0932": {
+  "word": "basileia",
+  "note": "Kingdom — kingship and reign more than territory: 'the kingdom of God' is God ruling."
+ },
+ "G5547": {
+  "word": "christos",
+  "note": "'Anointed one' — Greek for Hebrew mashiaḥ (Messiah). A title before it became a name."
+ },
+ "G2962": {
+  "word": "kyrios",
+  "note": "Lord or master. The Septuagint uses it for God's name YHWH, so calling Jesus kyrios echoes it."
+ },
+ "G0086": {
+  "word": "hadēs",
+  "note": "The realm of the dead, the Greek equivalent of Sheol. The KJV usually translates it 'hell'."
+ },
+ "G1067": {
+  "word": "geenna",
+  "note": "Gehenna: the Valley of Hinnom outside Jerusalem, once a site of child sacrifice (Jer 7:31), used by Jesus as an image of final judgment. Also translated 'hell'."
+ },
+ "G3341": {
+  "word": "metanoia",
+  "note": "Repentance: literally 'a change of mind', a turning around — not chiefly feeling sorry."
+ },
+ "G3952": {
+  "word": "parousia",
+  "note": "'Presence' or 'arrival' — used for an emperor's official visit, and for Christ's coming."
+ },
+ "G4991": {
+  "word": "sōtēria",
+  "note": "Salvation, rescue, deliverance, health."
+ },
+ "G0266": {
+  "word": "hamartia",
+  "note": "Sin; originally 'missing the mark'."
+ },
+ "G0166": {
+  "word": "aiōnios",
+  "note": "'Eternal' or 'age-long' — from aiōn, 'age'. Whether it always means endless (e.g. 'eternal punishment', Matt 25:46) is debated."
+ },
+ "G0165": {
+  "word": "aiōn",
+  "note": "An age or era; 'this age' and 'the age to come'. The KJV often translates it 'world' (Matt 13:39)."
+ },
+ "G3933": {
+  "word": "parthenos",
+  "note": "Virgin or young unmarried woman. Matthew 1:23 uses it, following the Septuagint of Isaiah 7:14 (Hebrew ʿalmah)."
+ },
+ "G0907": {
+  "word": "baptizō",
+  "note": "To dip or immerse; also used for washing (Luke 11:38)."
+ },
+ "G2098": {
+  "word": "euangelion",
+  "note": "Good news; used in the Roman world for announcements of an emperor's victory or birth. English 'gospel' is Old English 'good spell (news)'."
+ }
+}

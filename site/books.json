@@ -1,0 +1,464 @@
+[
+{
+"osis": "Gen",
+"name": "Genesis",
+"sil": "GEN",
+"ch": 50,
+"t": "OT"
+},
+{
+"osis": "Exod",
+"name": "Exodus",
+"sil": "EXO",
+"ch": 40,
+"t": "OT"
+},
+{
+"osis": "Lev",
+"name": "Leviticus",
+"sil": "LEV",
+"ch": 27,
+"t": "OT"
+},
+{
+"osis": "Num",
+"name": "Numbers",
+"sil": "NUM",
+"ch": 36,
+"t": "OT"
+},
+{
+"osis": "Deut",
+"name": "Deuteronomy",
+"sil": "DEU",
+"ch": 34,
+"t": "OT"
+},
+{
+"osis": "Josh",
+"name": "Joshua",
+"sil": "JOS",
+"ch": 24,
+"t": "OT"
+},
+{
+"osis": "Judg",
+"name": "Judges",
+"sil": "JDG",
+"ch": 21,
+"t": "OT"
+},
+{
+"osis": "Ruth",
+"name": "Ruth",
+"sil": "RUT",
+"ch": 4,
+"t": "OT"
+},
+{
+"osis": "1Sam",
+"name": "1 Samuel",
+"sil": "1SA",
+"ch": 31,
+"t": "OT"
+},
+{
+"osis": "2Sam",
+"name": "2 Samuel",
+"sil": "2SA",
+"ch": 24,
+"t": "OT"
+},
+{
+"osis": "1Kgs",
+"name": "1 Kings",
+"sil": "1KI",
+"ch": 22,
+"t": "OT"
+},
+{
+"osis": "2Kgs",
+"name": "2 Kings",
+"sil": "2KI",
+"ch": 25,
+"t": "OT"
+},
+{
+"osis": "1Chr",
+"name": "1 Chronicles",
+"sil": "1CH",
+"ch": 29,
+"t": "OT"
+},
+{
+"osis": "2Chr",
+"name": "2 Chronicles",
+"sil": "2CH",
+"ch": 36,
+"t": "OT"
+},
+{
+"osis": "Ezra",
+"name": "Ezra",
+"sil": "EZR",
+"ch": 10,
+"t": "OT"
+},
+{
+"osis": "Neh",
+"name": "Nehemiah",
+"sil": "NEH",
+"ch": 13,
+"t": "OT"
+},
+{
+"osis": "Esth",
+"name": "Esther",
+"sil": "EST",
+"ch": 10,
+"t": "OT"
+},
+{
+"osis": "Job",
+"name": "Job",
+"sil": "JOB",
+"ch": 42,
+"t": "OT"
+},
+{
+"osis": "Ps",
+"name": "Psalms",
+"sil": "PSA",
+"ch": 150,
+"t": "OT"
+},
+{
+"osis": "Prov",
+"name": "Proverbs",
+"sil": "PRO",
+"ch": 31,
+"t": "OT"
+},
+{
+"osis": "Eccl",
+"name": "Ecclesiastes",
+"sil": "ECC",
+"ch": 12,
+"t": "OT"
+},
+{
+"osis": "Song",
+"name": "Song of Solomon",
+"sil": "SNG",
+"ch": 8,
+"t": "OT"
+},
+{
+"osis": "Isa",
+"name": "Isaiah",
+"sil": "ISA",
+"ch": 66,
+"t": "OT"
+},
+{
+"osis": "Jer",
+"name": "Jeremiah",
+"sil": "JER",
+"ch": 52,
+"t": "OT"
+},
+{
+"osis": "Lam",
+"name": "Lamentations",
+"sil": "LAM",
+"ch": 5,
+"t": "OT"
+},
+{
+"osis": "Ezek",
+"name": "Ezekiel",
+"sil": "EZK",
+"ch": 48,
+"t": "OT"
+},
+{
+"osis": "Dan",
+"name": "Daniel",
+"sil": "DAN",
+"ch": 12,
+"t": "OT"
+},
+{
+"osis": "Hos",
+"name": "Hosea",
+"sil": "HOS",
+"ch": 14,
+"t": "OT"
+},
+{
+"osis": "Joel",
+"name": "Joel",
+"sil": "JOL",
+"ch": 3,
+"t": "OT"
+},
+{
+"osis": "Amos",
+"name": "Amos",
+"sil": "AMO",
+"ch": 9,
+"t": "OT"
+},
+{
+"osis": "Obad",
+"name": "Obadiah",
+"sil": "OBA",
+"ch": 1,
+"t": "OT"
+},
+{
+"osis": "Jonah",
+"name": "Jonah",
+"sil": "JON",
+"ch": 4,
+"t": "OT"
+},
+{
+"osis": "Mic",
+"name": "Micah",
+"sil": "MIC",
+"ch": 7,
+"t": "OT"
+},
+{
+"osis": "Nah",
+"name": "Nahum",
+"sil": "NAM",
+"ch": 3,
+"t": "OT"
+},
+{
+"osis": "Hab",
+"name": "Habakkuk",
+"sil": "HAB",
+"ch": 3,
+"t": "OT"
+},
+{
+"osis": "Zeph",
+"name": "Zephaniah",
+"sil": "ZEP",
+"ch": 3,
+"t": "OT"
+},
+{
+"osis": "Hag",
+"name": "Haggai",
+"sil": "HAG",
+"ch": 2,
+"t": "OT"
+},
+{
+"osis": "Zech",
+"name": "Zechariah",
+"sil": "ZEC",
+"ch": 14,
+"t": "OT"
+},
+{
+"osis": "Mal",
+"name": "Malachi",
+"sil": "MAL",
+"ch": 4,
+"t": "OT"
+},
+{
+"osis": "Matt",
+"name": "Matthew",
+"sil": "MAT",
+"ch": 28,
+"t": "NT"
+},
+{
+"osis": "Mark",
+"name": "Mark",
+"sil": "MRK",
+"ch": 16,
+"t": "NT"
+},
+{
+"osis": "Luke",
+"name": "Luke",
+"sil": "LUK",
+"ch": 24,
+"t": "NT"
+},
+{
+"osis": "John",
+"name": "John",
+"sil": "JHN",
+"ch": 21,
+"t": "NT"
+},
+{
+"osis": "Acts",
+"name": "Acts",
+"sil": "ACT",
+"ch": 28,
+"t": "NT"
+},
+{
+"osis": "Rom",
+"name": "Romans",
+"sil": "ROM",
+"ch": 16,
+"t": "NT"
+},
+{
+"osis": "1Cor",
+"name": "1 Corinthians",
+"sil": "1CO",
+"ch": 16,
+"t": "NT"
+},
+{
+"osis": "2Cor",
+"name": "2 Corinthians",
+"sil": "2CO",
+"ch": 13,
+"t": "NT"
+},
+{
+"osis": "Gal",
+"name": "Galatians",
+"sil": "GAL",
+"ch": 6,
+"t": "NT"
+},
+{
+"osis": "Eph",
+"name": "Ephesians",
+"sil": "EPH",
+"ch": 6,
+"t": "NT"
+},
+{
+"osis": "Phil",
+"name": "Philippians",
+"sil": "PHP",
+"ch": 4,
+"t": "NT"
+},
+{
+"osis": "Col",
+"name": "Colossians",
+"sil": "COL",
+"ch": 4,
+"t": "NT"
+},
+{
+"osis": "1Thess",
+"name": "1 Thessalonians",
+"sil": "1TH",
+"ch": 5,
+"t": "NT"
+},
+{
+"osis": "2Thess",
+"name": "2 Thessalonians",
+"sil": "2TH",
+"ch": 3,
+"t": "NT"
+},
+{
+"osis": "1Tim",
+"name": "1 Timothy",
+"sil": "1TI",
+"ch": 6,
+"t": "NT"
+},
+{
+"osis": "2Tim",
+"name": "2 Timothy",
+"sil": "2TI",
+"ch": 4,
+"t": "NT"
+},
+{
+"osis": "Titus",
+"name": "Titus",
+"sil": "TIT",
+"ch": 3,
+"t": "NT"
+},
+{
+"osis": "Phlm",
+"name": "Philemon",
+"sil": "PHM",
+"ch": 1,
+"t": "NT"
+},
+{
+"osis": "Heb",
+"name": "Hebrews",
+"sil": "HEB",
+"ch": 13,
+"t": "NT"
+},
+{
+"osis": "Jas",
+"name": "James",
+"sil": "JAS",
+"ch": 5,
+"t": "NT"
+},
+{
+"osis": "1Pet",
+"name": "1 Peter",
+"sil": "1PE",
+"ch": 5,
+"t": "NT"
+},
+{
+"osis": "2Pet",
+"name": "2 Peter",
+"sil": "2PE",
+"ch": 3,
+"t": "NT"
+},
+{
+"osis": "1John",
+"name": "1 John",
+"sil": "1JN",
+"ch": 5,
+"t": "NT"
+},
+{
+"osis": "2John",
+"name": "2 John",
+"sil": "2JN",
+"ch": 1,
+"t": "NT"
+},
+{
+"osis": "3John",
+"name": "3 John",
+"sil": "3JN",
+"ch": 1,
+"t": "NT"
+},
+{
+"osis": "Jude",
+"name": "Jude",
+"sil": "JUD",
+"ch": 1,
+"t": "NT"
+},
+{
+"osis": "Rev",
+"name": "Revelation",
+"sil": "REV",
+"ch": 22,
+"t": "NT"
+}
+]

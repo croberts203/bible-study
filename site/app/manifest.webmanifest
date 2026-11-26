@@ -1,0 +1,16 @@
+{
+  "name": "Bible Sources",
+  "short_name": "Bible Sources",
+  "description": "Hebrew, Greek and Septuagint side by side, word study, cross references, and where the texts differ.",
+  "start_url": "./#/read",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#fbfaf7",
+  "theme_color": "#2f3b52",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

@@ -1,0 +1,3 @@
+TBESH header
+H0430G	H0430G	=	אֱלֹהִים	elohim	H:N-M-P	God	<b>God</b>; plural of majesty<br>gods
+H1254A	H1254A	=	בָּרָא	bara	H:V	to create	<b>to create</b> shape, form

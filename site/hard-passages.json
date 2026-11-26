@@ -1,0 +1,781 @@
+{
+ "categories": {
+  "sexual": "Sexual violence and coercion",
+  "massacre": "Mass killing and destruction of peoples",
+  "children": "Violence against children; child sacrifice",
+  "slavery": "Slavery",
+  "law": "Harsh laws and punishments",
+  "women": "Treatment of women",
+  "harm": "Texts later used to justify harm"
+ },
+ "stances": {
+  "commanded": "Commanded by God or a leader in the text",
+  "law": "Given as law",
+  "approved": "Presented approvingly or without objection",
+  "reported": "Reported; the text's judgment is unclear or implied",
+  "condemned": "Condemned or punished within the text",
+  "imagery": "Prophetic or poetic imagery"
+ },
+ "items": [
+  {
+   "id": "lot-daughters",
+   "cat": "sexual",
+   "title": "Lot offers his daughters to a mob",
+   "refs": [
+    "Gen.19.4-8"
+   ],
+   "stance": "reported",
+   "what": "When the men of Sodom demand Lot's guests, Lot offers his two virgin daughters to the crowd instead.",
+   "views": [
+    "Hospitality to guests outweighed protecting daughters in that culture; the text reports it without praise",
+    "Lot's later disgrace (19:30–38) is read by some as an implied judgment",
+    "Feminist readings name it a 'text of terror'"
+   ]
+  },
+  {
+   "id": "lot-incest",
+   "cat": "sexual",
+   "title": "Lot's daughters and their father",
+   "refs": [
+    "Gen.19.30-36"
+   ],
+   "stance": "reported",
+   "what": "Lot's daughters make him drunk and conceive by him; the children become the ancestors of Moab and Ammon.",
+   "views": [
+    "Explains the origins of Israel's neighbours, often read as a polemic against them",
+    "Lot is portrayed as passive and shamed"
+   ]
+  },
+  {
+   "id": "dinah",
+   "cat": "sexual",
+   "title": "Dinah and the massacre at Shechem",
+   "refs": [
+    "Gen.34.1-2",
+    "Gen.34.25-29"
+   ],
+   "stance": "reported",
+   "what": "Shechem takes and violates Dinah. Her brothers Simeon and Levi then kill all the men of the city and take the women and children as plunder.",
+   "views": [
+    "Jacob rebukes the killing (34:30) and curses Simeon and Levi's violence (49:5–7)",
+    "Dinah never speaks in the story"
+   ]
+  },
+  {
+   "id": "hagar",
+   "cat": "sexual",
+   "title": "Hagar given to Abram",
+   "refs": [
+    "Gen.16.1-4",
+    "Gen.16.6"
+   ],
+   "stance": "reported",
+   "what": "Sarai gives her Egyptian slave Hagar to Abram to bear a child; when Hagar conceives, Sarai treats her harshly and she flees.",
+   "views": [
+    "A legal custom of the ancient Near East (compare Bilhah, Gen 30:3–4)",
+    "God meets Hagar in the wilderness and she gives him a name, El Roi (16:13)"
+   ]
+  },
+  {
+   "id": "levite-concubine",
+   "cat": "sexual",
+   "title": "The Levite's concubine",
+   "refs": [
+    "Judg.19.22-30"
+   ],
+   "stance": "condemned",
+   "what": "A Levite hands his concubine to a mob in Gibeah, who abuse her through the night. She dies; he cuts her body into twelve pieces and sends them through Israel.",
+   "views": [
+    "The book frames this as the low point of an age when 'there was no king in Israel' (19:1; 21:25)",
+    "Leads to civil war against Benjamin (Judg 20)"
+   ]
+  },
+  {
+   "id": "jabesh-shiloh",
+   "cat": "sexual",
+   "title": "Wives for Benjamin: Jabesh-gilead and Shiloh",
+   "refs": [
+    "Judg.21.10-12",
+    "Judg.21.20-23"
+   ],
+   "stance": "reported",
+   "what": "Israel kills the people of Jabesh-gilead except 400 virgin girls, who are given to the Benjamites; others are told to seize young women dancing at Shiloh.",
+   "views": [
+    "Part of the same 'no king' framing; the repair of one atrocity by another",
+    "Read by many as deliberate irony by the narrator"
+   ]
+  },
+  {
+   "id": "bathsheba",
+   "cat": "sexual",
+   "title": "David and Bathsheba",
+   "refs": [
+    "2Sam.11.2-4",
+    "2Sam.11.14-17"
+   ],
+   "stance": "condemned",
+   "what": "King David sends for Bathsheba, the wife of one of his soldiers, and sleeps with her; when she becomes pregnant he arranges her husband Uriah's death in battle.",
+   "views": [
+    "Nathan's parable condemns David (2 Sam 12:1–14)",
+    "Debated whether Bathsheba could refuse a king; many now read it as abuse of power"
+   ]
+  },
+  {
+   "id": "tamar",
+   "cat": "sexual",
+   "title": "Amnon and Tamar",
+   "refs": [
+    "2Sam.13.11-15"
+   ],
+   "stance": "condemned",
+   "what": "David's son Amnon rapes his half-sister Tamar, then throws her out.",
+   "views": [
+    "Tamar calls it folly (13:12); David is angry but does nothing (13:21), and Absalom later kills Amnon",
+    "Read as the fulfilment of Nathan's judgment on David's house"
+   ]
+  },
+  {
+   "id": "absalom-concubines",
+   "cat": "sexual",
+   "title": "Absalom and his father's concubines",
+   "refs": [
+    "2Sam.16.21-22"
+   ],
+   "stance": "reported",
+   "what": "On advice, Absalom sleeps with David's ten concubines publicly to show his break with his father.",
+   "views": [
+    "Fulfils the judgment of 2 Sam 12:11",
+    "The women are later confined for life (20:3)"
+   ]
+  },
+  {
+   "id": "midian-captives",
+   "cat": "sexual",
+   "title": "Midianite captives: kill the boys, keep the virgin girls",
+   "refs": [
+    "Num.31.17-18"
+   ],
+   "stance": "commanded",
+   "what": "Moses orders the soldiers to kill every male child and every woman who has lain with a man, and to keep the virgin girls alive \"for yourselves\".",
+   "views": [
+    "Punishment for Midian's role at Baal-peor (Num 25)",
+    "Defenders read 'for yourselves' as servants or wives, not abuse; critics read it as sanctioned sexual captivity",
+    "Many scholars see it as a later idealised war narrative"
+   ]
+  },
+  {
+   "id": "captive-bride",
+   "cat": "sexual",
+   "title": "Taking a captive woman as a wife",
+   "refs": [
+    "Deut.21.10-14"
+   ],
+   "stance": "law",
+   "what": "A soldier may take a captive woman he desires as a wife after a month of mourning; if he later does not want her, he must let her go free and may not sell her.",
+   "views": [
+    "Defenders: limits on wartime practice compared with surrounding cultures",
+    "Critics: consent is absent; it regulates rather than forbids taking captives"
+   ]
+  },
+  {
+   "id": "rape-marriage",
+   "cat": "sexual",
+   "title": "A rapist pays the father and marries the girl",
+   "refs": [
+    "Deut.22.28-29"
+   ],
+   "stance": "law",
+   "what": "A man who seizes an unbetrothed virgin and lies with her must pay her father fifty shekels, marry her, and may never divorce her.",
+   "views": [
+    "Some translations read it as seduction rather than force (compare Exod 22:16–17)",
+    "Intended to protect a woman's future in a society where she could not otherwise marry",
+    "Critics: the woman's wishes are not considered"
+   ]
+  },
+  {
+   "id": "betrothed-city",
+   "cat": "sexual",
+   "title": "A betrothed woman who did not cry out",
+   "refs": [
+    "Deut.22.23-27"
+   ],
+   "stance": "law",
+   "what": "If a betrothed woman lies with a man in a town, both are stoned, she because she 'cried not'; in the field, only the man dies, because no one could have heard her.",
+   "views": [
+    "The law presumes consent from silence in a town",
+    "The field case is read as recognising that she may have been forced"
+   ]
+  },
+  {
+   "id": "esther-harem",
+   "cat": "sexual",
+   "title": "Young women gathered for the king",
+   "refs": [
+    "Esth.2.2-4",
+    "Esth.2.12-14"
+   ],
+   "stance": "reported",
+   "what": "Officers gather young virgins from across the empire into the Persian king's harem; each spends one night with him.",
+   "views": [
+    "The story critiques Persian excess with irony",
+    "Esther rises within a system she did not choose"
+   ]
+  },
+  {
+   "id": "ezekiel-16-23",
+   "cat": "sexual",
+   "title": "Jerusalem as an unfaithful wife stripped and punished",
+   "refs": [
+    "Ezek.16.37-40",
+    "Ezek.23.25-29",
+    "Hos.2.3"
+   ],
+   "stance": "imagery",
+   "what": "The prophets picture God's judgment on Jerusalem and Samaria as a husband exposing and punishing an unfaithful wife, with violent sexual imagery.",
+   "views": [
+    "A metaphor for covenant betrayal, not instructions",
+    "Critics warn the imagery has been used to excuse domestic abuse"
+   ]
+  },
+  {
+   "id": "herem-command",
+   "cat": "massacre",
+   "title": "\"Save alive nothing that breatheth\"",
+   "refs": [
+    "Deut.7.1-2",
+    "Deut.20.16-17"
+   ],
+   "stance": "commanded",
+   "what": "Israel is commanded to utterly destroy the nations of Canaan, show them no mercy, and in their cities leave nothing that breathes alive.",
+   "views": [
+    "Judgment on Canaanite practices such as child sacrifice (Deut 12:31)",
+    "Hyperbolic war language common in ancient texts (the same peoples remain later, Judg 1)",
+    "Archaeology suggests a gradual settlement, not a sudden conquest",
+    "Others conclude it is a genuine moral problem in Scripture"
+   ]
+  },
+  {
+   "id": "jericho",
+   "cat": "massacre",
+   "title": "Jericho",
+   "refs": [
+    "Josh.6.21"
+   ],
+   "stance": "commanded",
+   "what": "Israel destroys everyone in Jericho, men and women, young and old, and the animals; only Rahab's family is spared.",
+   "views": [
+    "See the herem command (Deut 7, 20)"
+   ]
+  },
+  {
+   "id": "joshua-10",
+   "cat": "massacre",
+   "title": "\"He utterly destroyed all that breathed\"",
+   "refs": [
+    "Josh.10.40",
+    "Josh.11.14"
+   ],
+   "stance": "approved",
+   "what": "Joshua's southern and northern campaigns are summarised as leaving no survivors, 'as the LORD God of Israel commanded'.",
+   "views": [
+    "Stylised summary formulas; later chapters list peoples not driven out (Josh 13:13; 15:63)"
+   ]
+  },
+  {
+   "id": "amalek",
+   "cat": "massacre",
+   "title": "Amalek: \"slay both man and woman, infant and suckling\"",
+   "refs": [
+    "1Sam.15.2-3"
+   ],
+   "stance": "commanded",
+   "what": "Samuel tells Saul that God commands the destruction of Amalek, including infants and livestock. Saul spares the king and the best animals and is rejected as king for it.",
+   "views": [
+    "Punishment for Amalek's attack on Israel in the wilderness (Exod 17; Deut 25:17–19)",
+    "Amalekites still appear later (1 Sam 30), suggesting hyperbole",
+    "Often cited as the hardest command in the Old Testament"
+   ]
+  },
+  {
+   "id": "midian-war",
+   "cat": "massacre",
+   "title": "War against Midian",
+   "refs": [
+    "Num.31.7-11"
+   ],
+   "stance": "commanded",
+   "what": "Israel kills the men and kings of Midian and burns their cities; Moses is angry that the women were spared (31:14–15).",
+   "views": [
+    "See also the captives entry (Num 31:17–18)"
+   ]
+  },
+  {
+   "id": "flood",
+   "cat": "massacre",
+   "title": "The Flood",
+   "refs": [
+    "Gen.7.21-23"
+   ],
+   "stance": "approved",
+   "what": "Every living thing on the earth dies except those in the ark.",
+   "views": [
+    "Judgment on universal violence (Gen 6:11–13)",
+    "God's promise never to do it again (Gen 8:21; 9:11)"
+   ]
+  },
+  {
+   "id": "firstborn",
+   "cat": "massacre",
+   "title": "The death of Egypt's firstborn",
+   "refs": [
+    "Exod.12.29-30"
+   ],
+   "stance": "approved",
+   "what": "At midnight the LORD kills the firstborn of Egypt, from Pharaoh's son to the prisoner's, and the firstborn of the cattle.",
+   "views": [
+    "Mirrors Pharaoh's killing of Hebrew boys (Exod 1:22)",
+    "Questions about punishing children for a ruler's choices"
+   ]
+  },
+  {
+   "id": "nob",
+   "cat": "massacre",
+   "title": "The priests of Nob",
+   "refs": [
+    "1Sam.22.18-19"
+   ],
+   "stance": "condemned",
+   "what": "At Saul's order, Doeg kills 85 priests and everyone in their town, including women, children and infants.",
+   "views": [
+    "Presented as Saul's crime; David takes responsibility (22:22)"
+   ]
+  },
+  {
+   "id": "ammonite-captives",
+   "cat": "massacre",
+   "title": "David's treatment of the Ammonites",
+   "refs": [
+    "2Sam.12.31",
+    "1Chr.20.3"
+   ],
+   "stance": "reported",
+   "what": "The KJV says David 'put them under saws, and under harrows of iron' — i.e. tortured or killed them.",
+   "views": [
+    "Most modern translations read the Hebrew as forced labour with saws and picks, not torture",
+    "The difference turns on one Hebrew word in 1 Chronicles 20:3"
+   ]
+  },
+  {
+   "id": "achan",
+   "cat": "massacre",
+   "title": "Achan's family stoned and burned",
+   "refs": [
+    "Josh.7.24-25"
+   ],
+   "stance": "approved",
+   "what": "For Achan's theft from Jericho, he, his sons and daughters and animals are stoned and burned.",
+   "views": [
+    "Contrasts with Deut 24:16: children are not to die for a parent's sin",
+    "Corporate responsibility in ancient thought"
+   ]
+  },
+  {
+   "id": "korah",
+   "cat": "massacre",
+   "title": "Korah's households swallowed",
+   "refs": [
+    "Num.16.31-33"
+   ],
+   "stance": "approved",
+   "what": "The ground opens and swallows the rebels with their households and 'little children' (16:27).",
+   "views": [
+    "Num 26:11 notes that Korah's sons did not die",
+    "Corporate judgment"
+   ]
+  },
+  {
+   "id": "gibeonites",
+   "cat": "massacre",
+   "title": "Seven of Saul's sons executed to end a famine",
+   "refs": [
+    "2Sam.21.1-9"
+   ],
+   "stance": "reported",
+   "what": "David hands seven of Saul's descendants to the Gibeonites, who hang them; the famine then ends.",
+   "views": [
+    "Blood-guilt for Saul's breaking a treaty (Josh 9)",
+    "Rizpah's vigil over the bodies (21:10) moves David to bury them"
+   ]
+  },
+  {
+   "id": "esther-9",
+   "cat": "massacre",
+   "title": "75,000 killed in the Persian provinces",
+   "refs": [
+    "Esth.9.5-16"
+   ],
+   "stance": "approved",
+   "what": "The Jews, authorised by the king, kill those who planned to destroy them, including 75,000 in the provinces and Haman's ten sons.",
+   "views": [
+    "Self-defence against a decreed genocide (Esth 3:13)",
+    "Origin of the feast of Purim"
+   ]
+  },
+  {
+   "id": "revelation-blood",
+   "cat": "massacre",
+   "title": "Blood up to the horses' bridles",
+   "refs": [
+    "Rev.14.19-20",
+    "Rev.19.17-18"
+   ],
+   "stance": "imagery",
+   "what": "Visions of final judgment: a winepress of wrath with blood flowing 1,600 furlongs, and birds summoned to eat the flesh of kings and armies.",
+   "views": [
+    "Apocalyptic symbolism of judgment on evil",
+    "Critics note its violence toward enemies"
+   ]
+  },
+  {
+   "id": "isaac",
+   "cat": "children",
+   "title": "The binding of Isaac",
+   "refs": [
+    "Gen.22.2",
+    "Gen.22.9-12"
+   ],
+   "stance": "commanded",
+   "what": "God tells Abraham to offer his son Isaac as a burnt offering; an angel stops him at the last moment.",
+   "views": [
+    "A test of faith; the story ends with God forbidding the sacrifice",
+    "Read as a rejection of child sacrifice",
+    "Kierkegaard and others question a faith that obeys such a command"
+   ]
+  },
+  {
+   "id": "jephthah",
+   "cat": "children",
+   "title": "Jephthah's daughter",
+   "refs": [
+    "Judg.11.30-31",
+    "Judg.11.34-39"
+   ],
+   "stance": "reported",
+   "what": "Jephthah vows to sacrifice whatever comes out of his house first if he wins; his daughter comes out, and 'he did with her according to his vow'.",
+   "views": [
+    "Most read it as human sacrifice the narrator does not endorse",
+    "Some argue she was dedicated to lifelong virginity instead (11:37–39)",
+    "Hebrews 11:32 lists Jephthah among the faithful"
+   ]
+  },
+  {
+   "id": "mesha",
+   "cat": "children",
+   "title": "The king of Moab sacrifices his son",
+   "refs": [
+    "2Kgs.3.26-27"
+   ],
+   "stance": "reported",
+   "what": "Losing the battle, Moab's king offers his eldest son as a burnt offering on the wall, and 'there was great indignation against Israel', who withdraw.",
+   "views": [
+    "Whose 'indignation' is meant — Moab's god, Israel's God, or the Moabites — is debated"
+   ]
+  },
+  {
+   "id": "ezek-20-25",
+   "cat": "children",
+   "title": "\"Statutes that were not good\"",
+   "refs": [
+    "Ezek.20.25-26"
+   ],
+   "stance": "imagery",
+   "what": "God says he gave Israel statutes that were not good and let them make their firstborn pass through the fire.",
+   "views": [
+    "God handing people over to their own practices (compare Rom 1:24)",
+    "Others see a memory of firstborn sacrifice in Israel's past"
+   ]
+  },
+  {
+   "id": "bears",
+   "cat": "children",
+   "title": "Elisha and the bears",
+   "refs": [
+    "2Kgs.2.23-24"
+   ],
+   "stance": "reported",
+   "what": "Youths mock Elisha; he curses them in the LORD's name and two bears maul forty-two of them.",
+   "views": [
+    "The Hebrew can mean young men rather than small children (KJV 'little children')",
+    "A warning about contempt for a prophet"
+   ]
+  },
+  {
+   "id": "ps-137",
+   "cat": "children",
+   "title": "\"Dasheth thy little ones against the stones\"",
+   "refs": [
+    "Ps.137.8-9"
+   ],
+   "stance": "imagery",
+   "what": "An exile's psalm ends by blessing whoever will dash Babylon's infants against the rocks.",
+   "views": [
+    "A raw cry of grief and rage from survivors of Jerusalem's destruction, voiced to God rather than acted on",
+    "Christian tradition often allegorised it; many lectionaries omit it"
+   ]
+  },
+  {
+   "id": "hos-13-16",
+   "cat": "children",
+   "title": "Infants dashed, pregnant women ripped open",
+   "refs": [
+    "Hos.13.16",
+    "Isa.13.16"
+   ],
+   "stance": "imagery",
+   "what": "Prophecies of conquest describe the killing of infants and pregnant women as judgment.",
+   "views": [
+    "Describes the known brutality of Assyrian/Babylonian warfare as divine judgment"
+   ]
+  },
+  {
+   "id": "siege-cannibalism",
+   "cat": "children",
+   "title": "Mothers eating their children in siege",
+   "refs": [
+    "Deut.28.53-57",
+    "2Kgs.6.28-29",
+    "Lam.4.10"
+   ],
+   "stance": "reported",
+   "what": "The covenant curses warn of, and later narratives report, parents eating their children during famine under siege.",
+   "views": [
+    "Presented as the horror that follows covenant breaking"
+   ]
+  },
+  {
+   "id": "slave-beating",
+   "cat": "slavery",
+   "title": "Beating a slave: \"for he is his money\"",
+   "refs": [
+    "Exod.21.20-21"
+   ],
+   "stance": "law",
+   "what": "A master who beats a slave to death is punished, but if the slave survives a day or two there is no punishment, 'for he is his money'.",
+   "views": [
+    "One of the few ancient laws to punish killing a slave at all",
+    "Critics: treats a person as property; still permits beating"
+   ]
+  },
+  {
+   "id": "slave-wife",
+   "cat": "slavery",
+   "title": "The slave's wife and children stay with the master",
+   "refs": [
+    "Exod.21.4-6"
+   ],
+   "stance": "law",
+   "what": "A Hebrew slave goes free after six years, but a wife and children given by the master remain the master's; to keep them he must become a slave for life.",
+   "views": [
+    "Ancient debt-slavery regulated by term limits",
+    "Critics: the family is used as leverage"
+   ]
+  },
+  {
+   "id": "daughter-sold",
+   "cat": "slavery",
+   "title": "Selling a daughter as a servant",
+   "refs": [
+    "Exod.21.7-11"
+   ],
+   "stance": "law",
+   "what": "A man may sell his daughter as a maidservant (a concubine-wife); she does not go free like male slaves but has some protections.",
+   "views": [
+    "Regulates a debt practice; requires food, clothing and marital rights or her release"
+   ]
+  },
+  {
+   "id": "lev-25-slaves",
+   "cat": "slavery",
+   "title": "Slaves from the nations, property forever",
+   "refs": [
+    "Lev.25.44-46"
+   ],
+   "stance": "law",
+   "what": "Israelites may buy slaves from surrounding nations and pass them on as an inheritance for ever; fellow Israelites are not to be treated so harshly.",
+   "views": [
+    "Was cited in defence of American slavery",
+    "Distinguishes chattel slavery of foreigners from debt service of Israelites"
+   ]
+  },
+  {
+   "id": "nt-slaves",
+   "cat": "slavery",
+   "title": "\"Servants, be obedient to your masters\"",
+   "refs": [
+    "Eph.6.5",
+    "Col.3.22",
+    "1Pet.2.18"
+   ],
+   "stance": "approved",
+   "what": "New Testament letters tell slaves to obey their masters, including harsh ones.",
+   "views": [
+    "Also tells masters to treat slaves justly (Eph 6:9; Col 4:1) and urges Philemon to receive Onesimus 'as a brother'",
+    "Was quoted by both pro-slavery and abolitionist writers"
+   ]
+  },
+  {
+   "id": "stubborn-son",
+   "cat": "law",
+   "title": "Stoning a rebellious son",
+   "refs": [
+    "Deut.21.18-21"
+   ],
+   "stance": "law",
+   "what": "Parents may bring a stubborn, rebellious, drunken son to the elders, and the men of the city stone him.",
+   "views": [
+    "Rabbinic tradition hedged it with so many conditions that it was said never to have been carried out",
+    "Removed the power of life and death from the father alone"
+   ]
+  },
+  {
+   "id": "sabbath-sticks",
+   "cat": "law",
+   "title": "Stoned for gathering sticks on the Sabbath",
+   "refs": [
+    "Num.15.32-36"
+   ],
+   "stance": "commanded",
+   "what": "A man found gathering sticks on the Sabbath is stoned by the congregation at the LORD's command.",
+   "views": [
+    "Presented as a test case for defiant sin (15:30–31)"
+   ]
+  },
+  {
+   "id": "death-penalties",
+   "cat": "law",
+   "title": "Death penalties in Leviticus 20",
+   "refs": [
+    "Lev.20.9-16"
+   ],
+   "stance": "law",
+   "what": "Death is prescribed for cursing a parent, adultery, several kinds of incest, sex between men, and bestiality.",
+   "views": [
+    "Holiness code for ancient Israel; Christians debate what still applies",
+    "Lev 20:13 is central to modern debates on homosexuality"
+   ]
+  },
+  {
+   "id": "kill-relatives",
+   "cat": "law",
+   "title": "Kill a relative who entices you to other gods",
+   "refs": [
+    "Deut.13.6-10"
+   ],
+   "stance": "law",
+   "what": "If a brother, child, spouse or friend secretly urges worship of other gods, you must not pity them; your hand is to be first in stoning them.",
+   "views": [
+    "Treats apostasy as treason against the covenant",
+    "Cited historically in support of executing heretics"
+   ]
+  },
+  {
+   "id": "hand-cut",
+   "cat": "law",
+   "title": "Cutting off a woman's hand",
+   "refs": [
+    "Deut.25.11-12"
+   ],
+   "stance": "law",
+   "what": "If a woman grabs the genitals of a man fighting her husband, her hand is to be cut off without pity.",
+   "views": [
+    "The only bodily mutilation penalty in the Torah",
+    "Some scholars argue for a different reading of the penalty"
+   ]
+  },
+  {
+   "id": "ananias",
+   "cat": "law",
+   "title": "Ananias and Sapphira",
+   "refs": [
+    "Acts.5.1-10"
+   ],
+   "stance": "reported",
+   "what": "A couple lie about a gift to the church and each falls dead at Peter's words.",
+   "views": [
+    "Judgment on deceiving the Holy Spirit in the founding community",
+    "Peter does not pronounce a sentence on Ananias, only exposes the lie"
+   ]
+  },
+  {
+   "id": "women-silent",
+   "cat": "women",
+   "title": "\"Let the women learn in silence\"",
+   "refs": [
+    "1Tim.2.11-14",
+    "1Cor.14.34-35"
+   ],
+   "stance": "approved",
+   "what": "Women are told to be silent in the churches and not to teach or have authority over a man, with reference to Eve.",
+   "views": [
+    "Addressed to specific local problems",
+    "Some argue 1 Cor 14:34–35 is a later insertion (it moves position in some manuscripts)",
+    "Others hold it as a lasting rule"
+   ]
+  },
+  {
+   "id": "numbers-5",
+   "cat": "women",
+   "title": "The ordeal of the suspected wife",
+   "refs": [
+    "Num.5.11-31"
+   ],
+   "stance": "law",
+   "what": "A wife suspected of adultery by a jealous husband must drink 'bitter water' before the priest; there is no matching test for husbands.",
+   "views": [
+    "Removed punishment from the husband's hands to a ritual",
+    "Critics note the one-sided suspicion"
+   ]
+  },
+  {
+   "id": "curse-ham",
+   "cat": "harm",
+   "title": "The \"curse of Ham\"",
+   "refs": [
+    "Gen.9.25-27"
+   ],
+   "stance": "reported",
+   "what": "Noah curses Canaan, Ham's son, to be a servant of servants to his brothers.",
+   "views": [
+    "Was misused for centuries to justify enslaving Africans, though the text curses Canaan and says nothing about skin colour"
+   ]
+  },
+  {
+   "id": "blood-on-us",
+   "cat": "harm",
+   "title": "\"His blood be on us, and on our children\"",
+   "refs": [
+    "Matt.27.25"
+   ],
+   "stance": "reported",
+   "what": "The crowd before Pilate accepts responsibility for Jesus' death.",
+   "views": [
+    "Was used for centuries to blame all Jews for Jesus' death and to justify persecution",
+    "Rejected by most churches today (e.g. Vatican II, Nostra Aetate)"
+   ]
+  },
+  {
+   "id": "witch",
+   "cat": "harm",
+   "title": "\"Thou shalt not suffer a witch to live\"",
+   "refs": [
+    "Exod.22.18"
+   ],
+   "stance": "law",
+   "what": "A sorceress is to be put to death.",
+   "views": [
+    "Quoted to justify the European and colonial witch trials",
+    "The Hebrew word refers to a practitioner of sorcery, not the later idea of witchcraft"
+   ]
+  }
+ ]
+}

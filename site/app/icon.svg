@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#2f3b52"/>
+  <path d="M96 140c60-24 112-20 160 12v236c-48-32-100-36-160-12z" fill="#fbfaf7"/>
+  <path d="M416 140c-60-24-112-20-160 12v236c48-32 100-36 160-12z" fill="#e8dcc4"/>
+  <path d="M256 152v236" stroke="#8a5a2b" stroke-width="8"/>
+  <text x="176" y="290" font-family="Georgia, serif" font-size="96" text-anchor="middle" fill="#2f3b52">א</text>
+  <text x="336" y="290" font-family="Georgia, serif" font-size="96" text-anchor="middle" fill="#2f3b52">Ω</text>
+</svg>

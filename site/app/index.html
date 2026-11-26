@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Bible Sources</title>
+  <meta name="description" content="Read the Bible with the Hebrew, Greek and Septuagint side by side, word study, cross references, and where the ancient texts differ.">
+  <meta name="theme-color" content="#2f3b52">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital,wght@0,400;0,700;1,400&family=Noto+Serif+Hebrew:wght@400;600&family=Noto+Sans+Phoenician&family=Inter:wght@400;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <a id="brand" class="brand" href="#/read">Bible Sources</a>
+    <form id="quick" class="quick" role="search">
+      <input name="q" type="search" placeholder="John 3:16, a word, or H7225" aria-label="Go to a passage or search">
+    </form>
+  </header>
+  <nav class="tabs" aria-label="Main">
+    <a href="#/read" data-r="read"><span class="ti">📖</span>Read</a>
+    <a href="#/study" data-r="study"><span class="ti">🔍</span>Study</a>
+    <a href="#/search" data-r="search"><span class="ti">⌕</span>Search</a>
+    <a href="#/plans" data-r="plans"><span class="ti">🗓</span>Plans</a>
+    <a href="#/saved" data-r="saved"><span class="ti">★</span>Saved</a>
+    <a href="#/settings" data-r="settings"><span class="ti">⚙</span>More</a>
+  </nav>
+  <div id="banner"></div>
+  <main id="main"></main>
+  <aside id="panel" class="panel" aria-live="polite"></aside>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

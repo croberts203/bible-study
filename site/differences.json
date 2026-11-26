@@ -1,0 +1,533 @@
+{
+ "categories": {
+  "nt-lxx": "New Testament follows the Septuagint where it differs from the Hebrew",
+  "nt-mt": "New Testament follows the Hebrew where it differs from the Septuagint",
+  "nt-neither": "New Testament wording matches neither the Hebrew nor the Septuagint",
+  "mt-lxx": "Hebrew (Masoretic) and Septuagint differ",
+  "narrative": "New Testament detail differs from the Old Testament account",
+  "book": "Whole-book differences between the Hebrew and the Septuagint"
+ },
+ "abbrev": {
+  "MT": "Masoretic Text (the standard Hebrew text, Leningrad Codex c. 1008 AD)",
+  "LXX": "Septuagint (Greek translation, 3rd–1st century BC)",
+  "DSS": "Dead Sea Scrolls (c. 250 BC – 70 AD)",
+  "SP": "Samaritan Pentateuch"
+ },
+ "items": [
+  {
+   "id": "isa-7-14",
+   "cat": "nt-lxx",
+   "title": "Young woman / virgin",
+   "ot": "Isa.7.14",
+   "nt": [
+    "Matt.1.23"
+   ],
+   "mt": "ʿalmah — \"young woman\" (of marriageable age)",
+   "lxx": "parthenos — usually \"virgin\"",
+   "ntr": "parthenos — \"virgin\" (as the LXX)",
+   "note": "The Great Isaiah Scroll (1QIsaᵃ) reads ʿalmah like the MT. How narrowly ʿalmah and parthenos should be translated is itself debated.",
+   "scholars": [
+    "Rashi (11th century) — the young woman is the prophet's wife",
+    "Justin Martyr, Dialogue with Trypho (2nd century) — the earliest recorded debate over the word"
+   ]
+  },
+  {
+   "id": "ps-40-6",
+   "cat": "nt-lxx",
+   "title": "Ears / a body",
+   "ot": "Ps.40.6",
+   "lxxref": "Ps.39.7",
+   "nt": [
+    "Heb.10.5"
+   ],
+   "mt": "\"ears you have dug (opened) for me\"",
+   "lxx": "\"a body you have prepared for me\" (most manuscripts; a few read \"ears\")",
+   "ntr": "\"a body you have prepared for me\"",
+   "note": "Hebrew verse 7 = English 6. Hebrews builds its argument (10:10) on the word \"body\"."
+  },
+  {
+   "id": "deut-32-43",
+   "cat": "nt-lxx",
+   "title": "\"Let all God's angels worship him\"",
+   "ot": "Deut.32.43",
+   "nt": [
+    "Heb.1.6",
+    "Rom.15.10"
+   ],
+   "mt": "Shorter verse; no line about angels or gods worshipping",
+   "lxx": "Longer verse, including \"let all the sons/angels of God worship him\" and \"rejoice, O nations, with his people\"",
+   "ntr": "Heb 1:6 \"let all God's angels worship him\"; Rom 15:10 \"rejoice, O Gentiles, with his people\"",
+   "note": "A Dead Sea Scroll (4QDeutq) has a longer Hebrew text close to the LXX (\"bow down to him, all gods\"), so the shorter MT may be the changed text here."
+  },
+  {
+   "id": "hos-11-1",
+   "cat": "nt-mt",
+   "title": "My son / his children",
+   "ot": "Hos.11.1",
+   "nt": [
+    "Matt.2.15"
+   ],
+   "mt": "\"out of Egypt I called my son\"",
+   "lxx": "\"out of Egypt I called his children\"",
+   "ntr": "\"out of Egypt I called my son\" (as the Hebrew)",
+   "note": "Matthew's point (Jesus as God's son) depends on the Hebrew wording."
+  },
+  {
+   "id": "amos-9-11",
+   "cat": "nt-lxx",
+   "title": "Edom / mankind",
+   "ot": "Amos.9.12",
+   "nt": [
+    "Acts.15.17"
+   ],
+   "mt": "\"that they may possess the remnant of Edom\"",
+   "lxx": "\"that the rest of mankind may seek [the Lord]\"",
+   "ntr": "\"that the rest of mankind may seek the Lord\" (as the LXX)",
+   "note": "In Hebrew consonants, Edom (ʾdwm) / mankind (ʾdm) and possess (yyršw) / seek (ydršw) differ by one letter each. James's argument for including Gentiles uses the LXX reading."
+  },
+  {
+   "id": "isa-40-3",
+   "cat": "nt-lxx",
+   "title": "Where is the voice?",
+   "ot": "Isa.40.3",
+   "nt": [
+    "Matt.3.3",
+    "Mark.1.3",
+    "Luke.3.4",
+    "John.1.23"
+   ],
+   "mt": "\"A voice cries: In the wilderness prepare the way… make straight in the desert a highway for our God\"",
+   "lxx": "\"A voice of one crying in the wilderness: Prepare the way… make straight the paths of our God\"",
+   "ntr": "\"A voice of one crying in the wilderness\" (as the LXX); \"his paths\"",
+   "note": "The Hebrew consonants allow either phrasing; the MT's division comes from medieval accent marks. The Qumran community (1QS 8:14) read it the MT way."
+  },
+  {
+   "id": "isa-6-9",
+   "cat": "nt-lxx",
+   "title": "\"Make their heart fat\" / \"their heart has grown dull\"",
+   "ot": "Isa.6.10",
+   "nt": [
+    "Matt.13.15",
+    "Acts.28.27"
+   ],
+   "mt": "Commands to the prophet: \"Make the heart of this people fat… shut their eyes\"",
+   "lxx": "Description: \"the heart of this people has grown dull… they have closed their eyes\"",
+   "ntr": "Matthew and Acts: \"has grown dull… they have closed\" (as the LXX)",
+   "note": "In the LXX form the people harden themselves; in the Hebrew the prophet is told to harden them. See also John 12:40 (separate entry)."
+  },
+  {
+   "id": "john-12-40",
+   "cat": "nt-neither",
+   "title": "\"He has blinded their eyes\"",
+   "ot": "Isa.6.10",
+   "nt": [
+    "John.12.40"
+   ],
+   "mt": "The prophet is told to blind and harden",
+   "lxx": "The people have closed their own eyes",
+   "ntr": "\"He has blinded their eyes and hardened their heart\" — God as the one acting",
+   "note": "John's wording is a free rendering closer to the sense of the Hebrew than to the LXX."
+  },
+  {
+   "id": "isa-29-13",
+   "cat": "nt-lxx",
+   "title": "\"In vain do they worship me\"",
+   "ot": "Isa.29.13",
+   "nt": [
+    "Matt.15.8",
+    "Matt.15.9",
+    "Mark.7.6",
+    "Mark.7.7"
+   ],
+   "mt": "\"their fear of me is a commandment of men learned by rote\"",
+   "lxx": "\"in vain do they worship me, teaching the commandments and doctrines of men\"",
+   "ntr": "\"in vain do they worship me, teaching as doctrines the commandments of men\" (as the LXX)",
+   "note": ""
+  },
+  {
+   "id": "ps-8-2",
+   "cat": "nt-lxx",
+   "title": "Strength / praise",
+   "ot": "Ps.8.2",
+   "lxxref": "Ps.8.3",
+   "nt": [
+    "Matt.21.16"
+   ],
+   "mt": "\"out of the mouth of babes… you have established strength\"",
+   "lxx": "\"out of the mouth of babes… you have prepared praise\"",
+   "ntr": "\"you have prepared praise\" (as the LXX)",
+   "note": "Jesus's reply to the priests uses \"praise,\" fitting the children's shouts in the temple."
+  },
+  {
+   "id": "isa-61-1",
+   "cat": "nt-lxx",
+   "title": "Sight to the blind",
+   "ot": "Isa.61.1",
+   "nt": [
+    "Luke.4.18"
+   ],
+   "mt": "\"opening to those who are bound\" (peqaḥ-qoaḥ, \"opening,\" often of eyes)",
+   "lxx": "\"recovery of sight to the blind\"",
+   "ntr": "\"recovery of sight to the blind\" (as the LXX), plus \"to set at liberty the oppressed\" from Isa 58:6 LXX",
+   "note": "Luke presents this as the scroll Jesus read in the Nazareth synagogue."
+  },
+  {
+   "id": "zech-12-10",
+   "cat": "nt-mt",
+   "title": "Pierced / mocked",
+   "ot": "Zech.12.10",
+   "nt": [
+    "John.19.37",
+    "Rev.1.7"
+   ],
+   "mt": "\"they will look on me whom they have pierced\"",
+   "lxx": "\"they will look to me because they have mocked [me]\" (lit. \"danced in triumph\")",
+   "ntr": "\"they will look on him whom they pierced\" (Hebrew sense, third person)",
+   "note": "John's Greek is close to the later Greek revision of Theodotion rather than the LXX."
+  },
+  {
+   "id": "gen-47-31",
+   "cat": "nt-lxx",
+   "title": "Bed / staff",
+   "ot": "Gen.47.31",
+   "nt": [
+    "Heb.11.21"
+   ],
+   "mt": "\"Israel bowed himself upon the head of the bed\" (miṭṭah)",
+   "lxx": "\"Israel bowed in worship on the top of his staff\" (maṭṭeh)",
+   "ntr": "\"worshipped, leaning on the top of his staff\" (as the LXX)",
+   "note": "Same Hebrew consonants (mṭh); the words differ only in vowels, which were added to the text much later."
+  },
+  {
+   "id": "acts-7-14",
+   "cat": "nt-lxx",
+   "title": "Seventy / seventy-five souls",
+   "ot": "Gen.46.27",
+   "nt": [
+    "Acts.7.14"
+   ],
+   "mt": "70 persons went down to Egypt (Gen 46:27; Exod 1:5; Deut 10:22)",
+   "lxx": "75 persons (Gen 46:27; Exod 1:5)",
+   "ntr": "Stephen: \"seventy-five souls\"",
+   "note": "Two Dead Sea Scrolls (4QExodᵇ, 4QGen-Exodᵃ) also read 75 at Exod 1:5."
+  },
+  {
+   "id": "luke-3-36",
+   "cat": "nt-lxx",
+   "title": "The second Cainan",
+   "ot": "Gen.11.12",
+   "nt": [
+    "Luke.3.36"
+   ],
+   "mt": "Arphaxad is the father of Shelah (no Cainan)",
+   "lxx": "Arphaxad → Cainan → Shelah (Gen 10:24; 11:12–13)",
+   "ntr": "\"…the son of Shelah, the son of Cainan, the son of Arphaxad\" (as the LXX)",
+   "note": "1 Chronicles 1:18, 24 in the MT also lack this Cainan."
+  },
+  {
+   "id": "jer-31-32",
+   "cat": "nt-lxx",
+   "title": "\"I was a husband to them\" / \"I disregarded them\"",
+   "ot": "Jer.31.32",
+   "lxxref": "Jer.38.32",
+   "nt": [
+    "Heb.8.9"
+   ],
+   "mt": "\"my covenant which they broke, although I was a husband to them\"",
+   "lxx": "\"they did not continue in my covenant, and I disregarded them\"",
+   "ntr": "\"and I disregarded them\" (as the LXX)",
+   "note": "The Hebrew verbs for \"be husband/master\" (bʿlty) and \"loathe/reject\" (gʿlty) differ by one letter."
+  },
+  {
+   "id": "ps-95-8",
+   "cat": "nt-lxx",
+   "title": "Meribah and Massah / the rebellion and the testing",
+   "ot": "Ps.95.8",
+   "lxxref": "Ps.94.8",
+   "nt": [
+    "Heb.3.8",
+    "Heb.3.9",
+    "Heb.3.10"
+   ],
+   "mt": "Place names: \"as at Meribah, as on the day at Massah\"; \"forty years I loathed that generation\"",
+   "lxx": "\"as in the provocation, as in the day of testing\"",
+   "ntr": "\"as in the rebellion, in the day of testing\"; links \"forty years\" to \"saw my works\"",
+   "note": ""
+  },
+  {
+   "id": "prov-3-34",
+   "cat": "nt-lxx",
+   "title": "\"God opposes the proud\"",
+   "ot": "Prov.3.34",
+   "nt": [
+    "Jas.4.6",
+    "1Pet.5.5"
+   ],
+   "mt": "\"Surely he scorns the scorners, but gives grace to the humble\"",
+   "lxx": "\"The Lord resists the proud, but gives grace to the humble\"",
+   "ntr": "\"God opposes the proud, but gives grace to the humble\" (as the LXX)",
+   "note": ""
+  },
+  {
+   "id": "isa-28-16",
+   "cat": "nt-lxx",
+   "title": "\"Will not be put to shame\"",
+   "ot": "Isa.28.16",
+   "nt": [
+    "Rom.9.33",
+    "Rom.10.11",
+    "1Pet.2.6"
+   ],
+   "mt": "\"whoever believes will not be in haste (panic)\"",
+   "lxx": "\"whoever believes in him will not be put to shame\"",
+   "ntr": "\"will not be put to shame\" (as the LXX)",
+   "note": ""
+  },
+  {
+   "id": "exod-12-40",
+   "cat": "nt-lxx",
+   "title": "430 years — in Egypt only?",
+   "ot": "Exod.12.40",
+   "nt": [
+    "Gal.3.17"
+   ],
+   "mt": "Israel lived in Egypt 430 years",
+   "lxx": "430 years \"in the land of Egypt and in the land of Canaan\" (SP similar)",
+   "ntr": "Paul counts 430 years from the promise to Abraham to the Law",
+   "note": "Paul's count fits the LXX/SP reading, which includes the patriarchs' time in Canaan."
+  },
+  {
+   "id": "acts-7-4",
+   "cat": "narrative",
+   "title": "Did Abram leave Haran after Terah died?",
+   "ot": "Gen.11.32",
+   "nt": [
+    "Acts.7.4"
+   ],
+   "mt": "Terah is 70 at Abram's birth (11:26), Abram leaves at 75 (12:4), Terah dies at 205 — i.e. 60 years later",
+   "lxx": "Same numbers as the MT",
+   "ntr": "Stephen: Abram moved \"after his father died\"",
+   "note": "The Samaritan Pentateuch gives Terah's age at death as 145, which agrees with Acts. Others suggest Abram was not Terah's firstborn."
+  },
+  {
+   "id": "acts-7-16",
+   "cat": "narrative",
+   "title": "Which tomb, which seller?",
+   "ot": "Gen.23.16",
+   "nt": [
+    "Acts.7.16"
+   ],
+   "mt": "Abraham buys Machpelah at Hebron from Ephron the Hittite (Gen 23); Jacob buys land at Shechem from the sons of Hamor (Gen 33:19; Josh 24:32)",
+   "lxx": "Same as the MT",
+   "ntr": "Stephen: the tomb at Shechem \"that Abraham bought… from the sons of Hamor\"",
+   "note": "Often explained as Stephen compressing two purchases into one summary."
+  },
+  {
+   "id": "mark-2-26",
+   "cat": "narrative",
+   "title": "Abiathar or Ahimelech?",
+   "ot": "1Sam.21.1",
+   "nt": [
+    "Mark.2.26"
+   ],
+   "mt": "David receives the bread from Ahimelech the priest (1 Sam 21:1–6)",
+   "lxx": "Abimelech (spelling variant) — still not Abiathar",
+   "ntr": "\"in the time of Abiathar the high priest\"",
+   "note": "Matthew 12:4 and Luke 6:4 omit the name, and some manuscripts of Mark omit the phrase. Abiathar was Ahimelech's son and later high priest."
+  },
+  {
+   "id": "matt-27-9",
+   "cat": "narrative",
+   "title": "Jeremiah or Zechariah?",
+   "ot": "Zech.11.13",
+   "nt": [
+    "Matt.27.9"
+   ],
+   "mt": "Thirty pieces of silver thrown \"to the potter\" in the house of the LORD — in Zechariah",
+   "lxx": "\"into the furnace\" (to test the metal)",
+   "ntr": "Matthew attributes the quotation to \"Jeremiah the prophet\"",
+   "note": "Commonly explained as a combined quotation drawing on Jeremiah's potter and field purchase (Jer 18–19; 32:6–15), named after the more prominent prophet."
+  },
+  {
+   "id": "rom-11-26",
+   "cat": "nt-neither",
+   "title": "To Zion / from Zion",
+   "ot": "Isa.59.20",
+   "nt": [
+    "Rom.11.26"
+   ],
+   "mt": "\"A redeemer will come to Zion\"",
+   "lxx": "\"The deliverer will come for Zion's sake\"",
+   "ntr": "\"The deliverer will come from Zion\"",
+   "note": "Paul's \"from\" matches neither text; he may be blending Ps 14:7 (\"salvation out of Zion\")."
+  },
+  {
+   "id": "eph-4-8",
+   "cat": "nt-neither",
+   "title": "Received gifts / gave gifts",
+   "ot": "Ps.68.18",
+   "lxxref": "Ps.67.19",
+   "nt": [
+    "Eph.4.8"
+   ],
+   "mt": "\"you received gifts among men\"",
+   "lxx": "\"you received gifts for man\"",
+   "ntr": "\"he gave gifts to men\"",
+   "note": "The Aramaic Targum and the Syriac Peshitta of the Psalm also read \"gave,\" so Paul may follow a known interpretive tradition."
+  },
+  {
+   "id": "mic-5-2",
+   "cat": "nt-neither",
+   "title": "Little / by no means least",
+   "ot": "Mic.5.2",
+   "lxxref": "Mic.5.1",
+   "nt": [
+    "Matt.2.6"
+   ],
+   "mt": "\"Bethlehem Ephrathah, too little to be among the clans of Judah\"",
+   "lxx": "\"Bethlehem, house of Ephrathah, very few to be among the thousands of Judah\"",
+   "ntr": "\"Bethlehem… are by no means least among the rulers of Judah\"",
+   "note": "Matthew's wording reverses the sense, presenting the town as honored because of the coming ruler."
+  },
+  {
+   "id": "isa-25-8",
+   "cat": "nt-mt",
+   "title": "\"Death is swallowed up in victory\"",
+   "ot": "Isa.25.8",
+   "nt": [
+    "1Cor.15.54"
+   ],
+   "mt": "\"he will swallow up death forever\" (lāneṣaḥ — \"forever,\" in Aramaic also \"victory\")",
+   "lxx": "\"death, having prevailed, swallowed [them] up\"",
+   "ntr": "\"Death is swallowed up in victory\"",
+   "note": "Paul's wording agrees with the later Greek version of Theodotion and is closer to the Hebrew."
+  },
+  {
+   "id": "isa-9-1",
+   "cat": "nt-mt",
+   "title": "Galilee of the nations",
+   "ot": "Isa.9.1",
+   "nt": [
+    "Matt.4.15",
+    "Matt.4.16"
+   ],
+   "mt": "\"the way of the sea, beyond the Jordan, Galilee of the nations\"",
+   "lxx": "Differs in wording and adds \"you who dwell…\"",
+   "ntr": "Follows the Hebrew more closely than the LXX",
+   "note": "Hebrew 8:23–9:1 = English 9:1–2."
+  },
+  {
+   "id": "ps-22-16",
+   "cat": "mt-lxx",
+   "title": "\"Like a lion\" / \"they pierced\"",
+   "ot": "Ps.22.16",
+   "lxxref": "Ps.21.17",
+   "mt": "Most manuscripts: \"like a lion [at] my hands and my feet\" (kāʾărî)",
+   "lxx": "\"they dug (pierced) my hands and my feet\"",
+   "note": "A psalms scroll from Naḥal Ḥever (5/6ḤevPs) appears to read a verb (kʾrw), supporting a reading like the LXX. The NT does not quote this line directly.",
+   "scholars": [
+    "Peter W. Flint, The Dead Sea Psalms Scrolls and the Book of Psalms (1997) — on the Naḥal Ḥever reading"
+   ]
+  },
+  {
+   "id": "deut-32-8",
+   "cat": "mt-lxx",
+   "title": "Sons of Israel / sons of God",
+   "ot": "Deut.32.8",
+   "mt": "\"according to the number of the sons of Israel\"",
+   "lxx": "\"according to the number of the angels (some manuscripts: sons) of God\"",
+   "note": "A Dead Sea Scroll (4QDeutʲ) reads \"sons of God,\" supporting the LXX.",
+   "scholars": [
+    "Emanuel Tov, Textual Criticism of the Hebrew Bible — treats 'sons of Israel' as a later theological change",
+    "Michael S. Heiser — reads 'sons of God' as the divine council (Ps 82)"
+   ]
+  },
+  {
+   "id": "isa-53-11",
+   "cat": "mt-lxx",
+   "title": "\"He will see light\"",
+   "ot": "Isa.53.11",
+   "mt": "\"Out of the anguish of his soul he shall see [and] be satisfied\"",
+   "lxx": "\"to show him light\"",
+   "note": "Three Isaiah scrolls from Qumran (1QIsaᵃ, 1QIsaᵇ, 4QIsaᵈ) also read \"light.\"",
+   "scholars": [
+    "Emanuel Tov and other text critics regard 'light' as the original reading; many modern translations (NIV, NRSV) include it"
+   ]
+  },
+  {
+   "id": "gen-4-8",
+   "cat": "mt-lxx",
+   "title": "What Cain said",
+   "ot": "Gen.4.8",
+   "mt": "\"Cain spoke to Abel his brother. And when they were in the field…\" (his words are missing)",
+   "lxx": "Adds: \"Let us go out into the field\" (also SP, Syriac, Vulgate)",
+   "note": ""
+  },
+  {
+   "id": "1sam-17-4",
+   "cat": "mt-lxx",
+   "title": "How tall was Goliath?",
+   "ot": "1Sam.17.4",
+   "mt": "six cubits and a span (about 9′9″)",
+   "lxx": "four cubits and a span (about 6′9″)",
+   "note": "The Samuel scroll from Qumran (4QSamᵃ) agrees with the LXX's four cubits."
+  },
+  {
+   "id": "gen-5-11-ages",
+   "cat": "book",
+   "title": "Genealogy ages in Genesis 5 and 11",
+   "ot": "Gen.5.3",
+   "mt": "Creation to the Flood: 1,656 years",
+   "lxx": "Creation to the Flood: 2,242 years — many fathers are 100 years older when their son is born",
+   "note": "The SP has a third set of numbers. These totals underlie different ancient dates for the age of the world."
+  },
+  {
+   "id": "jer-shorter",
+   "cat": "book",
+   "title": "Jeremiah: a shorter, rearranged book",
+   "ot": "Jer.25.13",
+   "mt": "Longer text; oracles against the nations in chapters 46–51",
+   "lxx": "About one-eighth shorter; the oracles against the nations follow 25:13 and are in a different order (so LXX chapter numbers differ from 25 on)",
+   "note": "Hebrew fragments from Qumran (4QJerᵇ, 4QJerᵈ) support the shorter form — evidence that two Hebrew editions circulated.",
+   "scholars": [
+    "Emanuel Tov — the Septuagint of Jeremiah reflects an earlier Hebrew edition, supported by 4QJerᵇ,ᵈ"
+   ]
+  },
+  {
+   "id": "1sam-17-18",
+   "cat": "book",
+   "title": "David and Goliath: a shorter version",
+   "ot": "1Sam.17.12",
+   "mt": "Includes 17:12–31, 17:41, 17:48b, 17:50, 17:55–18:5 and more",
+   "lxx": "Codex Vaticanus lacks those passages, giving a shorter story in which David is not re-introduced to Saul",
+   "note": ""
+  },
+  {
+   "id": "job-shorter",
+   "cat": "book",
+   "title": "Job: about one-sixth shorter",
+   "ot": "Job.42.17",
+   "mt": "Ends at 42:17",
+   "lxx": "Roughly a sixth shorter overall, and adds an ending after 42:17 identifying Job with Jobab, king of Edom",
+   "note": ""
+  },
+  {
+   "id": "esth-dan-additions",
+   "cat": "book",
+   "title": "Esther and Daniel: added sections",
+   "ot": "Esth.1.1",
+   "mt": "Esther never names God; Daniel has 12 chapters",
+   "lxx": "Six additions to Esther (with prayers naming God); Daniel adds the Prayer of Azariah and Song of the Three, Susanna, and Bel and the Dragon",
+   "note": ""
+  },
+  {
+   "id": "psalm-numbering",
+   "cat": "book",
+   "title": "Psalm numbers are offset",
+   "ot": "Ps.10.1",
+   "mt": "Psalms 9 and 10 are separate; 114 and 115 separate; 116 one psalm; 147 one psalm",
+   "lxx": "Psalms 9–10 are one psalm, 114–115 one, 116 is split in two, 147 is split in two — so most LXX numbers are one lower (LXX 22 = Hebrew 23). LXX also adds Psalm 151",
+   "note": "This app's Septuagint column converts the numbers for you."
+  }
+ ]
+}

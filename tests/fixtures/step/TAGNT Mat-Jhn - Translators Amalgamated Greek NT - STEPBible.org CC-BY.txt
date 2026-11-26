@@ -1,0 +1,4 @@
+Word & Type	Greek	English translation	dStrongs = Grammar	Dictionary form =  Gloss	editions
+Mat.1.23#01=NKO	Ἰδοὺ (Idou)	Behold	G2400=INJ	ἰδού=behold	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz
+Mat.1.23#02=NKO	ἡ (hē)	the	G3588=T-NSF	ὁ=the	NA28+NA27+Tyn+SBL+WH+Treg+TR+Byz
+Mat.1.23#03=NKO	παρθένος (parthenos)	virgin	G3933=N-NSF	παρθένος=virgin	NA28+TR

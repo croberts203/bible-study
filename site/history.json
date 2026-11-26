@@ -1,0 +1,1271 @@
+{
+ "periods": [
+  {
+   "id": "primeval",
+   "name": "Primeval history",
+   "dates": "Before recorded history",
+   "scholarly": "Written down in Israel's monarchy or exile; draws on Mesopotamian traditions",
+   "summary": "Creation, the first humans, the Flood and the tower of Babel. Similar stories circulated in Mesopotamia: the Atrahasis epic and the Gilgamesh epic both tell of a great flood and a boat, and Babel echoes Babylon's temple-towers (ziggurats).",
+   "ranges": [
+    "Gen.1-11"
+   ]
+  },
+  {
+   "id": "patriarchs",
+   "name": "The patriarchs",
+   "dates": "Traditional: c. 2100–1800 BC",
+   "scholarly": "Set in the Middle Bronze Age (c. 2000–1550 BC); historicity debated",
+   "summary": "Abraham, Isaac, Jacob and Joseph move between Mesopotamia, Canaan and Egypt. Customs such as a slave-wife bearing an heir resemble those in tablets from Nuzi and Mari, though how far this dates the stories is debated.",
+   "ranges": [
+    "Gen.12-50"
+   ]
+  },
+  {
+   "id": "exodus",
+   "name": "Egypt, the Exodus and the wilderness",
+   "dates": "Traditional: Exodus c. 1446 BC (from 1 Kgs 6:1); or c. 1270–1250 BC under Ramesses II",
+   "scholarly": "Many scholars doubt a large-scale exodus; some see a smaller group's memory behind it",
+   "summary": "Slavery in Egypt, Moses, the Exodus, Sinai and forty years in the wilderness. Exodus 1:11 names the store-city Raamses, built under Ramesses II in the 13th century BC. The Law (Leviticus, Deuteronomy) is framed as given in this period.",
+   "ranges": [
+    "Exod.1-40",
+    "Lev.1-27",
+    "Num.1-36",
+    "Deut.1-34"
+   ]
+  },
+  {
+   "id": "settlement",
+   "name": "Settlement and the judges",
+   "dates": "Traditional: c. 1400–1050 BC",
+   "scholarly": "Iron Age I (c. 1200–1050 BC); hundreds of new highland villages appear",
+   "summary": "Israel enters Canaan and lives as tribes led by judges. The Merneptah Stele (c. 1208 BC) names a people \"Israel\" in Canaan. The Philistines, part of the 'Sea Peoples', settled the coast around 1175 BC.",
+   "ranges": [
+    "Josh.1-24",
+    "Judg.1-21",
+    "Ruth.1-4"
+   ]
+  },
+  {
+   "id": "united",
+   "name": "The united monarchy",
+   "dates": "c. 1050–930 BC (Saul c. 1050–1010, David c. 1010–970, Solomon c. 970–930)",
+   "scholarly": "The size of David and Solomon's kingdom is debated; the Tel Dan Stele confirms a 'House of David'",
+   "summary": "Samuel, Saul, David and Solomon. Jerusalem becomes the capital and Solomon builds the first temple.",
+   "ranges": [
+    "1Sam.1-31",
+    "2Sam.1-24",
+    "1Kgs.1-11",
+    "1Chr.10-29",
+    "2Chr.1-9"
+   ]
+  },
+  {
+   "id": "divided",
+   "name": "Two kingdoms: Israel and Judah",
+   "dates": "c. 930–722 BC",
+   "scholarly": "Well attested in Assyrian and Moabite inscriptions",
+   "summary": "The kingdom splits into Israel (north, capital Samaria) and Judah (south, Jerusalem). Assyria rises; Samaria falls in 722 BC and much of Israel is deported. Prophets: Elijah, Elisha, Amos, Hosea, Jonah, Micah, Isaiah.",
+   "ranges": [
+    "1Kgs.12-22",
+    "2Kgs.1-17",
+    "2Chr.10-28"
+   ]
+  },
+  {
+   "id": "judah",
+   "name": "Judah alone",
+   "dates": "722–586 BC",
+   "scholarly": "Sennacherib's own annals describe his 701 BC siege of Jerusalem",
+   "summary": "Hezekiah survives the Assyrian siege of 701 BC; Josiah's reform (622 BC) follows the finding of a law book. Babylon defeats Assyria and Egypt, takes Jerusalem in 597 BC and destroys it with the temple in 587/586 BC. Prophets: Jeremiah, Zephaniah, Nahum, Habakkuk.",
+   "ranges": [
+    "2Kgs.18-25",
+    "2Chr.29-36"
+   ]
+  },
+  {
+   "id": "exile",
+   "name": "Exile in Babylon",
+   "dates": "586–539 BC",
+   "scholarly": "Many scholars date much of the Torah's final editing and Isaiah 40–55 here",
+   "summary": "Judah's leaders live in Babylon; Jerusalem lies in ruins. Lamentations mourns the city; Ezekiel prophesies among the exiles. Babylonian ration tablets list King Jehoiachin as a captive.",
+   "ranges": []
+  },
+  {
+   "id": "persian",
+   "name": "The Persian period and the return",
+   "dates": "539–332 BC",
+   "scholarly": "Aramaic becomes the common language; parts of Ezra and Daniel are written in it",
+   "summary": "Cyrus of Persia conquers Babylon (539 BC) and lets exiles return. The second temple is finished c. 515 BC; Nehemiah rebuilds Jerusalem's walls (c. 445 BC). Prophets: Haggai, Zechariah, Malachi.",
+   "ranges": [
+    "Ezra.1-10",
+    "Neh.1-13",
+    "Esth.1-10"
+   ]
+  },
+  {
+   "id": "hellenistic",
+   "name": "Greek rule and the Maccabees",
+   "dates": "332–63 BC",
+   "scholarly": "Most scholars date Daniel 7–12 to the Maccabean crisis (c. 165 BC)",
+   "summary": "Alexander the Great conquers the region. Jews in Alexandria translate the Torah into Greek (the Septuagint, 3rd century BC). Antiochus IV desecrates the temple; the Maccabean revolt (167–164 BC) leads to Hanukkah and Jewish self-rule. The Dead Sea Scrolls begin to be copied.",
+   "ranges": []
+  },
+  {
+   "id": "jesus",
+   "name": "Roman Judea and the life of Jesus",
+   "dates": "63 BC – c. AD 30/33",
+   "scholarly": "Jesus born c. 6–4 BC; ministry c. AD 27–30; crucifixion AD 30 or 33",
+   "summary": "Pompey takes Jerusalem (63 BC). Herod the Great rebuilds the temple; Roman governors such as Pontius Pilate (AD 26–36) rule Judea. Jesus of Nazareth teaches in Galilee and is crucified in Jerusalem.",
+   "ranges": [
+    "Matt.1-28",
+    "Mark.1-16",
+    "Luke.1-24",
+    "John.1-21"
+   ]
+  },
+  {
+   "id": "church",
+   "name": "The early church",
+   "dates": "c. AD 30–70",
+   "scholarly": "Paul's letters (c. AD 48–64) are the earliest Christian writings",
+   "summary": "The movement spreads from Jerusalem across the Roman world. Paul travels and writes letters to churches. Rome destroys Jerusalem and the temple in AD 70.",
+   "ranges": [
+    "Acts.1-28"
+   ]
+  },
+  {
+   "id": "latent",
+   "name": "After the temple's fall",
+   "dates": "c. AD 70–100",
+   "scholarly": "Most scholars date the Gospels to c. AD 65–100",
+   "summary": "Christianity and Judaism separate; the Gospels, Hebrews, the Johannine letters and Revelation (traditionally c. AD 95, under Domitian) are written or completed.",
+   "ranges": []
+  }
+ ],
+ "books": {
+  "Gen": {
+   "periods": [
+    "primeval",
+    "patriarchs"
+   ],
+   "written": "Tradition: Moses. Scholars: composed from several sources and edited c. 6th–5th century BC."
+  },
+  "Exod": {
+   "periods": [
+    "exodus"
+   ],
+   "written": "Tradition: Moses. Scholars: sources edited c. 6th–5th century BC."
+  },
+  "Lev": {
+   "periods": [
+    "exodus"
+   ],
+   "written": "Tradition: Moses. Scholars: priestly material, final form c. 6th–5th century BC."
+  },
+  "Num": {
+   "periods": [
+    "exodus"
+   ],
+   "written": "Tradition: Moses. Scholars: sources edited c. 6th–5th century BC."
+  },
+  "Deut": {
+   "periods": [
+    "exodus"
+   ],
+   "written": "Tradition: Moses. Scholars: core often linked with Josiah's reform (622 BC), expanded in exile."
+  },
+  "Josh": {
+   "periods": [
+    "settlement"
+   ],
+   "written": "Tradition: Joshua. Scholars: part of the 'Deuteronomistic History', edited c. 7th–6th century BC."
+  },
+  "Judg": {
+   "periods": [
+    "settlement"
+   ],
+   "written": "Tradition: Samuel. Scholars: Deuteronomistic History, c. 7th–6th century BC."
+  },
+  "Ruth": {
+   "periods": [
+    "settlement"
+   ],
+   "written": "Set in the time of the judges; written in the monarchy or after the exile (debated)."
+  },
+  "1Sam": {
+   "periods": [
+    "united"
+   ],
+   "written": "Tradition: Samuel, Nathan, Gad. Scholars: Deuteronomistic History, using older court sources."
+  },
+  "2Sam": {
+   "periods": [
+    "united"
+   ],
+   "written": "As 1 Samuel. Contains the 'Court History' of David, thought by many to be early."
+  },
+  "1Kgs": {
+   "periods": [
+    "united",
+    "divided"
+   ],
+   "written": "Tradition: Jeremiah. Scholars: completed in the exile (after 562 BC, 2 Kgs 25:27)."
+  },
+  "2Kgs": {
+   "periods": [
+    "divided",
+    "judah"
+   ],
+   "written": "As 1 Kings; cites royal annals ('the book of the chronicles of the kings')."
+  },
+  "1Chr": {
+   "periods": [
+    "united"
+   ],
+   "written": "Tradition: Ezra. Scholars: c. 400–300 BC, retelling Samuel–Kings for the restored community."
+  },
+  "2Chr": {
+   "periods": [
+    "united",
+    "divided",
+    "judah"
+   ],
+   "written": "As 1 Chronicles; ends with Cyrus's decree (538 BC)."
+  },
+  "Ezra": {
+   "periods": [
+    "persian"
+   ],
+   "written": "Ezra and Nehemiah were one book; c. 400 BC. Ezra 4:8–6:18 and 7:12–26 are in Aramaic."
+  },
+  "Neh": {
+   "periods": [
+    "persian"
+   ],
+   "written": "Includes Nehemiah's first-person memoir (c. 445–430 BC)."
+  },
+  "Esth": {
+   "periods": [
+    "persian"
+   ],
+   "written": "Set under Xerxes I (486–465 BC); written in the Persian or early Greek period."
+  },
+  "Job": {
+   "periods": [],
+   "written": "Undated wisdom poem; setting patriarchal, composition often placed c. 6th–4th century BC."
+  },
+  "Ps": {
+   "periods": [
+    "united",
+    "divided",
+    "judah",
+    "exile",
+    "persian"
+   ],
+   "written": "Written over many centuries (David c. 1000 BC to after the exile, e.g. Ps 137); collected in the Second Temple period."
+  },
+  "Prov": {
+   "periods": [
+    "united",
+    "persian"
+   ],
+   "written": "Attributed largely to Solomon; collected in stages to Hezekiah's time (25:1) and after."
+  },
+  "Eccl": {
+   "periods": [
+    "persian",
+    "hellenistic"
+   ],
+   "written": "Tradition: Solomon. Scholars: c. 4th–3rd century BC on the basis of its late Hebrew."
+  },
+  "Song": {
+   "periods": [
+    "united"
+   ],
+   "written": "Attributed to Solomon; date debated (from the monarchy to the Persian period)."
+  },
+  "Isa": {
+   "periods": [
+    "divided",
+    "judah",
+    "exile",
+    "persian"
+   ],
+   "written": "Isaiah of Jerusalem prophesied c. 740–700 BC. Many scholars assign chapters 40–55 to the exile and 56–66 to after the return."
+  },
+  "Jer": {
+   "periods": [
+    "judah",
+    "exile"
+   ],
+   "written": "Jeremiah c. 627–580 BC, with his scribe Baruch (Jer 36). The Septuagint preserves a shorter edition."
+  },
+  "Lam": {
+   "periods": [
+    "exile"
+   ],
+   "written": "Laments over Jerusalem's fall (586 BC); tradition: Jeremiah."
+  },
+  "Ezek": {
+   "periods": [
+    "exile"
+   ],
+   "written": "Ezekiel, a priest deported in 597 BC, prophesied in Babylon c. 593–571 BC."
+  },
+  "Dan": {
+   "periods": [
+    "exile",
+    "persian",
+    "hellenistic"
+   ],
+   "written": "Set in the exile. Tradition: Daniel, 6th century BC. Most scholars: final form c. 165 BC. Daniel 2:4–7:28 is in Aramaic."
+  },
+  "Hos": {
+   "periods": [
+    "divided"
+   ],
+   "written": "Hosea, northern kingdom, c. 750–725 BC."
+  },
+  "Joel": {
+   "periods": [],
+   "written": "Undated; proposals range from the 9th to the 4th century BC."
+  },
+  "Amos": {
+   "periods": [
+    "divided"
+   ],
+   "written": "Amos, a shepherd from Judah preaching in Israel, c. 760–750 BC."
+  },
+  "Obad": {
+   "periods": [
+    "exile"
+   ],
+   "written": "Against Edom after Jerusalem's fall (586 BC)."
+  },
+  "Jonah": {
+   "periods": [
+    "divided"
+   ],
+   "written": "About a prophet of Jeroboam II's time (2 Kgs 14:25, 8th century BC); many date the book after the exile."
+  },
+  "Mic": {
+   "periods": [
+    "divided"
+   ],
+   "written": "Micah of Moresheth, c. 735–700 BC; quoted in Jer 26:18."
+  },
+  "Nah": {
+   "periods": [
+    "judah"
+   ],
+   "written": "Celebrates the fall of Nineveh (612 BC)."
+  },
+  "Hab": {
+   "periods": [
+    "judah"
+   ],
+   "written": "As Babylon rises, c. 605–597 BC."
+  },
+  "Zeph": {
+   "periods": [
+    "judah"
+   ],
+   "written": "In Josiah's reign, c. 630–620 BC."
+  },
+  "Hag": {
+   "periods": [
+    "persian"
+   ],
+   "written": "Dated precisely to 520 BC (Darius I's second year)."
+  },
+  "Zech": {
+   "periods": [
+    "persian",
+    "hellenistic"
+   ],
+   "written": "Chapters 1–8 dated 520–518 BC; many date 9–14 later."
+  },
+  "Mal": {
+   "periods": [
+    "persian"
+   ],
+   "written": "c. 5th century BC, after the second temple was rebuilt."
+  },
+  "Matt": {
+   "periods": [
+    "jesus"
+   ],
+   "written": "Tradition: the apostle Matthew. Scholars: c. AD 80–90, using Mark."
+  },
+  "Mark": {
+   "periods": [
+    "jesus"
+   ],
+   "written": "Tradition: John Mark, from Peter's preaching. Scholars: c. AD 65–73, the earliest Gospel."
+  },
+  "Luke": {
+   "periods": [
+    "jesus"
+   ],
+   "written": "Tradition: Luke the physician, Paul's companion. Scholars: c. AD 80–90."
+  },
+  "John": {
+   "periods": [
+    "jesus"
+   ],
+   "written": "Tradition: the apostle John. Scholars: c. AD 90–100."
+  },
+  "Acts": {
+   "periods": [
+    "church"
+   ],
+   "written": "Same author as Luke; ends c. AD 62 with Paul in Rome; written c. AD 62–90."
+  },
+  "Rom": {
+   "periods": [
+    "church"
+   ],
+   "written": "Paul, from Corinth, c. AD 57."
+  },
+  "1Cor": {
+   "periods": [
+    "church"
+   ],
+   "written": "Paul, from Ephesus, c. AD 53–55."
+  },
+  "2Cor": {
+   "periods": [
+    "church"
+   ],
+   "written": "Paul, from Macedonia, c. AD 55–56."
+  },
+  "Gal": {
+   "periods": [
+    "church"
+   ],
+   "written": "Paul, c. AD 48–55 (date debated)."
+  },
+  "Eph": {
+   "periods": [
+    "church"
+   ],
+   "written": "Paul from prison, c. AD 60–62; many scholars think a follower wrote it."
+  },
+  "Phil": {
+   "periods": [
+    "church"
+   ],
+   "written": "Paul from prison, c. AD 55–62."
+  },
+  "Col": {
+   "periods": [
+    "church"
+   ],
+   "written": "Paul from prison, c. AD 60–62; authorship debated."
+  },
+  "1Thess": {
+   "periods": [
+    "church"
+   ],
+   "written": "Paul, from Corinth, c. AD 50–51 — probably the oldest New Testament book."
+  },
+  "2Thess": {
+   "periods": [
+    "church"
+   ],
+   "written": "Paul, c. AD 51; authorship debated."
+  },
+  "1Tim": {
+   "periods": [
+    "church"
+   ],
+   "written": "Attributed to Paul; many scholars date it c. AD 80–100."
+  },
+  "2Tim": {
+   "periods": [
+    "church"
+   ],
+   "written": "Attributed to Paul shortly before his death (c. AD 64–67)."
+  },
+  "Titus": {
+   "periods": [
+    "church"
+   ],
+   "written": "Attributed to Paul; dated with 1 Timothy."
+  },
+  "Phlm": {
+   "periods": [
+    "church"
+   ],
+   "written": "Paul from prison, c. AD 55–62, about the slave Onesimus."
+  },
+  "Heb": {
+   "periods": [
+    "church",
+    "latent"
+   ],
+   "written": "Anonymous; before or soon after AD 70."
+  },
+  "Jas": {
+   "periods": [
+    "church"
+   ],
+   "written": "Tradition: James the brother of Jesus (died AD 62)."
+  },
+  "1Pet": {
+   "periods": [
+    "church"
+   ],
+   "written": "Tradition: Peter from Rome ('Babylon', 5:13), c. AD 62–64."
+  },
+  "2Pet": {
+   "periods": [
+    "latent"
+   ],
+   "written": "Attributed to Peter; many scholars date it c. AD 100–125."
+  },
+  "1John": {
+   "periods": [
+    "latent"
+   ],
+   "written": "Tradition: the apostle John, c. AD 90–100."
+  },
+  "2John": {
+   "periods": [
+    "latent"
+   ],
+   "written": "'The elder', c. AD 90–100."
+  },
+  "3John": {
+   "periods": [
+    "latent"
+   ],
+   "written": "'The elder', c. AD 90–100."
+  },
+  "Jude": {
+   "periods": [
+    "latent"
+   ],
+   "written": "Jude, brother of James; quotes 1 Enoch (v. 14–15)."
+  },
+  "Rev": {
+   "periods": [
+    "latent"
+   ],
+   "written": "John on Patmos; traditionally c. AD 95 under Domitian, some say c. AD 68."
+  }
+ },
+ "artifacts": [
+  {
+   "id": "merneptah",
+   "name": "Merneptah Stele",
+   "date": "c. 1208 BC",
+   "where": "Egyptian Museum, Cairo",
+   "refs": [
+    "Judg.1.1"
+   ],
+   "what": "Pharaoh Merneptah boasts of a campaign in Canaan: \"Israel is laid waste, his seed is not.\" The earliest known mention of Israel outside the Bible."
+  },
+  {
+   "id": "gezer",
+   "name": "Gezer Calendar",
+   "date": "10th century BC",
+   "where": "Istanbul Archaeology Museums",
+   "refs": [
+    "1Kgs.9.15"
+   ],
+   "what": "A schoolboy-style list of farming months, among the oldest Hebrew writing, in the Paleo-Hebrew script."
+  },
+  {
+   "id": "kurkh",
+   "name": "Kurkh Monolith",
+   "date": "853 BC",
+   "where": "British Museum",
+   "refs": [
+    "1Kgs.22.39"
+   ],
+   "what": "Shalmaneser III lists 'Ahab the Israelite' with 2,000 chariots among his opponents at the battle of Qarqar — a battle the Bible doesn't mention."
+  },
+  {
+   "id": "mesha",
+   "name": "Mesha Stele (Moabite Stone)",
+   "date": "c. 840 BC",
+   "where": "Louvre, Paris",
+   "refs": [
+    "2Kgs.3.4-5"
+   ],
+   "what": "King Mesha of Moab says Omri of Israel oppressed Moab and that he freed it. It names Omri and the God of Israel (YHWH). 2 Kings 3 tells the revolt from Israel's side."
+  },
+  {
+   "id": "tel-dan",
+   "name": "Tel Dan Stele",
+   "date": "9th century BC",
+   "where": "Israel Museum, Jerusalem",
+   "refs": [
+    "2Kgs.9.24-27"
+   ],
+   "what": "An Aramean king (probably Hazael) claims to have killed the king of Israel and the king of 'the House of David' — the first mention of David outside the Bible. 2 Kings 9 credits Jehu with killing Joram and Ahaziah."
+  },
+  {
+   "id": "black-obelisk",
+   "name": "Black Obelisk of Shalmaneser III",
+   "date": "c. 841 BC",
+   "where": "British Museum",
+   "refs": [
+    "2Kgs.10.32-34"
+   ],
+   "what": "Shows 'Jehu son of Omri' (or his envoy) bowing with tribute to the Assyrian king — the only known picture of an Israelite king. The Bible does not record this tribute."
+  },
+  {
+   "id": "siloam",
+   "name": "Siloam Inscription and Hezekiah's Tunnel",
+   "date": "c. 700 BC",
+   "where": "Istanbul Archaeology Museums (inscription); tunnel in Jerusalem",
+   "refs": [
+    "2Kgs.20.20",
+    "2Chr.32.30"
+   ],
+   "what": "Workmen carved a Paleo-Hebrew inscription describing how two crews, digging from either end, met inside the rock. The tunnel still carries water to the Pool of Siloam."
+  },
+  {
+   "id": "sennacherib",
+   "name": "Sennacherib's Prism (Taylor Prism)",
+   "date": "c. 690 BC",
+   "where": "British Museum; copies in Chicago and Jerusalem",
+   "refs": [
+    "2Kgs.18.13-16",
+    "Isa.36.1"
+   ],
+   "what": "Sennacherib claims he took 46 cities of Judah and shut up Hezekiah in Jerusalem 'like a bird in a cage' — but does not claim to have taken the city, matching the Bible's account that he withdrew."
+  },
+  {
+   "id": "lachish-reliefs",
+   "name": "Lachish Reliefs",
+   "date": "c. 700 BC",
+   "where": "British Museum",
+   "refs": [
+    "2Kgs.18.14",
+    "2Kgs.18.17"
+   ],
+   "what": "Stone panels from Sennacherib's palace in Nineveh show the siege and capture of Lachish, Judah's second city, mentioned in 2 Kings 18."
+  },
+  {
+   "id": "ketef-hinnom",
+   "name": "Ketef Hinnom silver scrolls",
+   "date": "c. 600 BC",
+   "where": "Israel Museum, Jerusalem",
+   "refs": [
+    "Num.6.24-26"
+   ],
+   "what": "Two tiny silver amulets inscribed with the priestly blessing ('The LORD bless thee, and keep thee…') — the oldest surviving text of any biblical passage."
+  },
+  {
+   "id": "lachish-letters",
+   "name": "Lachish Letters",
+   "date": "c. 588 BC",
+   "where": "British Museum and Israel Museum",
+   "refs": [
+    "Jer.34.7"
+   ],
+   "what": "Army letters on pottery written as Babylon advanced. One says the signal fires of Azekah can no longer be seen — Jeremiah 34:7 names Lachish and Azekah as the last cities holding out."
+  },
+  {
+   "id": "babylonian-chronicle",
+   "name": "Babylonian Chronicle (Jerusalem tablet)",
+   "date": "after 597 BC",
+   "where": "British Museum",
+   "refs": [
+    "2Kgs.24.10-17"
+   ],
+   "what": "Records that Nebuchadnezzar captured 'the city of Judah' on 2 Adar (16 March 597 BC), seized its king and appointed one of his own choosing — exactly as 2 Kings 24 describes."
+  },
+  {
+   "id": "jehoiachin-tablets",
+   "name": "Jehoiachin ration tablets",
+   "date": "c. 592 BC",
+   "where": "Pergamon Museum, Berlin",
+   "refs": [
+    "2Kgs.25.27-30"
+   ],
+   "what": "Babylonian palace records list oil rations for 'Jehoiachin, king of Judah' and his sons, confirming his captivity in Babylon."
+  },
+  {
+   "id": "nabonidus",
+   "name": "Nabonidus Cylinder",
+   "date": "6th century BC",
+   "where": "British Museum",
+   "refs": [
+    "Dan.5.1"
+   ],
+   "what": "King Nabonidus prays for his eldest son Belshazzar. Once Belshazzar was unknown outside Daniel; this shows he was the crown prince ruling in Babylon, which explains why he offers Daniel 'third' place in the kingdom (Dan 5:16)."
+  },
+  {
+   "id": "cyrus",
+   "name": "Cyrus Cylinder",
+   "date": "c. 539 BC",
+   "where": "British Museum",
+   "refs": [
+    "Ezra.1.1-4",
+    "Isa.45.1"
+   ],
+   "what": "Cyrus describes taking Babylon and returning deported peoples and their gods to their homelands — the policy behind his decree in Ezra 1. It does not mention the Jews by name."
+  },
+  {
+   "id": "elephantine",
+   "name": "Elephantine Papyri",
+   "date": "5th century BC",
+   "where": "Berlin, Brooklyn and Cairo museums",
+   "refs": [
+    "Neh.2.10"
+   ],
+   "what": "Letters from a Jewish military colony in Egypt mention 'the sons of Sanballat, governor of Samaria' — Nehemiah's opponent — and the high priest Johanan (Neh 12:22)."
+  },
+  {
+   "id": "isaiah-scroll",
+   "name": "Great Isaiah Scroll (1QIsaᵃ)",
+   "date": "c. 125 BC",
+   "where": "Israel Museum, Jerusalem (Shrine of the Book)",
+   "refs": [
+    "Isa.1.1",
+    "Isa.53.11"
+   ],
+   "what": "A complete Isaiah from the Dead Sea Scrolls, about 1,000 years older than the Leningrad Codex. It agrees closely with the Masoretic text, with many small spelling differences and a few readings that match the Septuagint."
+  },
+  {
+   "id": "caiaphas",
+   "name": "Caiaphas Ossuary",
+   "date": "1st century AD",
+   "where": "Israel Museum, Jerusalem",
+   "refs": [
+    "Matt.26.3",
+    "John.18.13"
+   ],
+   "what": "A decorated bone box inscribed 'Joseph son of Caiaphas', found in Jerusalem in 1990 — very likely the high priest who tried Jesus."
+  },
+  {
+   "id": "pilate",
+   "name": "Pilate Stone",
+   "date": "c. AD 26–36",
+   "where": "Israel Museum, Jerusalem",
+   "refs": [
+    "Matt.27.2",
+    "Luke.3.1"
+   ],
+   "what": "A dedication found at Caesarea in 1961 naming 'Pontius Pilate, prefect of Judea' — confirming his title and office."
+  },
+  {
+   "id": "siloam-pool",
+   "name": "Pool of Siloam",
+   "date": "1st century AD",
+   "where": "Jerusalem (excavated 2004)",
+   "refs": [
+    "John.9.7"
+   ],
+   "what": "The stepped pool where John says the blind man washed was uncovered by chance during sewer works in 2004."
+  },
+  {
+   "id": "gallio",
+   "name": "Gallio Inscription (Delphi)",
+   "date": "AD 52",
+   "where": "Delphi Archaeological Museum",
+   "refs": [
+    "Acts.18.12"
+   ],
+   "what": "A letter of Emperor Claudius names Gallio as proconsul of Achaia, dating his year in office to about AD 51–52 — the fixed point for dating Paul's stay in Corinth."
+  },
+  {
+   "id": "erastus",
+   "name": "Erastus Inscription",
+   "date": "1st century AD",
+   "where": "Corinth (in place)",
+   "refs": [
+    "Rom.16.23"
+   ],
+   "what": "A pavement inscription in Corinth says Erastus laid it at his own expense as aedile (a city official). Whether he is the Erastus of Romans 16:23 is debated."
+  }
+ ],
+ "scripts": [
+  {
+   "id": "paleo",
+   "name": "Paleo-Hebrew script",
+   "dates": "c. 1000–500 BC (First Temple period)",
+   "what": "The original alphabet of Israel and Judah, close to Phoenician. Used on the Gezer Calendar, the Siloam Inscription and the Ketef Hinnom scrolls. Only consonants were written; words were often separated by dots. The Samaritans still use a descendant of it."
+  },
+  {
+   "id": "square",
+   "name": "Square (Aramaic) script, consonants only",
+   "dates": "c. 500 BC – AD 700 (Second Temple and rabbinic era)",
+   "what": "After the exile Jews adopted the Aramaic 'square' letters still used today. The Dead Sea Scrolls (c. 250 BC – AD 68) are written this way, without vowels — some scrolls still write God's name in the old Paleo-Hebrew letters. Reading depended on memorised tradition, which is why words like miṭṭah/maṭṭeh ('bed'/'staff', Gen 47:31) could be read differently."
+  },
+  {
+   "id": "masoretic",
+   "name": "Masoretic text, with vowels and accents",
+   "dates": "c. AD 600–1000",
+   "what": "Scribes called the Masoretes, in Tiberias, added vowel points, cantillation (chanting) marks and marginal notes to fix the traditional reading. The Aleppo Codex (c. AD 930) and the Leningrad Codex (AD 1008, basis of this app's Hebrew) are their finest surviving manuscripts."
+  }
+ ],
+ "aramaic": "Aramaic was the international language of the Assyrian, Babylonian and Persian empires. Parts of the Bible are written in it: Daniel 2:4–7:28, Ezra 4:8–6:18 and 7:12–26, Jeremiah 10:11, and two words in Genesis 31:47. Jesus spoke Aramaic, and the Gospels preserve some of his Aramaic words (e.g. Talitha cumi, Mark 5:41).",
+ "claimStatus": {
+  "confirmed": "Confirmed by outside evidence",
+  "partly": "Partly matches; details differ",
+  "debated": "Debated among historians",
+  "none": "No outside evidence either way",
+  "conflicts": "Conflicts with mainstream evidence"
+ },
+ "claimGroups": {
+  "kings": "Kings and rulers",
+  "events": "Events",
+  "places": "Places and peoples",
+  "origins": "Human origins and biblical anthropology",
+  "religion": "Religion and customs",
+  "nt": "New Testament world"
+ },
+ "claims": [
+  {
+   "id": "omri-ahab",
+   "group": "kings",
+   "status": "confirmed",
+   "claim": "Omri and Ahab ruled Israel",
+   "refs": [
+    "1Kgs.16.23-30"
+   ],
+   "evidence": "The Mesha Stele names Omri; Assyrian records call Israel 'the House of Omri'; the Kurkh Monolith lists 'Ahab the Israelite' at the battle of Qarqar (853 BC).",
+   "other": ""
+  },
+  {
+   "id": "jehu",
+   "group": "kings",
+   "status": "confirmed",
+   "claim": "Jehu became king of Israel",
+   "refs": [
+    "2Kgs.9.1-13"
+   ],
+   "evidence": "The Black Obelisk of Shalmaneser III shows 'Jehu son of Omri' paying tribute (c. 841 BC).",
+   "other": "The tribute itself isn't in the Bible, and Assyria calls him Omri's 'son' though 2 Kings says he wiped out Omri's line."
+  },
+  {
+   "id": "menahem-hoshea",
+   "group": "kings",
+   "status": "confirmed",
+   "claim": "Menahem paid tribute to 'Pul' king of Assyria; Hoshea was Israel's last king",
+   "refs": [
+    "2Kgs.15.19-20",
+    "2Kgs.17.1-6"
+   ],
+   "evidence": "Tiglath-pileser III (also called Pulu in Babylonian lists) records tribute from Menahem of Samaria and claims he placed Hoshea on the throne.",
+   "other": ""
+  },
+  {
+   "id": "samaria-fall",
+   "group": "events",
+   "status": "confirmed",
+   "claim": "Assyria captured Samaria and deported Israel (722 BC)",
+   "refs": [
+    "2Kgs.17.5-6"
+   ],
+   "evidence": "Sargon II's inscriptions claim the capture of Samaria and the deportation of about 27,290 people.",
+   "other": "2 Kings names the king only as 'the king of Assyria' after Shalmaneser V began the siege; Sargon took credit."
+  },
+  {
+   "id": "hezekiah-sennacherib",
+   "group": "events",
+   "status": "partly",
+   "claim": "Sennacherib besieged Jerusalem in Hezekiah's reign but did not take it",
+   "refs": [
+    "2Kgs.18.13-16",
+    "2Kgs.19.35-36"
+   ],
+   "evidence": "Sennacherib's annals confirm the campaign, the tribute and that Hezekiah was shut in Jerusalem 'like a bird in a cage'; Lachish's fall is shown in his palace reliefs.",
+   "other": "The Assyrian sources say nothing of 185,000 soldiers struck down by an angel (2 Kgs 19:35); Herodotus tells a story of mice destroying an Assyrian army in Egypt."
+  },
+  {
+   "id": "sennacherib-death",
+   "group": "events",
+   "status": "confirmed",
+   "claim": "Sennacherib was murdered by his sons",
+   "refs": [
+    "2Kgs.19.37"
+   ],
+   "evidence": "Babylonian chronicles and his successor Esarhaddon's inscriptions report the murder; one son, Arda-Mulissu, is probably the Bible's 'Adrammelech'.",
+   "other": ""
+  },
+  {
+   "id": "manasseh",
+   "group": "kings",
+   "status": "confirmed",
+   "claim": "Manasseh was king of Judah under Assyria",
+   "refs": [
+    "2Kgs.21.1"
+   ],
+   "evidence": "Esarhaddon's prism lists 'Manasseh king of Judah' among vassals supplying building materials.",
+   "other": "2 Chr 33:11–13 says Manasseh was taken to Babylon and repented; no outside source mentions it."
+  },
+  {
+   "id": "jerusalem-586",
+   "group": "events",
+   "status": "confirmed",
+   "claim": "Babylon took Jerusalem in 597 and destroyed it in 587/586 BC",
+   "refs": [
+    "2Kgs.24.10-17",
+    "2Kgs.25.8-10"
+   ],
+   "evidence": "The Babylonian Chronicle dates the first capture to 16 March 597 BC; excavations show a destruction layer with burnt houses and Babylonian arrowheads.",
+   "other": ""
+  },
+  {
+   "id": "belshazzar",
+   "group": "kings",
+   "status": "partly",
+   "claim": "Belshazzar was king of Babylon when it fell, son of Nebuchadnezzar",
+   "refs": [
+    "Dan.5.1-2",
+    "Dan.5.30"
+   ],
+   "evidence": "Babylonian texts show Belshazzar was the son of Nabonidus and ruled Babylon while his father lived at Tema.",
+   "other": "He was never formally king, and he wasn't Nebuchadnezzar's son — defenders note 'son' can mean successor."
+  },
+  {
+   "id": "darius-mede",
+   "group": "kings",
+   "status": "conflicts",
+   "claim": "'Darius the Mede' took Babylon",
+   "refs": [
+    "Dan.5.31",
+    "Dan.6.1"
+   ],
+   "evidence": "No ruler of this name is known; Babylonian and Persian sources say Cyrus the Persian took Babylon in 539 BC, and Darius I reigned later (522–486 BC).",
+   "other": "Proposed identifications: Cyrus himself, or his governor Gubaru."
+  },
+  {
+   "id": "nebuchadnezzar-madness",
+   "group": "kings",
+   "status": "none",
+   "claim": "Nebuchadnezzar went mad for seven years",
+   "refs": [
+    "Dan.4.33"
+   ],
+   "evidence": "No Babylonian record mentions it.",
+   "other": "A Dead Sea Scroll, the Prayer of Nabonidus (4Q242), tells a similar story about Nabonidus, the last king, who left Babylon for ten years — many scholars think the story was transferred."
+  },
+  {
+   "id": "cyrus-decree",
+   "group": "kings",
+   "status": "confirmed",
+   "claim": "Cyrus allowed exiles to return and rebuild their temples",
+   "refs": [
+    "Ezra.1.1-4"
+   ],
+   "evidence": "The Cyrus Cylinder describes returning deported peoples and their gods to their homelands.",
+   "other": "The cylinder doesn't name the Jews; the wording of Ezra's decree can't be checked."
+  },
+  {
+   "id": "esther",
+   "group": "kings",
+   "status": "debated",
+   "claim": "Esther became queen of Xerxes (Ahasuerus)",
+   "refs": [
+    "Esth.2.16-17"
+   ],
+   "evidence": "Xerxes I is well documented, and a Persian official named Marduka appears in Persepolis tablets.",
+   "other": "Herodotus names Xerxes' queen Amestris; no Persian source mentions Vashti or Esther."
+  },
+  {
+   "id": "david",
+   "group": "kings",
+   "status": "partly",
+   "claim": "David founded a dynasty that ruled Judah",
+   "refs": [
+    "2Sam.5.3-5"
+   ],
+   "evidence": "The Tel Dan Stele (9th c. BC) mentions the 'House of David', confirming a dynasty named after him.",
+   "other": "The size of David and Solomon's kingdom is debated; some archaeologists see Jerusalem as a modest town in the 10th century."
+  },
+  {
+   "id": "solomon-gates",
+   "group": "places",
+   "status": "debated",
+   "claim": "Solomon built Hazor, Megiddo and Gezer",
+   "refs": [
+    "1Kgs.9.15"
+   ],
+   "evidence": "Matching six-chambered gates at all three sites were attributed to Solomon by Yigael Yadin.",
+   "other": "Others (the 'low chronology') date the gates to the 9th century, under Omri's dynasty."
+  },
+  {
+   "id": "exodus",
+   "group": "events",
+   "status": "none",
+   "claim": "About 600,000 men plus families left Egypt and lived 40 years in Sinai",
+   "refs": [
+    "Exod.12.37",
+    "Num.14.33"
+   ],
+   "evidence": "No Egyptian record mentions Israelite slaves or the Exodus, and no camps of that size have been found in Sinai.",
+   "other": "Defenders note Egypt rarely recorded defeats and nomads leave few traces; some scholars accept a smaller exodus behind the story. Exod 1:11's city Raamses fits the 13th century."
+  },
+  {
+   "id": "jericho",
+   "group": "places",
+   "status": "conflicts",
+   "claim": "Jericho's walls fell to Joshua",
+   "refs": [
+    "Josh.6.20"
+   ],
+   "evidence": "Kathleen Kenyon's excavations found Jericho's walls destroyed c. 1550 BC and the site largely empty in Joshua's century.",
+   "other": "Bryant Wood argued for a destruction c. 1400 BC; most archaeologists follow Kenyon."
+  },
+  {
+   "id": "ai",
+   "group": "places",
+   "status": "conflicts",
+   "claim": "Joshua destroyed the city of Ai",
+   "refs": [
+    "Josh.8.28"
+   ],
+   "evidence": "Et-Tell, the usual identification of Ai ('the ruin'), was abandoned from c. 2400 to 1200 BC.",
+   "other": "Some propose another site (Khirbet el-Maqatir); others read the story as explaining an ancient ruin."
+  },
+  {
+   "id": "philistines-genesis",
+   "group": "places",
+   "status": "conflicts",
+   "claim": "Philistines lived in Canaan in Abraham's and Isaac's time",
+   "refs": [
+    "Gen.21.32-34",
+    "Gen.26.1"
+   ],
+   "evidence": "The Philistines arrived on the coast of Canaan around 1175 BC, centuries after the patriarchs' traditional dates.",
+   "other": "Possibly an earlier Aegean group, or the later name used for the region (an anachronism)."
+  },
+  {
+   "id": "camels",
+   "group": "places",
+   "status": "debated",
+   "claim": "Abraham and his servant had camels",
+   "refs": [
+    "Gen.12.16",
+    "Gen.24.10"
+   ],
+   "evidence": "A 2014 study of bones at Timna found domesticated camels appear in the southern Levant around the 10th century BC.",
+   "other": "Camels were domesticated earlier in Arabia, and occasional earlier use is possible."
+  },
+  {
+   "id": "ur-chaldees",
+   "group": "places",
+   "status": "conflicts",
+   "claim": "Abraham came from 'Ur of the Chaldees'",
+   "refs": [
+    "Gen.11.31"
+   ],
+   "evidence": "Ur is a real Sumerian city, but the Chaldeans first appear in records in the 9th century BC, long after Abraham's traditional date.",
+   "other": "Read as the later name used for the region when Genesis was written."
+  },
+  {
+   "id": "hittites",
+   "group": "places",
+   "status": "partly",
+   "claim": "Hittites lived in Canaan (Ephron, Uriah)",
+   "refs": [
+    "Gen.23.10",
+    "2Sam.11.3"
+   ],
+   "evidence": "The Hittite empire was rediscovered at Hattusa in Turkey (1906); Neo-Hittite states existed in Syria later.",
+   "other": "The Bible's Hittites in Canaan may be a different local group with the same name."
+  },
+  {
+   "id": "table-nations",
+   "group": "origins",
+   "status": "partly",
+   "claim": "All nations descend from Noah's three sons (the Table of Nations)",
+   "refs": [
+    "Gen.10.1-32"
+   ],
+   "evidence": "Many names match real peoples: Javan (Ionian Greeks), Madai (Medes), Mizraim (Egypt), Kittim (Cyprus), Elam, Asshur.",
+   "other": "The links are geographic and political, not genetic or linguistic: Canaan is a son of Ham, yet Canaanites spoke a Semitic language like Hebrew."
+  },
+  {
+   "id": "adam-eve",
+   "group": "origins",
+   "status": "conflicts",
+   "claim": "All humans descend from one couple created about 6,000 years ago",
+   "refs": [
+    "Gen.2.7",
+    "Gen.3.20",
+    "Acts.17.26"
+   ],
+   "evidence": "Fossils date Homo sapiens to about 300,000 years ago; genetic diversity shows the human population never dropped to two people, staying in the thousands or more.",
+   "other": "Some theologians read Adam and Eve as representative or as a 'genealogical' pair among a larger population; others read Genesis 2–3 non-literally."
+  },
+  {
+   "id": "creation-date",
+   "group": "origins",
+   "status": "conflicts",
+   "claim": "The world is about 6,000 years old (from the genealogies, e.g. Ussher's 4004 BC)",
+   "refs": [
+    "Gen.5.3-32",
+    "Gen.11.10-26"
+   ],
+   "evidence": "Jericho itself was settled around 9000 BC; farming began c. 10,000 BC; the earth is about 4.5 billion years old.",
+   "other": "The Septuagint's genealogy is about 1,300 years longer; many readers don't treat the genealogies as a timeline."
+  },
+  {
+   "id": "lifespans",
+   "group": "origins",
+   "status": "conflicts",
+   "claim": "Early humans lived over 900 years (Methuselah 969)",
+   "refs": [
+    "Gen.5.27"
+   ],
+   "evidence": "No skeletal or historical evidence supports such lifespans.",
+   "other": "The Sumerian King List gives pre-flood kings reigns of tens of thousands of years — a shared ancient convention for the distant past."
+  },
+  {
+   "id": "flood",
+   "group": "origins",
+   "status": "conflicts",
+   "claim": "A worldwide flood covered the highest mountains",
+   "refs": [
+    "Gen.7.19-20"
+   ],
+   "evidence": "Geology shows no global flood layer; large local floods are found in Mesopotamia (e.g. at Shuruppak and Ur).",
+   "other": "Some read it as a regional flood described from a local viewpoint; the Mesopotamian flood stories (Atrahasis, Gilgamesh) are older written versions of a similar story."
+  },
+  {
+   "id": "babel",
+   "group": "origins",
+   "status": "conflicts",
+   "claim": "Languages began when God confused speech at Babel",
+   "refs": [
+    "Gen.11.6-9"
+   ],
+   "evidence": "Linguistics shows languages diverging gradually over many thousands of years; Babylon's temple-tower (Etemenanki) was real.",
+   "other": "Commonly read as a story explaining the diversity of nations and criticizing Babylon's pride."
+  },
+  {
+   "id": "asherah",
+   "group": "religion",
+   "status": "confirmed",
+   "claim": "Israelites worshipped Asherah and Baal alongside the LORD",
+   "refs": [
+    "2Kgs.23.4-7",
+    "Judg.2.13"
+   ],
+   "evidence": "Texts from Ugarit (found 1928) describe Baal, El and Asherah; inscriptions at Kuntillet Ajrud (c. 800 BC) bless by 'YHWH and his Asherah'.",
+   "other": "The archaeology suggests such worship was common, not just occasional apostasy."
+  },
+  {
+   "id": "child-sacrifice",
+   "group": "religion",
+   "status": "confirmed",
+   "claim": "Neighbouring peoples sacrificed children",
+   "refs": [
+    "2Kgs.3.27",
+    "Jer.7.31"
+   ],
+   "evidence": "Phoenician 'tophet' cemeteries at Carthage hold urns of infant remains, widely (though not universally) interpreted as sacrifices.",
+   "other": ""
+  },
+  {
+   "id": "jonah-nineveh",
+   "group": "events",
+   "status": "none",
+   "claim": "All of Nineveh repented at Jonah's preaching",
+   "refs": [
+    "Jonah.3.5-10"
+   ],
+   "evidence": "No Assyrian record mentions it, and the city was not 'three days' journey' across.",
+   "other": "Many read Jonah as a parable; others note Assyrian records rarely report such events."
+  },
+  {
+   "id": "quirinius",
+   "group": "nt",
+   "status": "conflicts",
+   "claim": "Jesus was born during the census when Quirinius governed Syria, and under King Herod",
+   "refs": [
+    "Luke.2.1-2",
+    "Matt.2.1"
+   ],
+   "evidence": "Josephus dates Quirinius's governorship and census to AD 6; Herod the Great died in 4 BC.",
+   "other": "Proposals: an earlier term or census under Quirinius, or reading Luke 2:2 as 'before Quirinius'."
+  },
+  {
+   "id": "innocents",
+   "group": "nt",
+   "status": "none",
+   "claim": "Herod killed Bethlehem's infants",
+   "refs": [
+    "Matt.2.16"
+   ],
+   "evidence": "No source outside Matthew mentions it.",
+   "other": "Bethlehem was small, so few children may have died; Herod is known to have executed his own sons."
+  },
+  {
+   "id": "pilate-caiaphas",
+   "group": "nt",
+   "status": "confirmed",
+   "claim": "Pontius Pilate and the high priest Caiaphas tried Jesus",
+   "refs": [
+    "Matt.27.2",
+    "Matt.26.57"
+   ],
+   "evidence": "The Pilate Stone, Josephus and Philo confirm Pilate as prefect (AD 26–36); the Caiaphas ossuary likely held the high priest's bones.",
+   "other": ""
+  },
+  {
+   "id": "crucifixion",
+   "group": "nt",
+   "status": "confirmed",
+   "claim": "Jesus was executed under Pontius Pilate",
+   "refs": [
+    "Mark.15.15"
+   ],
+   "evidence": "Tacitus (Annals 15.44) says Christus 'suffered the extreme penalty' under Pilate in Tiberius's reign; Josephus mentions Jesus and his brother James.",
+   "other": ""
+  },
+  {
+   "id": "darkness",
+   "group": "nt",
+   "status": "none",
+   "claim": "Darkness covered the land and the sun failed at the crucifixion",
+   "refs": [
+    "Luke.23.44-45"
+   ],
+   "evidence": "No reliable outside record; a solar eclipse is impossible at Passover, which falls at full moon.",
+   "other": "Later writers cite lost works by Thallus and Phlegon, whose meaning is disputed."
+  },
+  {
+   "id": "lysanias",
+   "group": "nt",
+   "status": "confirmed",
+   "claim": "Lysanias was tetrarch of Abilene in Tiberius's 15th year",
+   "refs": [
+    "Luke.3.1"
+   ],
+   "evidence": "Once thought an error (Josephus knew an earlier Lysanias, died 36 BC), an inscription at Abila names a later Lysanias as tetrarch in Tiberius's time.",
+   "other": ""
+  },
+  {
+   "id": "theudas",
+   "group": "nt",
+   "status": "conflicts",
+   "claim": "Gamaliel mentions the rebel Theudas (c. AD 34)",
+   "refs": [
+    "Acts.5.36"
+   ],
+   "evidence": "Josephus places Theudas's revolt under governor Fadus (c. AD 44–46), about ten years after Gamaliel's speech.",
+   "other": "Possibly a different, earlier Theudas, or Josephus erred."
+  },
+  {
+   "id": "nazareth-bethesda",
+   "group": "nt",
+   "status": "confirmed",
+   "claim": "Places in the Gospels: Nazareth, the Pool of Bethesda with five porches",
+   "refs": [
+    "Luke.4.16",
+    "John.5.2"
+   ],
+   "evidence": "Excavations show 1st-century houses at Nazareth and a large pool complex with colonnades at Bethesda.",
+   "other": ""
+  }
+ ]
+}
