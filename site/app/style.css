@@ -280,3 +280,6 @@ mark.topic-neg { background: color-mix(in srgb, #d0453a 30%, transparent); color
   .picker-body { position: fixed; left: .5rem; right: .5rem; top: auto; bottom: 4.5rem; width: auto; max-height: 65vh; }
   .picker-body.right { left: .5rem; right: .5rem; }
 }
+.fn-mark.fn-context { color: #4a7c59; }
+.commentary-text p { margin: .4rem 0; line-height: 1.6; }
+.chapter-intro summary { cursor: pointer; font-weight: 600; }

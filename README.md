@@ -12,6 +12,7 @@ The tabs are Read, Study (the research tools), Search, Plans, Saved and More. On
 - **Translations:** about 35 freely licensed Bibles in 20 languages. English: KJV, BSB, LSV, ASV, WEB, JPS Tanakh 1917, Masoretic English Tanakh, Webster, Geneva, Douay-Rheims. Plus the Aleppo Codex (Hebrew), the Textus Receptus (Greek) and the Latin Vulgate, and Arabic, Chinese, Czech, Dutch, Esperanto, French, German, Hungarian, Italian, Polish, Portuguese, Romanian, Russian, Swedish, Ukrainian and Vietnamese. You choose separately for the Old and New Testament, and any number show side by side.
 - **Hebrew in its historical scripts:** switch the Hebrew between Paleo-Hebrew (First Temple era), consonants only (as in the Dead Sea Scrolls), vowels only, and the full Masoretic text.
 - **Listen:** the full chapter in Hebrew or Greek, read aloud with the verse lit up as it's read. Modern Hebrew and modern Greek use the phone's own voices. Ancient pronunciation (Biblical Hebrew, Erasmian Greek) is a reconstruction read by a Spanish voice, for its clear vowels.
+- **Explanations:** verse-by-verse context notes as footnotes, plus an introduction to each chapter. The default is the Tyndale Open Study Notes; you can switch to Keil & Delitzsch (Hebrew scholarship on the Old Testament), John Gill (Jewish and rabbinic background), Jamieson-Fausset-Brown, Matthew Henry, Adam Clarke or John Calvin. All come from the HelloAO Free Use Bible API.
 - **Footnotes:** small letters in the text open notes. Key Hebrew and Greek words (YHWH, nephesh, ḥesed, Sheol, aiōnios…) get what the original means, its ancient setting, and the scholars who've written on it. History checks, archaeology, textual differences, contradictions and hard passages are footnoted too.
 - **History:** a timeline with traditional and scholarly dates, background for all 66 books, 22 archaeological finds tied to passages, and 39 biblical claims rated against the historical record (confirmed / partly / debated / no evidence / conflicts).
 - **Topic:** type any subject and the app gathers the Hebrew and Greek words for it and every verse that uses them, plus a text search in any translation and language. Verses are sorted into "affirms" and "negates" (negation detected in the Hebrew and Greek as well as the translation), and the closest pairs are offered as possible contradictions.
@@ -69,7 +70,9 @@ The fixtures are tiny placeholder texts used to check that the parsers and the a
 |---|---|---|
 | Hebrew OT (TAHOT) and Greek NT (TAGNT), word-tagged; brief lexicons (TBESH/TBESG) | STEPBible.org / Tyndale House Cambridge | CC BY 4.0 (attribution shown in app) |
 | Cross references | OpenBible.info (from the Treasury of Scripture Knowledge) | CC BY |
-| Septuagint Greek and English | Brenton, via eBible.org | Public domain |
+| Septuagint Greek and English | Brenton; Greek Orthodox text; Updated Brenton (via eBible.org) | Public domain |
+| Hebrew Bible | Westminster Leningrad Codex (eBible.org), Aleppo Codex (midvash) | Public domain |
+| Explanations and commentaries | Tyndale Open Study Notes (CC BY-SA 4.0) and public-domain commentaries, via bible.helloao.org | As listed in the app |
 | KJV, ASV, WEB, Geneva 1599 | midvash/bible-data | Public domain |
 | Textual differences and contradictions | Written for this app (`site/differences.json`, `site/contradictions.json`, `site/hard-passages.json`) | Yours |
 

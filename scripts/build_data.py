@@ -42,8 +42,15 @@ TRANSLATIONS = [
     ("jps", "JPS Tanakh (1917) — Jewish translation of the Hebrew Bible", "en", "Public domain", "vpl", "engjps"),
     ("met", "Masoretic English Tanakh (BSB conformed to the Leningrad Codex)", "en", "Public domain", "vpl", "engmet"),
     ("webster", "Webster Bible (1833)", "en", "Public domain", "vpl", "engwebster"),
+    ("msb", "Majority Standard Bible", "en", "Public domain", "vpl", "engmsb"),
+    ("oeb", "Open English Bible (US)", "en", "Public domain", "vpl", "engoebus"),
+    ("ulb", "Unlocked Literal Bible", "en", "© 2017 Door43 World Missions Community, CC BY-SA 4.0", "vpl", "engULB"),
+    ("t4t", "Translation for Translators", "en", "© 2008–2017 Ellis W. Deibler Jr., CC BY-SA 4.0", "vpl", "eng-t4t"),
+    ("wmb", "World Messianic Bible", "en", "Public domain", "vpl", "engwmb"),
+    ("fbv", "Free Bible Version (New Testament & Psalms)", "en", "© 2018 Jonathan Gallagher, CC BY-SA 4.0", "vpl", "engfbv"),
     ("geneva", "Geneva Bible (1599)", "en", "Public domain", "mv", "geneva1599"),
     ("dra", "Douay-Rheims (Catholic)", "en", "Public domain", "mv", "dra"),
+    ("wlc", "Westminster Leningrad Codex (Hebrew, AD 1008)", "he", "Public domain (per eBible.org)", "vpl", "hboWLC"),
     ("aleppo", "Aleppo Codex (Hebrew, c. 930 AD)", "he", "Public domain", "mv", "aleppo"),
     ("tr", "Textus Receptus (Greek, Stephanus 1550)", "gr", "Public domain", "mv", "tr"),
     ("clem", "Clementine Vulgate (Latin)", "la", "Public domain", "mv", "clem"),
@@ -74,12 +81,27 @@ MV_LANG = {"gr": "gr", "he": "he"}
 LXX_SOURCES = [
     ("lxx", "Septuagint – Greek (Brenton ed., Codex Vaticanus based)", "Public domain",
      ["https://ebible.org/Scriptures/grcbrent_vpl.zip"]),
+    ("lxx2", "Septuagint – Greek (Greek Orthodox text)", "Public domain",
+     ["https://ebible.org/Scriptures/grclxx_vpl.zip"]),
+    ("lxxeng2", "Septuagint – English (Updated Brenton, 2020)", "Public domain; updates CC0",
+     ["https://ebible.org/Scriptures/englxxup_vpl.zip"]),
     ("lxxeng", "Septuagint – English (Brenton)", "Public domain",
      ["https://ebible.org/Scriptures/eng-Brenton_vpl.zip",
       "https://ebible.org/Scriptures/englxxup_vpl.zip",
       "https://ebible.org/Scriptures/eng-lxx2012_vpl.zip"]),
 ]
 XREF_URLS = ["https://a.openbible.info/data/cross-references.zip"]
+HELLOAO = "https://bible.helloao.org/api"
+# Commentaries to include, in the order offered in the app (id, short description of its tradition).
+COMMENTARIES = [
+    ("tyndale", "Tyndale Open Study Notes (2022) — modern evangelical study notes: history, culture, meaning"),
+    ("keil-delitzsch", "Keil & Delitzsch (1860s–90s) — classic Hebrew-based scholarly commentary on the Old Testament"),
+    ("john-gill", "John Gill (1746–66) — Baptist Hebraist who draws heavily on Jewish and rabbinic sources"),
+    ("jamieson-fausset-brown", "Jamieson, Fausset & Brown (1871) — concise critical and explanatory notes"),
+    ("matthew-henry", "Matthew Henry (1706–14) — devotional Puritan commentary"),
+    ("adam-clarke", "Adam Clarke (1810–26) — Methodist scholar's commentary with language notes"),
+    ("john-calvin", "John Calvin (16th century) — Reformation commentary"),
+]
 STEP_REPO = "STEPBible/STEPBible-Data"
 
 ATTRIBUTION = {
@@ -87,6 +109,7 @@ ATTRIBUTION = {
             "Tyndale House Cambridge (CC BY 4.0).",
     "xref": "Cross references: OpenBible.info (CC BY), derived from the Treasury of Scripture Knowledge.",
     "lxx": "Septuagint Greek and English: Sir Lancelot C. L. Brenton (public domain), via eBible.org.",
+    "commentary": "Commentaries and Tyndale Open Study Notes (CC BY-SA 4.0, Tyndale House Publishers) via the HelloAO Free Use Bible API (bible.helloao.org).",
     "translations": "Translations via midvash/bible-data and eBible.org; licenses listed per translation. "
                     "LSV © 2020 Covenant Press (CC BY-SA 4.0).",
 }
@@ -109,6 +132,10 @@ ALIASES = {
     "jdg": "Judg", "rut": "Ruth", "jud": "Jude", "jas": "Jas", "est": "Esth", "esg": "Esth",
     "dag": "Dan", "1kingdoms": "1Sam", "2kingdoms": "2Sam", "3kingdoms": "1Kgs", "4kingdoms": "2Kgs",
     "1paralipomenon": "1Chr", "2paralipomenon": "2Chr", "qoheleth": "Eccl",
+    # BibleWorks-style codes used in eBible VPL files
+    "sol": "Song", "eze": "Ezek", "joe": "Joel", "mar": "Mark", "joh": "John", "phi": "Phil",
+    "1jo": "1John", "2jo": "2John", "3jo": "3John", "jam": "Jas", "jdg": "Judg", "rth": "Ruth",
+    "1sm": "1Sam", "2sm": "2Sam", "1kg": "1Kgs", "2kg": "2Kgs", "ezk": "Ezek", "jnh": "Jonah", "zph": "Zeph",
 }
 RESOLVE = {}
 for b in BOOKS:
@@ -228,12 +255,20 @@ def parse_vpl_books(data):
     if not names:
         raise RuntimeError("no VPL text file in zip")
     text = z.read(names[0]).decode("utf-8-sig", errors="replace")
-    sil = {b["sil"]: b["osis"] for b in BOOKS}
     books = defaultdict(lambda: defaultdict(dict))
+    unknown = set()
     for line in text.splitlines():
         m = VPL_RE.match(line.strip())
-        if m and m.group(1) in sil:
-            books[sil[m.group(1)]][int(m.group(2))][int(m.group(3))] = m.group(4).strip()
+        if not m:
+            continue
+        code = m.group(1).upper()
+        osis = None if code in ("ESG", "DAG") else resolve_book(code)
+        if osis:
+            books[osis][int(m.group(2))][int(m.group(3))] = m.group(4).strip()
+        else:
+            unknown.add(code)
+    if unknown:
+        log("  skipped book codes (not in 66-book canon):", " ".join(sorted(unknown)))
     out = {}
     for osis, chs in books.items():
         arr = []
@@ -275,7 +310,7 @@ def build_translations(F, out, manifest):
             log(f"WARNING translation {vid} failed: {e}")
 
 # ---------------------------------------------------------------- septuagint (VPL)
-VPL_RE = re.compile(r"^([1-4A-Z]{3})\s+(\d+):(\d+)\s+(.*)$")
+VPL_RE = re.compile(r"^([1-4A-Za-z]{3})\s+(\d+):(\d+)\s+(.*)$")
 
 def parse_vpl_zip(data):
     """Return {osis: {ch: {v: text}}} using the edition's own (LXX) numbering."""
@@ -291,11 +326,11 @@ def parse_vpl_zip(data):
         m = VPL_RE.match(line.strip())
         if not m:
             continue
-        code, c, v, t = m.group(1), m.group(2), m.group(3), m.group(4).strip()
+        code, c, v, t = m.group(1).upper(), m.group(2), m.group(3), m.group(4).strip()
         if code in ("ESG", "DAG"):
             alt[resolve_book(code)][c][v] = t
             continue
-        osis = next((b["osis"] for b in BOOKS if b["sil"] == code), None)
+        osis = resolve_book(code)
         if osis and BOOK_INDEX[osis] < 39:
             books[osis][c][v] = t
     for osis, chs in alt.items():
@@ -542,12 +577,87 @@ def build_xrefs(F, out, manifest):
         manifest["errors"].append(f"cross references: {e}")
         log(f"WARNING cross references failed: {e}")
 
+# ---------------------------------------------------------------- commentaries (HelloAO Free Use Bible API)
+def flatten_content(items):
+    out = []
+    for it in items or []:
+        if isinstance(it, str):
+            out.append(it)
+        elif isinstance(it, dict):
+            if it.get("text"):
+                out.append(str(it["text"]))
+            elif it.get("lineBreak"):
+                out.append("\n")
+            elif it.get("heading"):
+                out.append(str(it["heading"]) + "\n")
+    return strip_html(" ".join(out)).replace(" \n ", "\n").strip()
+
+def build_commentaries(F, out, manifest, workers=8):
+    from concurrent.futures import ThreadPoolExecutor
+    try:
+        avail = json.loads(F.get(f"{HELLOAO}/available_commentaries.json", key="helloao_available.json"))
+        avail_list = avail.get("commentaries", avail if isinstance(avail, list) else [])
+        info = {c.get("id"): c for c in avail_list}
+    except Exception as e:  # noqa: BLE001
+        log(f"WARNING commentary list failed ({e}); trying the default ids")
+        info = {}
+    manifest["commentaries"] = []
+    for cid, desc in COMMENTARIES:
+        if info and cid not in info:
+            manifest["errors"].append(f"commentary {cid}: not offered by the API")
+            continue
+        try:
+            books = json.loads(F.get(f"{HELLOAO}/c/{cid}/books.json", key=f"helloao_{cid}_books.json"))
+            book_list = books.get("books", books if isinstance(books, list) else [])
+            jobs = []
+            for b in book_list:
+                osis = resolve_book(b.get("id", "")) or resolve_book(b.get("commonName", "") or b.get("name", ""))
+                if not osis:
+                    continue
+                n = b.get("numberOfChapters") or next(x["ch"] for x in BOOKS if x["osis"] == osis)
+                for c in range(1, int(n) + 1):
+                    jobs.append((b["id"], osis, c))
+
+            def one(job):
+                bid, osis, c = job
+                try:
+                    d = json.loads(F.get(f"{HELLOAO}/c/{cid}/{bid}/{c}.json", key=f"helloao_{cid}_{bid}_{c}.json"))
+                except Exception:  # noqa: BLE001
+                    return 0
+                ch = d.get("chapter", {})
+                verses = {}
+                for item in ch.get("content", []):
+                    if item.get("type") == "verse" and item.get("number"):
+                        t = flatten_content(item.get("content"))
+                        if t:
+                            verses[str(item["number"])] = t
+                intro = strip_html(ch.get("introduction") or "")
+                if verses or intro:
+                    write_json(os.path.join(out, "commentary", cid, osis, f"{c}.json"), {"i": intro, "v": verses})
+                    return 1
+                return 0
+
+            with ThreadPoolExecutor(max_workers=workers) as ex:
+                written = sum(ex.map(one, jobs))
+            meta = info.get(cid, {})
+            manifest["commentaries"].append({
+                "id": cid, "name": meta.get("englishName") or meta.get("name") or cid, "about": desc,
+                "license": meta.get("licenseUrl") or "", "licenseNotes": meta.get("licenseNotes") or "",
+                "chapters": written, "ot": any(BOOK_INDEX[j[1]] < 39 for j in jobs), "nt": any(BOOK_INDEX[j[1]] >= 39 for j in jobs)})
+            log(f"commentary {cid}: {written} chapters")
+            if not written:
+                manifest["errors"].append(f"commentary {cid}: no chapters downloaded")
+        except Exception as e:  # noqa: BLE001
+            manifest["errors"].append(f"commentary {cid}: {e}")
+            log(f"WARNING commentary {cid} failed: {e}")
+
 # ---------------------------------------------------------------- main
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default=os.path.join(ROOT, "site", "data"))
     ap.add_argument("--cache", default=os.path.join(ROOT, ".cache"))
     ap.add_argument("--fixtures", default=None, help="offline test: read sources from this folder")
+    ap.add_argument("--skip-commentary", action="store_true", help="don't download commentaries")
     args = ap.parse_args()
     F = Fetcher(args.cache, args.fixtures)
     manifest = {"built": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
@@ -557,6 +667,8 @@ def main():
     build_lxx(F, args.out, manifest)
     build_step(F, args.out, manifest)
     build_xrefs(F, args.out, manifest)
+    if not args.skip_commentary:
+        build_commentaries(F, args.out, manifest)
     write_json(os.path.join(args.out, "manifest.json"), manifest)
     if manifest["errors"]:
         log("finished with warnings:\n  " + "\n  ".join(manifest["errors"]))

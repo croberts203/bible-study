@@ -53,6 +53,9 @@ const interlinear = (b, c) => getJSON(`${D}interlinear/${b}/${c}.json`);
 const xrefBook = (b) => getJSON(`${D}xref/${b}.json`);
 const lexGroup = (s) => getJSON(`${D}lex/${s.slice(0, 3)}.json`);
 const occGroup = (s) => getJSON(`${D}occ/${s.slice(0, 3)}.json`);
+const commentaryCh = (cid, b, c) => getJSON(`${D}commentary/${cid}/${b}/${c}.json`);
+const comms = (t) => (manifest.commentaries || []).filter((x) => x.chapters && (!t || x[t.toLowerCase()]));
+const noteSource = (t) => { const list = comms(t); return list.find((x) => x.id === settings.noteSource) || list[0] || null; };
 /** Occurrence refs without the "!" negation marker, de-duplicated, in order. */
 const occRefs = (list) => [...new Set((list || []).map((r) => r.replace(/^!/, "")))];
 
@@ -85,7 +88,7 @@ async function verseText(ver, ref) {
 // ---------------------------------------------------------------- settings
 const SKEY = "bible-study:settings:v1";
 const settings = Object.assign(
-  { versionsOT: ["kjv"], versionsNT: ["kjv"], original: true, gloss: true, lxx: false, lxxeng: false, compare: false, hard: true, footnotes: true,
+  { versionsOT: ["kjv"], versionsNT: ["kjv"], original: true, gloss: true, lxx: false, lxxeng: false, compare: false, hard: true, footnotes: true, explain: true, noteSource: "tyndale",
     script: "masoretic", rate: 0.85, size: 18, theme: "auto" },
   (() => { try { return JSON.parse(localStorage.getItem(SKEY)) || {}; } catch { return {}; } })(),
 );
@@ -109,6 +112,9 @@ const LANG_NAME = { en: "English", he: "Hebrew", gr: "Greek", la: "Latin", ar: "
   ru: "Russian", sv: "Swedish", uk: "Ukrainian", vi: "Vietnamese" };
 const verLabel = (id) => manifest.translations.find((t) => t.id === id)?.label || id.toUpperCase();
 const hasLxx = (id) => manifest.lxx.some((l) => l.id === id);
+const lxxG = () => (hasLxx(settings.lxxG) ? settings.lxxG : "lxx");
+const lxxE = () => (hasLxx(settings.lxxE) ? settings.lxxE : "lxxeng");
+const lxxLabel = (id) => manifest.lxx.find((l) => l.id === id)?.label || id;
 
 // ---------------------------------------------------------------- side panel
 function openPanel(title, ...content) {
@@ -164,11 +170,13 @@ async function viewRead([b, c, v]) {
 
   const vers = chosenFor(bk.t);
   const lxxCh = isOT ? lxxChapters(bk.osis, c) : [];
-  const [texts, orig, lxxG, lxxE] = await Promise.all([
+  const ns = settings.explain ? noteSource(bk.t) : null;
+  const [texts, orig, lxxG, lxxE, comm] = await Promise.all([
     Promise.all(vers.map((x) => textBook(x, bk.osis))),
     settings.original || settings.footnotes ? interlinear(bk.osis, c) : null,
-    isOT && settings.lxx && hasLxx("lxx") ? lxxBook("lxx", bk.osis) : null,
-    isOT && (settings.lxxeng || settings.compare) && hasLxx("lxxeng") ? lxxBook("lxxeng", bk.osis) : null,
+    isOT && settings.lxx && hasLxx(lxxG()) ? lxxBook(lxxG(), bk.osis) : null,
+    isOT && (settings.lxxeng || settings.compare) && hasLxx(lxxE()) ? lxxBook(lxxE(), bk.osis) : null,
+    ns ? commentaryCh(ns.id, bk.osis, c) : null,
   ]);
   const chapterTexts = texts.map((t) => (t && t[c - 1]) || []);
   const origData = orig;
@@ -218,7 +226,7 @@ async function viewRead([b, c, v]) {
     }
   }
 
-  const notes = settings.footnotes ? buildFootnotes(bk, c, nVerses, origData, diffByVerse) : new Map();
+  const notes = settings.footnotes || settings.explain ? buildFootnotes(bk, c, nVerses, origData, diffByVerse, comm, ns) : new Map();
   const note = isOT && (settings.lxx || settings.lxxeng) ? lxxNote(bk.osis, c) : "";
   const missing = [];
   if (settings.original && !orig && manifest.original?.hebrew) missing.push(`${isOT ? "Hebrew" : "Greek"} text`);
@@ -226,6 +234,7 @@ async function viewRead([b, c, v]) {
   const chapter = h("div", { id: "chapter", class: `cols-${cols.length}`, style: `--ncols:${cols.length}` },
     h("h1", { class: "ch-title" }, `${bk.name} ${c}`),
     historyStrip(bk, c),
+    comm?.i ? h("details", { class: "notice chapter-intro" }, h("summary", {}, `About ${bk.name} ${c} — ${ns.name}`), h("p", {}, comm.i)) : null,
     note ? h("p", { class: "notice" }, note) : null,
     missing.length && manifest.built ? h("p", { class: "muted small" }, `Not available for this chapter: ${missing.join(", ")}.`) : null,
     (() => {
@@ -251,18 +260,21 @@ async function viewRead([b, c, v]) {
 }
 
 // ---------------------------------------------------------------- footnotes
-const FN_ICON = { word: "א", aramaic: "𐡀", diff: "⚑", contra: "⚖", hard: "⚠", claim: "🏛", artifact: "🏺" };
-const FN_KIND = { word: "Original language", aramaic: "Aramaic", diff: "Text difference", contra: "Contradiction", hard: "Hard passage", claim: "History check", artifact: "Archaeology" };
+const FN_ICON = { context: "✎", word: "א", aramaic: "𐡀", diff: "⚑", contra: "⚖", hard: "⚠", claim: "🏛", artifact: "🏺" };
+const FN_KIND = { context: "Explanation", word: "Original language", aramaic: "Aramaic", diff: "Text difference", contra: "Contradiction", hard: "Hard passage", claim: "History check", artifact: "Archaeology" };
 function letterFor(i) { let s = ""; i++; while (i > 0) { const r = (i - 1) % 26; s = String.fromCharCode(97 + r) + s; i = Math.floor((i - 1) / 26); } return s; }
 const covers = (refs, b, c, v) => refs.some((r) => refCovers(r, b, c, v));
 
-function buildFootnotes(bk, c, nVerses, words, diffByVerse) {
+function buildFootnotes(bk, c, nVerses, words, diffByVerse, comm, ns) {
   const out = new Map();
   const seenWord = new Set();
   let aramaicDone = false, n = 0;
   const heb = bk.t === "OT";
   for (let v = 1; v <= nVerses; v++) {
     const list = [];
+    const ctext = comm?.v?.[String(v)];
+    if (ctext) list.push({ kind: "context", label: `Explanation — ${ns.name}`, short: ctext, open: () => contextPanel(bk, c, v) });
+    if (!settings.footnotes) { if (list.length) { list.forEach((x) => (x.letter = letterFor(n++))); out.set(v, list); } continue; }
     const ws = words?.[String(v)] || [];
     ws.forEach((w, i) => {
       const kw = KEYWORDS[w[3]];
@@ -297,6 +309,34 @@ function footnoteList(bk, c, notes) {
           h("button", { class: "linkish fn-title", onclick: n.open }, `${FN_ICON[n.kind]} ${n.label}`),
           h("span", { class: "muted small" }, ` · v. ${v}`),
           h("div", { class: "small fn-short" }, n.short.length > 220 ? n.short.slice(0, 220) + "…" : n.short)))))));
+}
+async function contextPanel(bk, c, v) {
+  const list = comms(bk.t);
+  const ref = `${bk.osis}.${c}.${v}`;
+  const body = h("div", {}, loading());
+  let current = noteSource(bk.t)?.id || list[0]?.id;
+  openPanel(`Explanation — ${fmtRef(ref)}`, body);
+  const draw = async () => {
+    const meta = list.find((x) => x.id === current);
+    const ch = meta ? await commentaryCh(meta.id, bk.osis, c) : null;
+    let text = ch?.v?.[String(v)], from = v;
+    if (!text && ch?.v) {   // commentaries often comment on a passage at its first verse
+      for (let back = v - 1; back >= Math.max(1, v - 8); back--) if (ch.v[String(back)]) { text = ch.v[String(back)]; from = back; break; }
+    }
+    const verseEng = await verseText(primaryVer(), ref);
+    fill(body,
+      h("p", { class: "verse-quote" }, verseEng),
+      h("div", { class: "chips" }, list.map((x) => h("button", { class: `chip${x.id === current ? " on" : ""}`, onclick: () => { current = x.id; draw(); } },
+        x.name.replace(/ Bible Commentary| Commentary on the Whole Bible| Commentary/, "")))),
+      meta ? h("p", { class: "muted small" }, meta.about) : null,
+      text ? [from !== v ? h("p", { class: "muted small" }, `Note on ${fmtRef(`${bk.osis}.${c}.${from}`)}, which covers this verse:`) : null,
+        h("div", { class: "commentary-text" }, text.split(/\n+/).map((p) => h("p", {}, p)))]
+        : h("p", { class: "muted" }, ch ? "No note on this verse in this commentary — try another." : "This commentary isn't available for this chapter."),
+      ch?.i ? h("details", {}, h("summary", {}, "Introduction to this chapter"), h("p", { class: "small" }, ch.i)) : null,
+      meta ? h("p", { class: "muted tiny" }, "Source: ", meta.name, " via the HelloAO Free Use Bible API. ", meta.license ? h("a", { href: meta.license, target: "_blank", rel: "noopener" }, "License") : null,
+        meta.licenseNotes ? ` — ${meta.licenseNotes}` : "") : null);
+  };
+  draw();
 }
 function claimPanel(x) {
   openPanel("History check",
@@ -431,13 +471,22 @@ function readerToolbar(bk, c) {
       toggle("gloss", "English under each word", hasOrig),
       scriptSel,
       h("div", { class: "picker-lang" }, "Notes"),
-      toggle("footnotes", "Footnotes", true, "key words, history, differences"),
+      toggle("explain", "Explanation footnotes", comms(bk.t).length > 0, "context for each verse"),
+      comms(bk.t).length > 1 ? h("label", { class: "picker-item" }, "Explanations from: ",
+        h("select", { onchange: (e) => { settings.noteSource = e.target.value; saveSettings(); route(); } },
+          comms(bk.t).map((x) => h("option", { value: x.id, selected: noteSource(bk.t)?.id === x.id }, x.name)))) : null,
+      toggle("footnotes", "Study footnotes", true, "Hebrew/Greek words, history, differences"),
       toggle("hard", "Mark hard passages", hard.items.length > 0),
       bk.t === "OT" ? [h("div", { class: "picker-lang" }, "Septuagint (Greek Old Testament)"),
-        toggle("lxx", "Septuagint in Greek", hasLxx("lxx")),
-        toggle("lxxeng", "Septuagint in English", hasLxx("lxxeng")),
-        toggle("compare", "Highlight Hebrew ↔ Septuagint differences", hasLxx("lxxeng")),
-        hasLxx("lxxeng") ? h("a", { class: "picker-item", href: `#/compare/${bk.osis}` }, `Scan all of ${bk.name} for differences ›`) : null] : null));
+        toggle("lxx", "Septuagint in Greek", hasLxx(lxxG())),
+        toggle("lxxeng", "Septuagint in English", hasLxx(lxxE())),
+        toggle("compare", "Highlight Hebrew ↔ Septuagint differences", hasLxx(lxxE())),
+        ...[["lxxG", (l) => !/English/.test(l.label), "Greek edition"], ["lxxE", (l) => /English/.test(l.label), "English edition"]].map(([key, f, lab]) => {
+          const opts = manifest.lxx.filter(f);
+          return opts.length > 1 ? h("label", { class: "picker-item" }, `${lab}: `, h("select", { onchange: (e) => { settings[key] = e.target.value; saveSettings(); route(); } },
+            opts.map((l) => h("option", { value: l.id, selected: (key === "lxxG" ? lxxG() : lxxE()) === l.id }, l.label.replace(/^Septuagint – /, ""))))) : null;
+        }),
+        hasLxx(lxxE()) ? h("a", { class: "picker-item", href: `#/compare/${bk.osis}` }, `Scan all of ${bk.name} for differences ›`) : null] : null));
   return h("div", { class: "toolbar" },
     h("div", { class: "nav-row" },
       h("a", { class: "btn", href: prevHref(bk, c), "aria-label": "Previous chapter" }, "‹"),
@@ -484,6 +533,7 @@ async function versePanel(bk, c, v) {
   openPanel(fmtRef(ref),
     h("p", { class: "verse-quote" }, await verseText(ver, ref)),
     ctxBox,
+    comms(bk.t).length ? h("button", { class: "btn", onclick: () => contextPanel(bk, c, v) }, "✎ Explanations & commentary") : null,
     h("div", { class: "hl-row" }, "Highlight: ",
       HL_COLORS.map((col) => h("button", { class: `swatch hl-${col}`, "aria-label": col,
         onclick: () => { store.set("highlights", ref, store.get("highlights", ref) === col ? null : col); route2(); } })),
@@ -563,8 +613,8 @@ async function xrefProblems(from, to, votes, deep) {
     if (x.refs.some((rr) => { const p = parseOsis(rr); return p && p.b === r.b && r.v && refCovers(rr, r.b, r.c, r.v); }))
       flags.push({ kind: "hard", label: `⚠ Hard passage: ${x.title}`, open: () => hardPanel(x) });
   }
-  if (deep && b.t === "OT" && hasLxx("lxxeng") && settings.compare && target) {
-    const lx = await lxxBook("lxxeng", b.osis);
+  if (deep && b.t === "OT" && hasLxx(lxxE()) && settings.compare && target) {
+    const lx = await lxxBook(lxxE(), b.osis);
     const chs = lxxChapters(b.osis, r.c);
     let best = null;
     for (const lc of chs) for (const dv of [0, -1, 1]) {
@@ -712,12 +762,12 @@ async function diffPanel(d) {
       il[String(ot.v)].map((w) => h("span", { class: "w static" }, h("span", { class: "wt" }, w[0].replace(/\//g, "")),
         h("span", { class: "wg", dir: "ltr" }, w[2])))));
     const lref = d.lxxref ? parseOsis(d.lxxref) : { ...ot, c: lxxChapters(ot.b, ot.c)[0] };
-    for (const id of ["lxx", "lxxeng"]) {
+    for (const id of [lxxG(), lxxE()]) {
       if (!hasLxx(id)) continue;
       const bkData = await lxxBook(id, lref.b);
       const t = bkData?.[String(lref.c)]?.[String(lref.v)];
-      if (t) blocks.push(h("h4", {}, `Septuagint ${id === "lxx" ? "Greek" : "English (Brenton)"} — ${fmtRef(lref)} in LXX numbering`),
-        h("p", { lang: id === "lxx" ? "grc" : "en" }, t));
+      if (t) blocks.push(h("h4", {}, `${lxxLabel(id)} — ${fmtRef(lref)} in LXX numbering`),
+        h("p", { lang: /English/.test(lxxLabel(id)) ? "en" : "grc" }, t));
     }
   }
   for (const r of d.nt || []) {
@@ -1185,9 +1235,9 @@ async function viewCompare([b]) {
     h("p", { class: "lead" }, "Every verse of a book compared automatically: the Hebrew (Masoretic) text, through the KJV, against the Septuagint, through Brenton's translation. Verses are ranked by how much they differ."),
     h("div", { class: "row" }, "Book: ", sel, h("a", { href: "#/differences" }, "Curated list of key differences ›")),
     h("div", { id: "cmp-out" }, loading()));
-  if (!hasLxx("lxxeng") || bk.t !== "OT") { fill($("#cmp-out"), h("p", { class: "muted" }, "The Septuagint text isn't available.")); return; }
+  if (!hasLxx(lxxE()) || bk.t !== "OT") { fill($("#cmp-out"), h("p", { class: "muted" }, "The Septuagint text isn't available.")); return; }
   const base = manifest.translations.some((t) => t.id === "kjv") ? "kjv" : primaryVer();
-  const [mt, lxx] = await Promise.all([textBook(base, bk.osis), lxxBook("lxxeng", bk.osis)]);
+  const [mt, lxx] = await Promise.all([textBook(base, bk.osis), lxxBook(lxxE(), bk.osis)]);
   if (!mt || !lxx) { fill($("#cmp-out"), h("p", { class: "muted" }, "This book isn't available in both texts.")); return; }
   const rows = [], perCh = [];
   for (let c = 1; c <= bk.ch; c++) {
